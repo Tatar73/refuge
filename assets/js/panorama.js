@@ -37,15 +37,23 @@ pano_moins.addEventListener("click", () => {
   });
 
 
-var hoverElement = document.getElementById("roche_nue");
+var hoverElement = document.getElementById("localisation");
 var hiddenImage = document.getElementById("afficher");
 
 
 
 hoverElement.onmouseover = function() {
-  if(hiddenImage.style.display != "block"){
-  hiddenImage.style.display = "block";
+  if(hiddenImage.style.opacity != 1){
+  hiddenImage.style.opacity = 1;
   }else{
-  hiddenImage.style.display = "none";
+  hiddenImage.style.opacity = 0;
+  }
+}
+
+hoverElement.onmouseoverout = function() {
+  if(hiddenImage.style.opacity != 0){
+  hiddenImage.style.opacity = 0;
+  }else{
+  hiddenImage.style.opacity = 1;
   }
 }

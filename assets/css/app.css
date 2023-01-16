@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Athelas";
   src: url(../assets/Athelas-Regular.woff);
@@ -113,6 +114,53 @@ table {
   border-spacing: 0;
 }
 
+footer {
+  position: relative;
+  background: #FFFFFF;
+  padding: 32px 0;
+}
+footer .flex {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+footer .flex .right h4 {
+  font-family: "Athelas";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #555B47;
+  padding: 0 0 20px 0;
+}
+footer .flex .right p {
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #555B47;
+  margin-top: 16px;
+}
+footer .flex .middle p {
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #555B47;
+  opacity: 0.5;
+  margin-top: 170px;
+}
+footer .flex .left p {
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #555B47;
+  margin-top: 16px;
+}
+
 .container-index .background {
   position: relative;
 }
@@ -212,17 +260,17 @@ table {
 }
 .container-index .acceuil #content-index {
   height: 100%;
-  opacity: 1;
   transition-property: opacity, left;
   transition-duration: 1s;
 }
 .container-index .acceuil #pano_moins {
   display: none;
 }
-.container-index .acceuil .content-pano .localisation {
+.container-index .acceuil .content-pano {
   position: absolute;
-  top: 5vw;
-  left: 20vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .container-index .acceuil .content-pano .localisation .afficher p {
   font-family: "Gilmer";
@@ -532,51 +580,200 @@ table {
   background-color: #1d1e1b;
 }
 
-footer {
-  position: relative;
-  background: #FFFFFF;
-  padding: 32px 0;
+.container-acces {
+  background-color: #F8F4EC;
 }
-footer .flex {
+.container-acces .acces {
+  min-height: 100vh;
+}
+.container-acces .acces h1 {
+  margin-top: 72px;
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #555B47;
+  text-align: center;
+}
+.container-acces .acces legend {
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #555B47;
+  opacity: 0.5;
+  text-align: center;
+  padding-top: 8px;
+}
+.container-acces .acces .content {
+  margin-top: 80px;
   display: flex;
   justify-content: center;
-  gap: 80px;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 64px;
+  gap: 32px;
 }
-footer .flex .right h4 {
+.container-acces .acces .content .images {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  gap: 20px;
+}
+.container-acces .acces .content .images .image {
+  display: flex;
+  flex-direction: column;
+}
+.container-acces .acces .content .images .image img {
+  width: 100%;
+  display: flex;
+}
+.container-acces .acces .content .images .image legend {
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: #8C8C8C;
+  opacity: 0.5;
+  text-align: right;
+}
+.container-acces .acces .texte {
+  width: 50%;
+}
+.container-acces .acces .texte p {
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 200%;
+  color: #555B47;
+}
+.container-acces .itineraires {
+  padding: 0 64px;
+}
+.container-acces .itineraires h2 {
   font-family: "Athelas";
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 48px;
+  text-align: center;
   color: #555B47;
-  padding: 0 0 20px 0;
 }
-footer .flex .right p {
+.container-acces .itineraires h3 {
+  margin-top: 50px;
   font-family: "Gilmer";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: left;
+  color: rgba(85, 91, 71, 0.9);
+}
+.container-acces .itineraires .itineraire {
+  width: 100%;
+  min-height: 35vh;
+  background-color: #EDEDE9;
+  margin-top: 25px;
+  display: flex;
+}
+.container-acces .itineraires .itineraire .left {
+  background: linear-gradient(0deg, rgba(85, 91, 71, 0.7), rgba(85, 91, 71, 0.7)), #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 33.3%;
+}
+.container-acces .itineraires .itineraire .left h4 {
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #F8F4EC;
+}
+.container-acces .itineraires .itineraire .left p {
+  margin-top: 8px;
+  font-family: "Gilmer Medium";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #F8F4EC;
+}
+.container-acces .itineraires .itineraire .middle {
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+}
+.container-acces .itineraires .itineraire .middle p {
+  text-align: left;
+  padding: 8px 96px;
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #555B47;
+}
+.container-acces .itineraires .itineraire .middle #duree::before {
+  content: "";
+  background-image: url("../../assets/img/icon/duree.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px; /* Taille de l'icône */
+  height: 32px; /* Taille de l'icône */
+  margin-right: 8px; /* Espacement à droite de l'icône */
+}
+.container-acces .itineraires .itineraire .middle #distance::before {
+  content: "";
+  background-image: url("../../assets/img/icon/distance.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px; /* Taille de l'icône */
+  height: 32px; /* Taille de l'icône */
+  margin-right: 8px; /* Espacement à droite de l'icône */
+}
+.container-acces .itineraires .itineraire .middle #difficulte::before {
+  content: "";
+  background-image: url("../../assets/img/icon/difficulte.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px; /* Taille de l'icône */
+  height: 32px; /* Taille de l'icône */
+  margin-right: 8px; /* Espacement à droite de l'icône */
+}
+.container-acces .itineraires .itineraire .middle #carte::before {
+  content: "";
+  background-image: url("../../assets/img/icon/carte.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px; /* Taille de l'icône */
+  height: 32px; /* Taille de l'icône */
+  margin-right: 8px; /* Espacement à droite de l'icône */
+}
+.container-acces .itineraires .itineraire .right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: left;
+  width: 33.3%;
+}
+.container-acces .itineraires .itineraire .right p {
+  text-align: left;
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 600;
   font-size: 16px;
-  line-height: 20px;
   color: #555B47;
-  margin-top: 16px;
 }
-footer .flex .middle p {
-  font-family: "Gilmer";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #555B47;
-  opacity: 0.5;
-  margin-top: 170px;
+.container-acces .itineraires #background-normal {
+  background: linear-gradient(0deg, #555B47, #555B47), #F8F4EC;
 }
-footer .flex .left p {
-  font-family: "Gilmer";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #555B47;
-  margin-top: 16px;
+.container-acces .itineraires #background-dark {
+  background: linear-gradient(0deg, #434838, #434838), #F8F4EC;
 }
 
 /* Flickity horizontal scroll */

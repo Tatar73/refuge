@@ -108,10 +108,9 @@
                 color: #FFFFFF;
             }
         }
-
-        #content-index{
-            height: 100%;
-            opacity: 1;
+        
+        #content-index{ 
+            height: 100%;   
             transition-property: opacity, left;
             transition-duration: 1s;
         }
@@ -119,35 +118,38 @@
         #pano_moins{
             display: none;
         }
-
-        .content-pano .localisation{
+        .content-pano {
             position: absolute;
-            top: 5vw;
-            left: 20vw;
-            .afficher{
-                p{
-                    font-family: 'Gilmer';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 16px;
-                    color: white;
-                    opacity: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            .localisation{
+                .afficher{
+                    p{
+                        font-family: 'Gilmer';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: white;
+                        opacity: 1;
+                    }
+                    .pointilles{
+                        border: 2px dashed #FFFFFF;
+                        transform: rotate(-90deg);
+                        width: 27px;
+                        height: 0px;
+                        margin-top: 14px;
+                        margin-left: 4px;
+                        opacity: 1;
+                    }
                 }
-                .pointilles{
-                    border: 2px dashed #FFFFFF;
-                    transform: rotate(-90deg);
-                    width: 27px;
-                    height: 0px;
-                    margin-top: 14px;
-                    margin-left: 4px;
-                    opacity: 1;
+    
+                img{
+                    margin-top: 16px;
                 }
-            }
-
-            img{
-                margin-top: 16px;
             }
         }
+
     
     }
     

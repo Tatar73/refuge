@@ -1,0 +1,202 @@
+.container-acces{
+    background-color: #F8F4EC;
+    .acces{
+        min-height: 100vh;
+        h1{
+            margin-top: 72px;
+            font-family: 'Gilmer';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            color: #555B47;
+            text-align: center;
+        }
+        legend{
+            font-family: 'Gilmer';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            color: #555B47;
+            opacity: 0.5;
+            text-align: center;
+            padding-top: 8px;
+        }
+        .content{
+            margin-top: 80px;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            padding: 0 64px;
+            gap: 32px;
+            .images{
+                display: flex;
+                flex-direction: row;
+                width: 50%;
+                gap: 20px;
+                .image{
+                    display: flex;
+                    flex-direction: column;
+                    img{
+                        width: 100%;
+                        display: flex;
+                    }
+                    legend{
+                        font-family: 'Gilmer';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        color: #8C8C8C;
+                        opacity: 0.5;
+                        text-align: right;
+                    }
+    
+                }
+
+            }
+        }
+        .texte{
+            width: 50%;
+            p{
+                font-family: 'Gilmer';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 200%;
+                color: #555B47;
+            }
+
+        }
+    }
+    .itineraires{
+        padding: 0 64px;
+        h2{
+            font-family: 'Athelas';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            text-align: center;
+            color: #555B47;
+        }
+
+        h3{
+            margin-top: 50px;
+            font-family: 'Gilmer';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            text-align: left;
+            color: rgba(85, 91, 71, 0.9);
+        }
+
+        .itineraire{
+            width: 100%;
+            min-height: 35vh;
+            background-color: #EDEDE9;
+            margin-top: 25px;
+            display: flex;
+            .left{
+                background: linear-gradient(0deg, rgba(85, 91, 71, 0.7), rgba(85, 91, 71, 0.7)), #FFFFFF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h4{
+                    font-family: 'Gilmer';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    color: #F8F4EC;
+                }
+                p{
+                    margin-top: 8px;
+                    font-family: 'Gilmer Medium';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: #F8F4EC;
+                }
+                width: 33.3%;
+            }
+            .middle{
+                width: 33.3%;
+                display: flex;
+                justify-content: center;
+                align-items: left;
+                flex-direction: column; 
+                p{
+                    text-align: left;
+                    padding: 8px 96px;
+                    font-family: 'Gilmer';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    color: #555B47;
+                }
+                #duree::before{
+                    content: "";
+                    background-image: url("../../assets/img/icon/duree.svg");
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 32px; /* Taille de l'icône */
+                    height: 32px; /* Taille de l'icône */
+                    margin-right: 8px; /* Espacement à droite de l'icône */
+                }
+                #distance::before{
+                    content: "";
+                    background-image: url("../../assets/img/icon/distance.svg");
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 32px; /* Taille de l'icône */
+                    height: 32px; /* Taille de l'icône */
+                    margin-right: 8px; /* Espacement à droite de l'icône */
+                }
+                #difficulte::before{
+                    content: "";
+                    background-image: url("../../assets/img/icon/difficulte.svg");
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 32px; /* Taille de l'icône */
+                    height: 32px; /* Taille de l'icône */
+                    margin-right: 8px; /* Espacement à droite de l'icône */
+                }
+                #carte::before{
+                    content: "";
+                    background-image: url("../../assets/img/icon/carte.svg");
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 32px; /* Taille de l'icône */
+                    height: 32px; /* Taille de l'icône */
+                    margin-right: 8px; /* Espacement à droite de l'icône */
+                }
+            }
+            .right{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: left;
+                p{         
+                    text-align: left;
+                    font-family: 'Gilmer';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: #555B47;
+                }
+                width: 33.3%;
+            }
+        }
+
+        #background-normal{
+            background: linear-gradient(0deg, #555B47, #555B47), #F8F4EC;
+        }
+
+        #background-dark{
+            background: linear-gradient(0deg, #434838, #434838), #F8F4EC;
+        }
+    }
+}

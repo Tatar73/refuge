@@ -37,15 +37,15 @@ $slider = get_field('slider');
             </button>
             <p>Panorama</p>
         </div>
-        <div id="content-pano">
+        <div class="content-pano" id="content-pano" style="display: none;">
             <div class="localisation">
-                <div class="afficher" id="afficher" style="display: none;">
+                <div class="afficher" id="afficher" style="opacity: 0;">
                     <p>Roche Nue</p>
                     <p>2979m</p>
-                    <div class="pointilles"></div>
+                    <div class=" pointilles"></div>
                 </div>
-                <img src="http://127.0.0.1/refuge/wordpress/wp-content/themes/refuge/assets/img/panorama_localisation.svg"
-                    alt="localisation panorama" style="display: none;" id="localisation">
+                <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/panorama_localisation.svg"
+                    alt="localisation panorama" id="localisation">
             </div>
         </div>
         <script type=" text/javascript"
