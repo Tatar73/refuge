@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Athelas';
-    src: url(../assets/Athelas-Regular.ttf);
+    src: url(../assets/Athelas-Regular.woff);
 }
 
 @font-face {
     font-family: 'Gilmer';
-    src: url(../assets/Gilmer-Regular.otf);
+    src: url(../assets/GilmerRegular.woff);
 }
 
 ////////////////////////////// HOME ////////////////////////////
@@ -15,15 +15,26 @@ html{
 }
 
 
+
 header{
     background-color: white;
     width: 100%;
     position: fixed;
     z-index: 5;
-    transition: top 0.3s;
-    transition-delay: 0.2s;
+    transition: all 200ms;
     top: 0;
     left: 0;
+    opacity: 0;
+    .home &.top{
+        opacity: 1;
+        background-color: transparent;
+        a{
+            color: white;
+        }
+        img{
+            opacity: 0;
+        }
+    }
     .nav{
         display: flex;
         align-items: center;
@@ -31,6 +42,8 @@ header{
         padding: 32px 64px;
         transition-property: opacity, left;
         transition-duration: 1s;
+
+
         ul{
             display: flex;
             align-items: center;
@@ -51,4 +64,6 @@ header{
         }
     }
 }
+
+
 

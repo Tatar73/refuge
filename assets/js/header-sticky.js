@@ -4,9 +4,12 @@ let lastScrollY = 0;
 window.addEventListener("scroll", () => {
   const currentScrollY = window.scrollY;
   if (currentScrollY < lastScrollY) {
-    header.style.display = "block";
+    header.style.opacity = 1;
   } else {
-    header.style.display = "none";
+    header.style.opacity = 0;
   }
   lastScrollY = currentScrollY;
+
+  header.classList.toggle("top", currentScrollY === 0)
+  
 });

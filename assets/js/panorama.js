@@ -9,7 +9,7 @@ let localisation = document.getElementById("localisation");
 
 
 pano_plus.addEventListener("click", () => {
-  if(d1.style.opacity != 0 && nav.style.opacity != 0 && getComputedStyle(pano_moins).display != "block" && localisation.style.display != "block"){
+  if(d1.style.opacity != 0 && nav.style.opacity != 0 && getComputedStyle(pano_moins).display != "block"){
     localisation.style.display = "block";
     d1.style.opacity = 0;
     nav.style.opacity = 0;

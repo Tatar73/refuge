@@ -1,7 +1,16 @@
 <?php
 // Header
 get_header();
+
+$slider = get_field('slider');
+//var_dump($slider);
 ?>
+
+<!-- 
+<img src="<?php echo ($image['image']['url']); ?>" height="" width="" alt="">
+<p>
+    <?php echo ($image['copyright']); ?>
+</p> -->
 
 
 
@@ -11,7 +20,7 @@ get_header();
         <!-- Animation panorama -->
         <div id="content-index">
             <h1>REFUGE DES LACS MERLET</h1>
-            <h2>Parc National de la Vanoise</h2>
+            <h2>Altitude : 2417m</h2>
             <div class="ouverture">
                 <p id="periode">Gardé de mi-juin à mi-septembre</p>
                 <p id="acces">Non gardé hors saisons</p>
@@ -44,22 +53,17 @@ get_header();
                 </script>
     </section>
     <div class="background">
+        <!-- <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/fond.svg" alt="background"> -->
         <section class="intro">
             <div class="intro-slider">
                 <div class="main-carousel"
                     data-flickity='{ "cellAlign": "right", "contain": true, "wrapAround": true }'>
-                    <div id="horizontal_img" class="carousel-cell">
-                        <img src="http://127.0.0.1/refuge/wordpress/wp-content/themes/refuge/assets/img/intro_image_refuge1.jpg"
-                            alt="concept">
-                    </div>
-                    <div class="carousel-cell">
-                        <img src="http://127.0.0.1/refuge/wordpress/wp-content/themes/refuge/assets/img/intro_image_refuge2.jpg"
-                            alt="concept">
-                    </div>
-                    <div class="carousel-cell">
-                        <img src="http://127.0.0.1/refuge/wordpress/wp-content/themes/refuge/assets/img/intro_image_refuge3.jpg"
-                            alt="concept">
-                    </div>
+                    <?php foreach ($slider['images'] as $image): ?>
+                        <div id="horizontal_img" class="carousel-cell">
+                            <img src="<?php echo ($image['image']['url']); ?>" height="" width="" alt="">
+                            <!-- <p><?php echo ($image['copyright']); ?></p> -->
+                        </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
 
@@ -67,7 +71,8 @@ get_header();
                 <h3>
                     <?php the_field('un_lieu_unique') ?>
                 </h3>
-                <p><?php the_field('intro_texte_1') ?>
+                <p>
+                    <?php the_field('intro_texte_1') ?>
                 </p>
                 <br>
                 <p>
@@ -92,8 +97,10 @@ get_header();
                         <div class="content-left">
                         </div>
                         <div class="content-right">
-                            <h4>Gardiennage</h4>
-                            <legend>Juin - Septembre</legend>
+                            <h4>
+                                <?php the_field('gardiennage') ?>
+                            </h4>
+                            <legend><?php the_field('periode_gardiennage') ?></legend>
                             <div class="conditions">
                                 <div class="condition">
                                     <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/lit.svg"
@@ -133,8 +140,10 @@ get_header();
                         <div class="content-left" id="gardiennage">
                         </div>
                         <div class="content-right">
-                            <h4>Hors <br>Gardiennage</h4>
-                            <legend>Octobre - Mai</legend>
+                            <h4>
+                                <?php the_field('hors_gardiennage') ?>
+                            </h4>
+                            <legend><?php the_field('periode_hors_gardiennage') ?></legend>
                             <div class="conditions">
                                 <div class="condition">
                                     <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/lit.svg"

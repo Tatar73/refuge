@@ -10,8 +10,8 @@
 
 </head>
 
-<body>
-    <header>
+<body <?php body_class(); ?>>
+    <header class="top">
         <nav class="nav">
 
             <img id="logo_refuge" src="<?php echo (get_template_directory_uri()); ?>/assets/img/logo_refuge.svg" alt="">
@@ -25,6 +25,8 @@
                 <li><a href="">Réservation</a></li>
             </ul>
         </nav>
-        <script type="text/javascript" src="<?php echo (get_template_directory_uri()); ?>/assets/js/header-sticky.js"
-            async></script>
+    </header>
+
+    <script type="text/javascript" src="<?php echo (get_template_directory_uri()); ?>/assets/js/header-sticky.js"
+        async></script>
     </header>
