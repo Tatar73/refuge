@@ -1,0 +1,55 @@
+footer{
+    position: relative;
+    background: #FFFFFF;
+    padding: 32px 0;
+    .flex{
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        .right{
+            h4{
+                font-family: 'Athelas';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                color: #555B47;
+                padding: 0 0 20px 0;
+            }
+            p{
+                font-family: 'Gilmer';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: #555B47;
+                margin-top: 16px;
+            }
+        }
+
+        .middle{
+            p{
+                font-family: 'Gilmer';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+                color: #555B47;
+                opacity: 0.5;
+                margin-top: 170px;
+            }
+        }
+
+        .left{  
+            p{
+                font-family: 'Gilmer';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: #555B47;
+                margin-top: 16px;
+            }
+        }
+    }
+
+}
