@@ -199,4 +199,99 @@
             background: linear-gradient(0deg, #434838, #434838), #F8F4EC;
         }
     }
+
+    .reglementation{
+        margin-top: 96px;
+        padding: 0 64px;
+        h2{
+            font-family: 'Athelas';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            text-align: center;
+            color: #555B47;
+            margin-bottom: 48px;
+        }
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 32px;
+            grid-row-gap: 32px;
+            margin: auto;
+            .item{
+                padding: 64px 0;
+                width: 100%;
+                background: #555B47;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                img{
+                    margin: auto;
+                    width: 80px;
+                    height: 80px;
+                }
+                p{
+                    text-align: center;
+                    font-family: 'Gilmer';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: #F8F4EC;
+                }
+                legend{       
+                    margin-top: 8px; 
+                    text-align: center;
+                    font-family: 'Gilmer';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: #F8F4EC;
+                }
+            }
+        }
+        >p{
+            font-family: 'Gilmer';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #555B47;
+            a{
+                text-decoration: none;
+                color: #728CB4;
+            }
+        }
+    }
+
+    .carte{
+        position: relative;
+        padding-bottom: 128px;
+        h2{
+            margin: 48px 0;
+            font-family: 'Athelas';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            text-align: center;
+            color: #555B47;
+        }
+
+        #map{
+            position: relative;
+            width: 90%;
+            padding: 0 64px;
+            height: 80vh;
+            margin: auto;
+            z-index: 1;
+        }
+        img{
+            z-index: 5;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: translate(-30%, -50%);
+        }
+    }
 }

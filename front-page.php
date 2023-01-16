@@ -48,8 +48,7 @@ $slider = get_field('slider');
                     alt="localisation panorama" id="localisation">
             </div>
         </div>
-        <script type=" text/javascript"
-            src="http://127.0.0.1/refuge/wordpress/wp-content/themes/refuge/assets/js/panorama.js" async>
+        <script type=" text/javascript" src="<?php echo (get_template_directory_uri()); ?>/assets/js/panorama.js" async>
                 </script>
     </section>
     <div class="background">

@@ -775,6 +775,98 @@ footer .flex .left p {
 .container-acces .itineraires #background-dark {
   background: linear-gradient(0deg, #434838, #434838), #F8F4EC;
 }
+.container-acces .reglementation {
+  margin-top: 96px;
+  padding: 0 64px;
+}
+.container-acces .reglementation h2 {
+  font-family: "Athelas";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  color: #555B47;
+  margin-bottom: 48px;
+}
+.container-acces .reglementation .parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+  margin: auto;
+}
+.container-acces .reglementation .parent .item {
+  padding: 64px 0;
+  width: 100%;
+  background: #555B47;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.container-acces .reglementation .parent .item img {
+  margin: auto;
+  width: 80px;
+  height: 80px;
+}
+.container-acces .reglementation .parent .item p {
+  text-align: center;
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #F8F4EC;
+}
+.container-acces .reglementation .parent .item legend {
+  margin-top: 8px;
+  text-align: center;
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #F8F4EC;
+}
+.container-acces .reglementation > p {
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #555B47;
+}
+.container-acces .reglementation > p a {
+  text-decoration: none;
+  color: #728CB4;
+}
+.container-acces .carte {
+  position: relative;
+  padding-bottom: 128px;
+}
+.container-acces .carte h2 {
+  margin: 48px 0;
+  font-family: "Athelas";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  color: #555B47;
+}
+.container-acces .carte #map {
+  position: relative;
+  width: 90%;
+  padding: 0 64px;
+  height: 80vh;
+  margin: auto;
+  z-index: 1;
+}
+.container-acces .carte img {
+  z-index: 5;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(-30%, -50%);
+}
 
 /* Flickity horizontal scroll */
 /*! Flickity v2.3.0

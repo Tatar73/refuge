@@ -93,5 +93,71 @@ $acces = get_field('access');
             </div>
         </div>
     </section>
+
+    <section class="reglementation">
+        <h2>Réglementation du parc national de la Vanoise</h2>
+        <div class="parent">
+            <div class="item">
+                <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/chien.svg" alt="">
+                <p>Interdit aux chiens</p>
+                <legend>Même en laisse</legend>
+            </div>
+        </div>
+        <p>Pour que le partage de l’espace soit le plus harmonieux possible, chacun doit adopter un comportement
+            respectueux des hommes et de la nature.</p>
+        <br>
+        <p>Pour toutes questions, veuillez vous renseigner auprès du parc national de la Vanoise au
+            04 79 62 30 54</p>
+        <br>
+        <p>ou sur leur <a href="">Site Web</a></p>
+    </section>
+
+    <section class="carte">
+        <h2>Carte</h2>
+        <div id="map">
+        </div>
+        <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/telecharger.svg" alt="">
+        <!-- Leaflet map JavaScript -->
+        <script>
+            // L'id du container, par exemple <div id="map"></div>
+            var mapID = 'map';
+
+            // Plan IGN avec une transparence de 50%
+            var PlanIGN = L.tileLayer('https://wxs.ign.fr/{ignApiKey}/geoportail/wmts?' +
+                '&REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&TILEMATRIXSET=PM' +
+                '&LAYER={ignLayer}&STYLE={style}&FORMAT={format}' +
+                '&TILECOL={x}&TILEROW={y}&TILEMATRIX={z}',
+                {
+                    ignApiKey: 'decouverte',
+                    ignLayer: 'GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2',
+                    style: 'normal',
+                    format: 'image/png',
+                    service: 'WMTS',
+                    opacity: 0.5
+                });
+
+            // Photographies aériennes en-dessous de Plan IGN
+            var OrthoIGN = L.tileLayer('https://wxs.ign.fr/{ignApiKey}/geoportail/wmts?' +
+                '&REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&TILEMATRIXSET=PM' +
+                '&LAYER={ignLayer}&STYLE={style}&FORMAT={format}' +
+                '&TILECOL={x}&TILEROW={y}&TILEMATRIX={z}',
+                {
+                    ignApiKey: 'decouverte',
+                    ignLayer: 'ORTHOIMAGERY.ORTHOPHOTOS',
+                    style: 'normal',
+                    format: 'image/jpeg',
+                    service: 'WMTS'
+                });
+            // Ma carte
+            var myMap = L.map(mapID, {
+                center: [45.36086, 6.65168],
+                zoom: 16,
+                layers: [OrthoIGN, PlanIGN]
+            })
+        </script>
+    </section>
+
+    <script type="text/javascript" src="<?php echo (get_template_directory_uri()); ?>/assets/js/carteign.js"
+        async></script>
 </div>
 <?php get_footer() ?>
