@@ -8,6 +8,7 @@
     src: url(../assets/Gilmer-Regular.otf);
 }
 
+////////////////////////////// HOME ////////////////////////////
 html{
     overflow-x: hidden;
     margin-top: 0;
@@ -15,40 +16,39 @@ html{
 
 
 header{
-    background-color: none;
+    background-color: white;
     width: 100%;
-    z-index: 3;
     position: fixed;
-    
-}
+    z-index: 5;
+    transition: top 0.3s;
+    transition-delay: 0.2s;
+    top: 0;
+    left: 0;
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 32px 64px;
+        transition-property: opacity, left;
+        transition-duration: 1s;
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            gap: 25px;
+        }
+        li{
+            list-style-type: none;
+            a{
+                text-decoration: none;
+                color: #555B47;
 
-header nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 64px;
-    transition-property: opacity, left;
-    transition-duration: 1s;
-}
-
-header ul{
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    gap: 25px;
-    padding: 48px 0;
-}
-
-header ul li{
-    list-style-type: none;
-}
-
-header ul li a{
-    text-decoration: none;
-    color: white;
-    font-family: 'Gilmer';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
+                font-family: 'Gilmer';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+            }
+        }
+    }
 }
 

@@ -7,8 +7,6 @@ get_header();
 
 <!-- Section content-flexible -->
 <div class="container-index">
-
-
     <section class="acceuil">
         <!-- Animation panorama -->
         <div id="content-index">
@@ -45,7 +43,6 @@ get_header();
             src="http://127.0.0.1/refuge/wordpress/wp-content/themes/refuge/assets/js/panorama.js" async>
                 </script>
     </section>
-
     <div class="background">
         <section class="intro">
             <div class="intro-slider">

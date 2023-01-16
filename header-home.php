@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -12,10 +12,7 @@
 
 <body>
     <header>
-        <nav class="nav">
-
-            <img id="logo_refuge" src="<?php echo (get_template_directory_uri()); ?>/assets/img/logo_refuge.svg" alt="">
-
+        <nav class="nav-pages">
             <ul>
                 <li><a href="page.php">Accès</a></li>
                 <li><a href="">Notre Cuisine</a></li>
@@ -25,6 +22,4 @@
                 <li><a href="">Réservation</a></li>
             </ul>
         </nav>
-        <script type="text/javascript" src="<?php echo (get_template_directory_uri()); ?>/assets/js/header-sticky.js"
-            async></script>
     </header>

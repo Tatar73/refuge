@@ -12,36 +12,35 @@ html {
 }
 
 header {
-  background-color: none;
+  background-color: white;
   width: 100%;
-  z-index: 3;
   position: fixed;
+  z-index: 5;
+  transition: top 0.3s;
+  transition-delay: 0.2s;
+  top: 0;
+  left: 0;
 }
-
-header nav {
+header .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 64px;
+  padding: 32px 64px;
   transition-property: opacity, left;
   transition-duration: 1s;
 }
-
-header ul {
+header .nav ul {
   display: flex;
   align-items: center;
   justify-content: right;
   gap: 25px;
-  padding: 48px 0;
 }
-
-header ul li {
+header .nav li {
   list-style-type: none;
 }
-
-header ul li a {
+header .nav li a {
   text-decoration: none;
-  color: white;
+  color: #555B47;
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 400;
@@ -104,13 +103,13 @@ table {
 }
 
 .container-index .background {
-  background-image: url("http://127.0.0.1/refuge/wordpress/wp-content/themes/refuge/assets/img/chemins.svg");
+  background-image: url("../../assets/img/chemins.svg");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 5;
 }
 .container-index .acceuil {
-  background-image: url("http://127.0.0.1/refuge/wordpress/wp-content/themes/refuge/assets/img/acceuil_background.jpg");
+  background-image: url("../../assets/img/acceuil_background.jpg");
   background-size: cover;
   background-position: 25% 90%;
   background-repeat: no-repeat;
@@ -346,14 +345,14 @@ table {
 }
 .container-index .services .wrap .flex .services-left .content-left {
   width: 50%;
-  background-image: url("http://127.0.0.1/refuge/wordpress/wp-content/themes/refuge/assets/img/gardiennage.jpg");
+  background-image: url("../../assets/img/gardiennage.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .container-index .services .wrap .flex .services-left #gardiennage {
   width: 50%;
-  background-image: url("http://127.0.0.1/refuge/wordpress/wp-content/themes/refuge/assets/img/hors_gardiennage.jpg");
+  background-image: url("../../assets/img/hors_gardiennage.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

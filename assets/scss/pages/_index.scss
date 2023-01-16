@@ -1,14 +1,15 @@
 
 .container-index{
+    
     .background{
-        background-image: url("../assets/img/chemins.svg");
+        background-image: url("../../assets/img/chemins.svg");
         background-size: cover;
         background-repeat: no-repeat;
         z-index: 5;
     }
 
     .acceuil{
-        background-image: url("../assets/img/acceuil_background.jpg");
+        background-image: url("../../assets/img/acceuil_background.jpg");
         background-size: cover;
         background-position: 25% 90%;
         background-repeat: no-repeat;
@@ -274,14 +275,14 @@
                     }
                     .content-left{
                         width: 50%;
-                        background-image: url("../assets/img/gardiennage.jpg");
+                        background-image: url("../../assets/img/gardiennage.jpg");
                         background-repeat: no-repeat;
                         background-position: center;
                         background-size: cover;
                     }
                     #gardiennage{
                         width: 50%;
-                        background-image: url("../assets/img/hors_gardiennage.jpg");
+                        background-image: url("../../assets/img/hors_gardiennage.jpg");
                         background-repeat: no-repeat;
                         background-position: center;
                         background-size: cover;
