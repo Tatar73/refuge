@@ -13,8 +13,7 @@
 <body>
     <header>
         <nav id="nav">
-            <img id="logo_refuge"
-                src="http://127.0.0.1/refuge/wordpress/wp-content/themes/refuge/assets/img/logo_refuge.svg" alt="">
+            <img id="logo_refuge" src="<?php echo (get_template_directory_uri());?>assets/img/logo_refuge.svg" alt="">
             <ul>
                 <li><a href="#">Accès</a></li>
                 <li><a href="">Notre Cuisine</a></li>
@@ -25,5 +24,5 @@
             </ul>
         </nav>
         <script type="text/javascript"
-            src="http://127.0.0.1/refuge/wordpress/wp-content/themes/refuge/assets/js/header.js" async></script>    
+            src="http://127.0.0.1/refuge/wordpress/wp-content/themes/refuge/assets/js/header.js" async></script>
     </header>
