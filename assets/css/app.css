@@ -38,6 +38,7 @@ header .nav {
   padding: 32px 64px;
   transition-property: opacity, left;
   transition-duration: 1s;
+  opacity: 1;
 }
 header .nav ul {
   display: flex;
@@ -211,6 +212,7 @@ table {
 }
 .container-index .acceuil #content-index {
   height: 100%;
+  opacity: 1;
   transition-property: opacity, left;
   transition-duration: 1s;
 }

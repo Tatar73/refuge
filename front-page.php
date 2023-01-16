@@ -18,7 +18,7 @@ $slider = get_field('slider');
 <div class="container-index">
     <section class="acceuil">
         <!-- Animation panorama -->
-        <div id="content-index">
+        <div id="content-index" style="opacity: 1">
             <h1>REFUGE DES LACS MERLET</h1>
             <h2>Altitude : 2417m</h2>
             <div class="ouverture">
@@ -31,13 +31,13 @@ $slider = get_field('slider');
                 <img src="http://127.0.0.1/refuge/wordpress/wp-content/themes/refuge/assets/img/panorama_button.svg"
                     alt="bouton panorama">
             </button>
-            <button id="pano_moins">
+            <button id="pano_moins" style="display: none">
                 <img src="http://127.0.0.1/refuge/wordpress/wp-content/themes/refuge/assets/img/panorama_button_moins.svg"
                     alt="bouton panorama">
             </button>
             <p>Panorama</p>
         </div>
-        <div class="content-pano">
+        <div id="content-pano">
             <div class="localisation">
                 <div class="afficher" id="afficher" style="display: none;">
                     <p>Roche Nue</p>

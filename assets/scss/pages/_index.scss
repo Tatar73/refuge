@@ -108,8 +108,10 @@
                 color: #FFFFFF;
             }
         }
+
         #content-index{
             height: 100%;
+            opacity: 1;
             transition-property: opacity, left;
             transition-duration: 1s;
         }
