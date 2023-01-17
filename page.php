@@ -3,7 +3,8 @@
 get_header();
 
 $acces = get_field('access');
-?>
+$itineraire = get_field('itineraire1')
+    ?>
 
 <div class="container-acces">
     <section class="acces">
@@ -35,8 +36,10 @@ $acces = get_field('access');
         <h3>DÉPARTS</h3>
         <div class="itineraire">
             <div class="left">
-                <h4>Courchevel</h4>
-                <p>Par la vallée des Avals</p>
+                <h4>
+                    <?php the_field($itineraire['itineraire_1_titre']); ?>
+                </h4>
+                <p><?php the_field('itineraire_1_legende') ?></p>
             </div>
             <div class="middle">
                 <p id="duree">Durée : 3h15</p>
@@ -103,13 +106,9 @@ $acces = get_field('access');
                 <legend>Même en laisse</legend>
             </div>
         </div>
-        <p>Pour que le partage de l’espace soit le plus harmonieux possible, chacun doit adopter un comportement
-            respectueux des hommes et de la nature.</p>
-        <br>
-        <p>Pour toutes questions, veuillez vous renseigner auprès du parc national de la Vanoise au
-            04 79 62 30 54</p>
-        <br>
-        <p>ou sur leur <a href="">Site Web</a></p>
+        <p>
+            <?php the_field('reglementation_infos'); ?><a href="">Site Web</a>
+        </p>
     </section>
 
     <section class="carte">

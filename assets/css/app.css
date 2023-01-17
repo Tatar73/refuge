@@ -759,6 +759,7 @@ footer .flex .left p {
   justify-content: center;
   flex-direction: column;
   align-items: left;
+  padding: 0 32px;
   width: 33.3%;
 }
 .container-acces .itineraires .itineraire .right p {
