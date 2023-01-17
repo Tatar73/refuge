@@ -969,6 +969,115 @@ footer .flex .left p {
   color: #FFFFFF;
 }
 
+.cuisine {
+  background: #555B47;
+  padding: 0 256px;
+}
+.cuisine .container {
+  display: flex;
+  gap: 96px;
+}
+.cuisine .container .ligne {
+  border: 2px solid #F8F4EC;
+  border-radius: 1px;
+  width: 100%;
+}
+.cuisine .container .left {
+  width: 60%;
+}
+.cuisine .container .left h1 {
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 63px;
+  color: #F8F4EC;
+}
+.cuisine .container .left p {
+  margin: 20px 0 48px 0;
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #F8F4EC;
+}
+.cuisine .container .left img {
+  width: 100%;
+  filter: drop-shadow(0px 61px 136px rgba(0, 0, 0, 0.15));
+}
+.cuisine .container .right {
+  width: 40%;
+  max-height: 864px;
+}
+.cuisine .container .right h3 {
+  padding: 16px 0 8px 0;
+  font-family: "Athelas";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #F8F4EC;
+}
+.cuisine .container .right p {
+  font-family: "Gilmer Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #F8F4EC;
+}
+.cuisine > p {
+  padding: 32px 0 64px 0;
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #F8F4EC;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #555B47;
+  padding: 0 256px;
+}
+.menu h2 {
+  padding-top: 32px;
+  font-family: "Athelas";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 135%;
+  text-align: center;
+  color: #F8F4EC;
+}
+.menu button {
+  margin-top: 32px;
+  border: none;
+  background: none;
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #F8F4EC;
+  padding: 12px 32px;
+  background: #3A3D35;
+  border-radius: 1px;
+  text-decoration: none;
+  transition: all 500ms;
+}
+.menu button:hover {
+  background-color: #1d1e1b;
+}
+.menu h3 {
+  padding: 64px 0;
+  font-family: "Athelas";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #F8F4EC;
+}
+
 .contact {
   margin-top: 100px;
   background: #F8F4EC;
