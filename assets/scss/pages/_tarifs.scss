@@ -1,0 +1,427 @@
+.tarifs{
+    .titre{
+        height: 30vh;
+        background: #F8F4EC;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        h1{
+            font-family: 'Gilmer';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            text-align: center;
+            color: #3A472B;
+        }
+        p{
+            font-family: 'Gilmer';
+            font-size: 20px;
+            line-height: 135%;
+            text-align: center;
+            color: #555B47;
+
+        }
+    }
+    .forfaits{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 115px;
+        height: 100vh;
+        background: #555B47;
+        position: relative;
+        .parent {
+            padding: 100px 0;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 64px;
+            grid-row-gap: 0px;
+            .infos{
+                position: absolute;
+                display: flex;
+                .taxes{
+                    background: #F8F4EC;
+                    padding: 32px 32px 32px 50px;
+                    p{
+                        font-family: 'Gilmer';
+                        font-style: normal;
+                        font-weight: 800;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #555B47;
+                    }
+                }
+                img{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    transform: translateX(-50%);
+                }
+            }
+            .tarif{
+                background: #F8F4EC;
+                .prix{
+                    padding: 128px 48px;
+                    background-image: url("../../assets/img/tarif_enfant.svg");
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    p{
+                        font-family: 'Gilmer';
+                        font-size: 96px;
+                        line-height: 112px;
+                        text-align: center;
+                        color: #F8F4EC;
+                    }
+    
+                }
+                .categorie{
+                    p{
+                        padding: 32px 0;
+                        font-family: 'Gilmer';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        text-align: center;
+                        color: #555B47;
+                    }
+    
+                }
+            }
+            .tarif2{
+                background: #F8F4EC;
+                .prix{
+                    padding: 128px 48px;
+                    background-image: url("../../assets/img/tarif_adulte.svg");
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    p{
+                        font-family: 'Gilmer';
+                        font-size: 96px;
+                        line-height: 112px;
+                        text-align: center;
+                        color: #F8F4EC;
+                    }
+    
+                }
+                .categorie{
+                    p{
+                        padding: 32px 0;
+                        font-family: 'Gilmer';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        text-align: center;
+                        color: #555B47;
+                    }
+    
+                }
+            }
+            .tarif3{
+                background: #F8F4EC;
+                .prix{
+                    padding: 128px 48px;
+                    background-image: url("../../assets/img/tarif_caf.svg");
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    p{
+                        font-family: 'Gilmer';
+                        font-size: 96px;
+                        line-height: 112px;
+                        text-align: center;
+                        color: #F8F4EC;
+                    }
+                }
+                .categorie{
+                    p{
+                        padding: 32px 0 0 0;
+                        font-family: 'Gilmer';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        text-align: center;
+                        color: #555B47;
+                    }
+                    legend{
+                        font-family: 'Gilmer';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 14px;
+                        text-align: center;
+                        color: #555B47;
+                        padding-bottom: 16px;
+                    }
+                }
+            }
+            .tarif4{
+                background: #F8F4EC;
+                .prix{
+                    padding: 128px 48px;
+                    background-image: url("../../assets/img/tarif_bivouac.svg");
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    p{
+                        font-family: 'Gilmer';
+                        font-size: 96px;
+                        line-height: 112px;
+                        text-align: center;
+                        color: #F8F4EC;
+                    }
+    
+                }
+                .categorie{
+                    p{
+                        padding: 32px 0;
+                        font-family: 'Gilmer';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        text-align: center;
+                        color: #555B47;
+                    }
+    
+                }
+            }
+        }
+    }
+}
+
+.reservation{
+    padding: 100px 64px;
+    h2{
+        font-family: 'Gilmer';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        color: #3A472B;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+    .resa{
+        display: flex;
+        flex-direction: row;
+        .resa-left{
+            width: 55%;
+            display: flex;
+            flex-wrap: wrap;
+            clear: both;
+            label{
+                font-family: 'Gilmer';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 135%;
+                color: #555B47;
+            }
+            input{
+                border: 3px solid #555B47;
+                height: 50px;
+            }
+            .form-flex{
+                display: flex;
+                flex-direction: row;
+                gap: 100px;
+                width: 100%;
+                .form-left{
+                    width: 50%;
+                }
+                .form-right{
+                    width: 50%;
+                }
+                input{
+                    width: 100%;
+                }
+            }
+            .nb-personnes{
+                margin-top: 50px;
+                width: 100%;
+                .flex{
+                    margin-top: 16px;
+                    display: flex;
+                    justify-content: space-between;
+                    .right{
+                        >p{
+                            color: white;
+                            padding: 12px 75px;
+                            background: #555B47;
+                        }
+                    }
+                    .middle{
+                        >p{
+                            color: white;
+                            padding: 12px 75px;
+                            background: #555B47;
+                        }
+                    }
+                    .left{
+                        >p{
+                            color: white;
+                            padding: 12px 75px;
+                            background: #555B47;
+                        }
+                    }
+
+                    .quantite{
+                        margin-top: 8px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        button{
+                            border: none;
+                            background: none;
+                        }
+                        p{
+                            font-family: 'Gilmer';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 48px;
+                            color: #555B47;
+                        }
+                    }
+                }
+                p{
+                    font-family: 'Gilmer';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    color: #555B47;
+                    text-align: center;
+                }
+            }
+            .date{
+                margin-top: 50px;
+                width: 100%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                label{
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
+                input{
+
+                    text-align: center;
+                    width: 100%;
+                    margin: auto;
+                    width: 30%;
+                    font-family: 'Gilmer';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    color: #555B47;
+                }
+            }
+            .message{
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                width: 100%;
+                label{
+                    margin-bottom: 10px;
+                }
+                input{
+                    width: 100%;
+                    height: 200px;
+                }
+            }
+            .submit{
+                margin-top: 50px;
+                display: flex;
+                input{
+                    font-family: 'Gilmer';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    color: white;
+                    background: #555B47;
+                    padding: 0 112px;
+                }
+            }
+        }
+
+        .resa-right{
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+            ul{
+                align-self: end;
+                width: 50%;
+                list-style: square;
+                li:nth-child(1){
+                    font-family: 'Gilmer';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: #3A2E2E;
+                }
+                li:nth-child(3){
+                    font-family: 'Gilmer';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: #8E7A7A;
+                }
+            }
+            h3{
+                align-self: end;
+                margin-right: 80px;
+                font-family: 'Athelas';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 48px;
+                color: #555B47;
+            }
+        }
+    }
+    
+}
+
+.nuit{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    min-height: 50vh;
+    padding: 0 64px;
+    .left{
+        width: 50%;
+        background-image: url("../../assets/img/refuge_nuit.jpg");
+        background-size: cover;
+        background-position: 20% 80%;
+        background-repeat: no-repeat;
+    }
+    .right{
+        width: 50%;
+        h3{                      
+            font-family: 'Athelas';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            color: #555B47;
+        }
+        p{
+            min-height: 100%;
+            font-family: 'Gilmer';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            color: #3A2E2E;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1250px) {
+    .tarifs .forfaits .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 32px;
+        grid-row-gap: 32px;
+    }
+}
