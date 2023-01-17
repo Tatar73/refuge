@@ -1,7 +1,7 @@
 .container-acces{
     background-color: #F8F4EC;
     .acces{
-        min-height: 100vh;
+        min-height: 90vh;
         h1{
             margin-top: 72px;
             font-family: 'Gilmer';
@@ -214,6 +214,7 @@
             margin-bottom: 48px;
         }
         .parent {
+            width: 80%;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(3, 1fr);
@@ -252,6 +253,7 @@
             }
         }
         >p{
+            margin: 50px;
             font-family: 'Gilmer';
             font-style: normal;
             font-weight: 600;
@@ -270,7 +272,7 @@
         position: relative;
         padding-bottom: 128px;
         h2{
-            margin: 48px 0;
+            margin: 64px 0;
             font-family: 'Athelas';
             font-style: normal;
             font-weight: 700;

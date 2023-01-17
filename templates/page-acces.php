@@ -1,10 +1,20 @@
 <?php
+
+/*
+    Template name: Acces
+*/
+
 // Header
 get_header();
 
 $acces = get_field('access');
-$itineraire = get_field('itineraire1')
-    ?>
+$itineraires = get_field('itineraires');
+$reglements = get_field('reglements');
+
+// debug($reglements[0]["illustration"]);
+// debug($reglements);
+
+?>
 
 <div class="container-acces">
     <section class="acces">
@@ -34,80 +44,50 @@ $itineraire = get_field('itineraire1')
     <section class="itineraires">
         <h2>Itinéraires</h2>
         <h3>DÉPARTS</h3>
-        <div class="itineraire">
-            <div class="left">
-                <h4>
-                    <?php the_field($itineraire['itineraire_1_titre']); ?>
-                </h4>
-                <p><?php the_field('itineraire_1_legende') ?></p>
-            </div>
-            <div class="middle">
-                <p id="duree">Durée : 3h15</p>
-                <p id="distance">Distance : 10km</p>
-                <p id="difficulte">Difficulté : moyenne</p>
-                <p id="carte">Carte : 3534 OT</p>
-            </div>
-            <div class="right">
-                <p>Se garer au parking du Belvédère à Courchevel Moriond.</p>
-                <br>
-                <p>Suivre le sentier des Avals sur une piste en gravier.
-                    Arrivé au refuge du Grand Plan, continuer sur le sentier partant sur la gauche.</p>
-                <br>
-                <p>Face au lac merlet, le refuge se situe en retrait sur la gauche.</p>
-            </div>
-        </div>
+        <?php foreach ($itineraires as $itineraire): ?>
+            <div class="itineraire">
 
-        <div class="itineraire">
-            <div class="left" id="background-normal">
-                <h4>Méribel - Mottaret</h4>
+                <div class="left">
+                    <h4>
+                        <?php echo ($itineraire['titre']); ?>
+                    </h4>
+                    <p>
+                        <?php echo ($itineraire['legende']); ?>
+                    </p>
+                </div>
+                <div class="middle">
+                    <p id="duree"><?php echo ($itineraire['time']); ?></p>
+                    <p id="distance"><?php echo ($itineraire['distance']); ?></p>
+                    <p id="difficulte"><?php echo ($itineraire['difficulte']); ?></p>
+                    <p id="carte"><?php echo ($itineraire['carte']); ?></p>
+                </div>
+                <div class="right">
+                    <p><?php echo ($itineraire['texte']); ?></p>
+                </div>
             </div>
-            <div class="middle">
-                <p id="duree">Durée : 3h15</p>
-                <p id="distance">Distance : 10km</p>
-                <p id="difficulte">Difficulté : moyenne</p>
-                <p id="carte">Carte : 3534 OT</p>
-            </div>
-            <div class="right">
-                <p>Se garer au parking du Belvédère à Courchevel Moriond.</p>
-                <br>
-                <p>Suivre le sentier des Avals sur une piste en gravier.
-                    Arrivé au refuge du Grand Plan, continuer sur le sentier partant sur la gauche.</p>
-                <br>
-                <p>Face au lac merlet, le refuge se situe en retrait sur la gauche.</p>
-            </div>
-        </div>
-        <div class="itineraire">
-            <div class="left" id="background-dark">
-                <h4>Pralognan-la-Vanoise</h4>
-            </div>
-            <div class="middle">
-                <p id="duree">Durée : 3h15</p>
-                <p id="distance">Distance : 10km</p>
-                <p id="difficulte">Difficulté : moyenne</p>
-                <p id="carte">Carte : 3534 OT</p>
-            </div>
-            <div class="right">
-                <p>Se garer au parking du Belvédère à Courchevel Moriond.</p>
-                <br>
-                <p>Suivre le sentier des Avals sur une piste en gravier.
-                    Arrivé au refuge du Grand Plan, continuer sur le sentier partant sur la gauche.</p>
-                <br>
-                <p>Face au lac merlet, le refuge se situe en retrait sur la gauche.</p>
-            </div>
-        </div>
+            <?php
+        endforeach;
+        ?>
     </section>
 
     <section class="reglementation">
         <h2>Réglementation du parc national de la Vanoise</h2>
+
         <div class="parent">
+        
+        <?php foreach ($reglements as $reglement): ?>
             <div class="item">
-                <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/chien.svg" alt="">
-                <p>Interdit aux chiens</p>
-                <legend>Même en laisse</legend>
+                <img src="<?php echo ($reglement['illustration']); ?>" alt="">
+                <p><?php echo ($reglement['titre']); ?></p>
+                <legend><?php echo ($reglement['legende']); ?></legend>
             </div>
+            <?php
+        endforeach;
+        ?>
         </div>
+
         <p>
-            <?php the_field('reglementation_infos'); ?><a href="">Site Web</a>
+            <?php the_field('reglement_infos'); ?><a href="">Site Web</a>
         </p>
     </section>
 

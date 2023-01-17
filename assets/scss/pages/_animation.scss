@@ -1,0 +1,47 @@
+.animation{
+    background: #555B47;
+    padding: 100px 64px;
+    .intro{
+        min-height: 50vh;
+        position: relative;
+        h1{
+            font-family: 'Gilmer';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 135%;
+            color: #F8F4EC;
+        }
+        p{
+            margin-top: 25px;
+            font-family: 'Gilmer';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #F8F4EC;
+            width: 65%;
+        }
+        img{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    h2{
+        font-family: 'Athelas';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        color: #F8F4EC;
+    }
+    .animation-slider{
+        font-family: 'Athelas Arabic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        color: #F8F4EC;
+    }
+}

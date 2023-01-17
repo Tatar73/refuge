@@ -584,7 +584,7 @@ footer .flex .left p {
   background-color: #F8F4EC;
 }
 .container-acces .acces {
-  min-height: 100vh;
+  min-height: 90vh;
 }
 .container-acces .acces h1 {
   margin-top: 72px;
@@ -790,6 +790,7 @@ footer .flex .left p {
   margin-bottom: 48px;
 }
 .container-acces .reglementation .parent {
+  width: 80%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -828,6 +829,7 @@ footer .flex .left p {
   color: #F8F4EC;
 }
 .container-acces .reglementation > p {
+  margin: 50px;
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 600;
@@ -845,7 +847,7 @@ footer .flex .left p {
   padding-bottom: 128px;
 }
 .container-acces .carte h2 {
-  margin: 48px 0;
+  margin: 64px 0;
   font-family: "Athelas";
   font-style: normal;
   font-weight: 700;
@@ -867,6 +869,54 @@ footer .flex .left p {
   bottom: 0;
   right: 0;
   transform: translate(-30%, -50%);
+}
+
+.animation {
+  background: #555B47;
+  padding: 100px 64px;
+}
+.animation .intro {
+  min-height: 50vh;
+  position: relative;
+}
+.animation .intro h1 {
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 135%;
+  color: #F8F4EC;
+}
+.animation .intro p {
+  margin-top: 25px;
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #F8F4EC;
+  width: 65%;
+}
+.animation .intro img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.animation h2 {
+  font-family: "Athelas";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #F8F4EC;
+}
+.animation .animation-slider {
+  font-family: "Athelas Arabic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #F8F4EC;
 }
 
 /* Flickity horizontal scroll */

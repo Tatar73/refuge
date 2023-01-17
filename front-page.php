@@ -1,4 +1,9 @@
 <?php
+
+/*
+Template name: Accueil
+*/
+
 // Header
 get_header();
 
@@ -6,11 +11,6 @@ $slider = get_field('slider');
 //var_dump($slider);
 ?>
 
-<!-- 
-<img src="<?php echo ($image['image']['url']); ?>" height="" width="" alt="">
-<p>
-    <?php echo ($image['copyright']); ?>
-</p> -->
 
 
 

@@ -1,4 +1,7 @@
 <?php
+
+// Template Name: Contact
+
 // Header
 get_header();
 ?>
