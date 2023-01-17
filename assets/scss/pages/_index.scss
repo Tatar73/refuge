@@ -14,13 +14,14 @@
     }
 
     .acceuil{
-        background-image: url("../../assets/img/acceuil_background.jpg");
+        // background-image: url("../../assets/img/acceuil_background.jpg");
         background-size: cover;
         background-position: 25% 90%;
         background-repeat: no-repeat;
         height: 100vh;
         position: relative;
         z-index: 1;
+        
 
         .marker_layer{
             position: absolute;
