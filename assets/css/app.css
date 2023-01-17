@@ -910,13 +910,156 @@ footer .flex .left p {
   line-height: 58px;
   color: #F8F4EC;
 }
-.animation .animation-slider {
+
+.programme {
+  background: #555B47;
+  height: 90vh;
+}
+.programme .ligne {
+  height: 0px;
+  border: 3px solid #F8F4EC;
+}
+.programme .animation-slider {
+  padding: 0 64px;
+  margin-bottom: 128px;
+  position: relative;
+  bottom: 28px;
+  z-index: 5;
+}
+.programme .animation-slider .main-carousel .carousel-cell {
+  padding: 0 32px;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  width: 33%;
+}
+.programme .animation-slider .main-carousel .carousel-cell img:first-child {
+  width: 50px;
+  height: 86px;
+}
+.programme .animation-slider .main-carousel .carousel-cell img:last-child {
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+.programme .animation-slider .main-carousel .carousel-cell .categorie {
+  font-family: "Gilmer";
+  font-style: normal;
+  text-align: left;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.programme .animation-slider .main-carousel .carousel-cell .titre {
+  margin-top: 25px;
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.programme .animation-slider .main-carousel .carousel-cell .text {
+  margin-top: 25px;
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.contact {
+  margin-top: 100px;
+  background: #F8F4EC;
+  padding: 0 64px;
+}
+.contact h1 {
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+  color: #555B47;
+}
+.contact h3 {
+  margin-top: 8px;
+  font-family: "Gilmer Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #555B47;
+}
+.contact h2 {
+  margin-top: 100px;
   font-family: "Athelas Arabic";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
-  line-height: 58px;
+  color: #555B47;
+}
+.contact .form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.contact .form .left {
+  width: 70%;
+}
+
+body div.wpforms-container-full .wpforms-form .wpforms-field-container {
+  --gap-field: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-field);
+}
+body div.wpforms-container-full .wpforms-form .wpforms-field {
+  width: 100%;
+}
+body div.wpforms-container-full .wpforms-form .wpforms-field:nth-child(1), body div.wpforms-container-full .wpforms-form .wpforms-field:nth-child(2) {
+  --nth-width: calc(var(--gap-field) / 2);
+  width: calc(50% - var(--nth-width));
+}
+body div.wpforms-container-full .wpforms-form .wpforms-field input {
+  border: 3px solid #555B47;
+  background: none;
+  max-width: 100%;
+}
+body div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-label {
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #555B47;
+}
+body div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-label span {
+  display: none;
+}
+body div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-medium {
+  background: none;
+  border: 3px solid #555B47;
+}
+body div.wpforms-container-full .wpforms-form .wpforms-submit-container {
+  float: right;
+}
+body div.wpforms-container-full .wpforms-form .wpforms-submit-container button {
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
   color: #F8F4EC;
+  padding: 10px 32px;
+  background: #3A3D35;
+  border-radius: 1px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 500ms;
+  width: 300px;
+}
+body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:hover {
+  background-color: #1d1e1b;
 }
 
 /* Flickity horizontal scroll */
