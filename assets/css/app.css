@@ -70,9 +70,8 @@ html {
 header {
   background-color: white;
   width: 100%;
-  position: fixed;
+  position: sticky;
   z-index: 5;
-  transition: all 200ms;
   top: 0;
   left: 0;
   transition: opacity 0.5s ease-out;
@@ -84,13 +83,16 @@ header.hidden {
   visibility: hidden;
   transition: opacity 0.5s ease-in, 0s visibility 0.5s;
 }
-header .home.top {
+.home header {
+  position: fixed;
+}
+.home header.top {
   background-color: transparent;
 }
-header .home.top a {
+.home header.top a {
   color: white;
 }
-header .home.top img {
+.home header.top img {
   opacity: 0;
 }
 header .nav {
@@ -626,7 +628,7 @@ footer .flex .left p {
   min-height: 90vh;
 }
 .container-acces .acces h1 {
-  margin-top: 72px;
+  padding-top: 100px;
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 700;
@@ -1118,11 +1120,11 @@ footer .flex .left p {
 }
 
 .contact {
-  margin-top: 100px;
   background: #F8F4EC;
   padding: 0 64px;
 }
 .contact h1 {
+  padding-top: 100px;
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 700;
