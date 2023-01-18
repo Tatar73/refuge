@@ -44,6 +44,5 @@ jobs:
             webpack.config.js
             webpack.gutenberg.config.js
             **/tests/**
-            **/assets/**
             **/.vscode/**
             **/vendor/**
