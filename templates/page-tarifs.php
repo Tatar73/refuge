@@ -129,7 +129,7 @@ Template name: Tarifs
             </div>
             <div class="message">
                 <label for="message">Votre message</label>
-                <input id="message" name="message">
+                <textarea id="message" name="message"></textarea>
             </div>
             <div class="submit">
                 <input type="submit" value="Envoyer">
@@ -159,12 +159,12 @@ Template name: Tarifs
     <div class="right">
         <h3>Seul avec les étoiles</h3>
         <p>C’est à la nuit tombée que la magie opère. Les animaux dorment, plus aucun bruit et aucune lumière à
-            l’horizon.
-
-            Il ne reste que vous et le ciel étoilé. L’occasion de venir réver dans ce lieu épargné de la pollution
-            lumineuse.
-
-            Afin d’avoir un maximum de chance d’observer la voie lactée, préférez un jour d’été sans nuages et sans
+            l’horizon.</p>
+        <br>
+        <p>Il ne reste que vous et le ciel étoilé. L’occasion de venir réver dans ce lieu épargné de la pollution
+            lumineuse.</p>
+        <br>
+        <p>Afin d’avoir un maximum de chance d’observer la voie lactée, préférez un jour d’été sans nuages et sans
             lune.</p>
     </div>
 </section>

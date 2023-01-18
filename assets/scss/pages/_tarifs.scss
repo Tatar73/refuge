@@ -192,7 +192,17 @@
 }
 
 .reservation{
-    padding: 100px 64px;
+    padding: 100px 64px;    
+    background: #F8F4EC;
+    input{
+        background: none;
+        font-family: 'Gilmer';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #555B47;
+    }
     h2{
         font-family: 'Gilmer';
         font-style: normal;
@@ -326,9 +336,16 @@
                 label{
                     margin-bottom: 10px;
                 }
-                input{
+                textarea{
+                    background: none;
                     width: 100%;
                     height: 200px;
+                    font-family: 'Gilmer';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #555B47;
                 }
             }
             .submit{
@@ -384,11 +401,13 @@
 }
 
 .nuit{
+    background: #F8F4EC;
     width: 100%;
     display: flex;
+    gap: 160px;
     flex-direction: row;
     min-height: 50vh;
-    padding: 0 64px;
+    padding: 100px 64px;
     .left{
         width: 50%;
         background-image: url("../../assets/img/refuge_nuit.jpg");
@@ -406,6 +425,8 @@
             color: #555B47;
         }
         p{
+            margin-top: 32px;
+            line-height: 150%;
             min-height: 100%;
             font-family: 'Gilmer';
             font-style: normal;

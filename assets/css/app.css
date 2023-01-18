@@ -189,6 +189,15 @@ footer .flex .left p {
   height: 100%;
   object-fit: cover;
 }
+.container-index .acceuil .marker_layer .marker {
+  display: none;
+}
+.container-index .acceuil .marker_layer .marker :hover .text_hidden {
+  display: block;
+}
+.container-index .acceuil .marker_layer .text_hidden {
+  display: none;
+}
 .container-index .acceuil h1 {
   position: relative;
   top: 50%;
@@ -1357,6 +1366,16 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
 
 .reservation {
   padding: 100px 64px;
+  background: #F8F4EC;
+}
+.reservation input {
+  background: none;
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #555B47;
 }
 .reservation h2 {
   font-family: "Gilmer";
@@ -1486,9 +1505,16 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
 .reservation .resa .resa-left .message label {
   margin-bottom: 10px;
 }
-.reservation .resa .resa-left .message input {
+.reservation .resa .resa-left .message textarea {
+  background: none;
   width: 100%;
   height: 200px;
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #555B47;
 }
 .reservation .resa .resa-left .submit {
   margin-top: 50px;
@@ -1538,11 +1564,13 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
 }
 
 .nuit {
+  background: #F8F4EC;
   width: 100%;
   display: flex;
+  gap: 160px;
   flex-direction: row;
   min-height: 50vh;
-  padding: 0 64px;
+  padding: 100px 64px;
 }
 .nuit .left {
   width: 50%;
@@ -1562,6 +1590,8 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   color: #555B47;
 }
 .nuit .right p {
+  margin-top: 32px;
+  line-height: 150%;
   min-height: 100%;
   font-family: "Gilmer";
   font-style: normal;
