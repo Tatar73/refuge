@@ -344,10 +344,24 @@ footer .flex .left p {
 .container-index .intro {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  background: #F8F4EC;
-  height: 100vh;
   align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #F8F4EC;
+  position: relative;
+}
+.container-index .intro #topo_left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-20%, -10%);
+}
+.container-index .intro #topo_right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0.1;
+  transform: translate(40%, 10%);
 }
 .container-index .intro .intro-slider {
   width: 55%;
@@ -373,13 +387,36 @@ footer .flex .left p {
   line-height: 24px;
   color: #555B47;
 }
-.container-index .intro .main-carousel .carousel-cell {
+.container-index .intro .intro-right button {
+  margin-top: 64px;
+  border: none;
+  background: none;
+}
+.container-index .intro .intro-right button a {
+  width: 100%;
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #F8F4EC;
+  padding: 10px 25px;
+  background: #3A3D35;
+  border-radius: 1px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 500ms;
+}
+.container-index .intro .intro-right button a :hover {
+  cursor: pointer;
+  background-color: #1d1e1b;
+}
+.container-index .main-carousel .carousel-cell {
   padding: 0 32px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container-index .intro .main-carousel .carousel-cell p {
+.container-index .main-carousel .carousel-cell p {
   flex-direction: column;
   font-family: "Gilmer";
   font-style: normal;
@@ -389,7 +426,8 @@ footer .flex .left p {
   color: #35392E;
   opacity: 0.3;
 }
-.container-index .services {
+
+.services {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -397,10 +435,22 @@ footer .flex .left p {
   position: relative;
   z-index: 2;
 }
-.container-index .services .wrap {
+.services #service_topo_gauche {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, 0);
+}
+.services #service_topo_droite {
+  position: absolute;
+  right: 0;
+  transform: translate(60%, 0);
+  object-fit: contain;
+}
+.services .wrap {
   padding: 0 64px;
 }
-.container-index .services .wrap h3 {
+.services .wrap h3 {
   margin-top: 80px;
   text-align: center;
   font-family: "Athelas";
@@ -411,14 +461,14 @@ footer .flex .left p {
   /* identical to box height */
   color: #F8F4EC;
 }
-.container-index .services .wrap .flex {
+.services .wrap .flex {
   margin-top: 80px;
   display: flex;
   gap: 32px;
   flex-direction: row;
   position: relative;
 }
-.container-index .services .wrap .flex .services-left {
+.services .wrap .flex .services-left {
   display: flex;
   flex-direction: row;
   width: 50%;
@@ -426,20 +476,20 @@ footer .flex .left p {
   background: #F8F4EC;
   box-shadow: 0px 0px 60px 20px rgba(0, 0, 0, 0.25);
 }
-.container-index .services .wrap .flex .services-left .content-right {
+.services .wrap .flex .services-left .content-right {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.container-index .services .wrap .flex .services-left .content-right h4 {
+.services .wrap .flex .services-left .content-right h4 {
   text-align: center;
   font-family: "Gilmer Bold";
   font-weight: 700;
   font-size: 32px;
   color: #555B47;
 }
-.container-index .services .wrap .flex .services-left .content-right > legend {
+.services .wrap .flex .services-left .content-right > legend {
   padding: 8px 0;
   font-family: "Gilmer Bold";
   font-style: normal;
@@ -449,17 +499,17 @@ footer .flex .left p {
   text-align: center;
   color: #555B47;
 }
-.container-index .services .wrap .flex .services-left .content-right .conditions {
+.services .wrap .flex .services-left .content-right .conditions {
   margin-left: auto;
   margin-right: auto;
 }
-.container-index .services .wrap .flex .services-left .content-right .conditions .condition {
+.services .wrap .flex .services-left .content-right .conditions .condition {
   display: flex;
   align-items: center;
   vertical-align: middle;
   gap: 24px;
 }
-.container-index .services .wrap .flex .services-left .content-right .conditions .condition > p {
+.services .wrap .flex .services-left .content-right .conditions .condition > p {
   padding: 12px 0;
   text-align: center;
   font-family: "Gilmer Medium";
@@ -469,14 +519,14 @@ footer .flex .left p {
   font-size: 20px;
   color: #555B47;
 }
-.container-index .services .wrap .flex .services-left .content-right .conditions .condition .legends p {
+.services .wrap .flex .services-left .content-right .conditions .condition .legends p {
   font-family: "Gilmer Medium";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   color: #555B47;
 }
-.container-index .services .wrap .flex .services-left .content-right .conditions .condition .legends legend {
+.services .wrap .flex .services-left .content-right .conditions .condition .legends legend {
   font-family: "Gilmer Medium";
   font-style: normal;
   font-weight: 600;
@@ -484,25 +534,25 @@ footer .flex .left p {
   color: #555B47;
   opacity: 0.8;
 }
-.container-index .services .wrap .flex .services-left .content-left {
+.services .wrap .flex .services-left .content-left {
   width: 50%;
   background-image: url("../../assets/img/gardiennage.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.container-index .services .wrap .flex .services-left #gardiennage {
+.services .wrap .flex .services-left #gardiennage {
   width: 50%;
   background-image: url("../../assets/img/hors_gardiennage.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.container-index .services .wrap .flex .services-right {
+.services .wrap .flex .services-right {
   width: 50%;
   height: 100%;
 }
-.container-index .services .wrap .flex .rappels {
+.services .wrap .flex .rappels {
   background: #F8F4EC;
   box-shadow: 0px 0px 60px 10px rgba(0, 0, 0, 0.25);
   position: absolute;
@@ -512,16 +562,16 @@ footer .flex .left p {
   width: 256px;
   height: 205px;
 }
-.container-index .services .wrap .flex .rappels img {
+.services .wrap .flex .rappels img {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.container-index .services .wrap .flex .rappels .warnings {
+.services .wrap .flex .rappels .warnings {
   margin: 28px 0 0 0;
 }
-.container-index .services .wrap .flex .rappels .warnings p {
+.services .wrap .flex .rappels .warnings p {
   font-family: "Gilmer";
   font-weight: 600;
   font-size: 16px;
@@ -529,7 +579,8 @@ footer .flex .left p {
   text-align: center;
   color: #555B47;
 }
-.container-index .cuisine {
+
+.cuisine {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -538,7 +589,7 @@ footer .flex .left p {
   z-index: 1;
   flex-wrap: wrap;
 }
-.container-index .cuisine h3 {
+.cuisine h3 {
   padding-top: 64px;
   text-align: center;
   font-family: "Athelas";
@@ -549,13 +600,13 @@ footer .flex .left p {
   /* identical to box height */
   color: #F8F4EC;
 }
-.container-index .cuisine .texte {
+.cuisine .texte {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.container-index .cuisine .texte p {
+.cuisine .texte p {
   width: 502px;
   font-family: "Gilmer";
   font-style: normal;
@@ -565,7 +616,7 @@ footer .flex .left p {
   color: #F8F4EC;
   text-align: left;
 }
-.container-index .cuisine .texte a {
+.cuisine .texte a {
   margin-top: 42px;
   font-family: "Gilmer";
   font-style: normal;
@@ -582,10 +633,11 @@ footer .flex .left p {
   height: 43px;
   transition: all 500ms;
 }
-.container-index .cuisine .texte a:hover {
+.cuisine .texte a:hover {
   background-color: #1d1e1b;
 }
-.container-index .animations {
+
+.animations {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -593,7 +645,7 @@ footer .flex .left p {
   height: 100vh;
   align-items: center;
 }
-.container-index .animations .wrap {
+.animations .wrap {
   display: flex;
   flex-direction: row;
   padding: 0 64px;
@@ -601,7 +653,7 @@ footer .flex .left p {
   margin-left: auto;
   justify-content: space-between;
 }
-.container-index .animations .wrap h3 {
+.animations .wrap h3 {
   font-family: "Athelas";
   font-style: normal;
   font-weight: 700;
@@ -609,15 +661,15 @@ footer .flex .left p {
   color: #555B47;
   padding-bottom: 32px;
 }
-.container-index .animations .wrap .animations-right {
+.animations .wrap .animations-right {
   width: 50%;
   display: flex;
   justify-content: right;
 }
-.container-index .animations .wrap .animations-left {
+.animations .wrap .animations-left {
   width: 50%;
 }
-.container-index .animations .wrap .animations-left p {
+.animations .wrap .animations-left p {
   text-align: left;
   font-family: "Gilmer";
   font-style: normal;
@@ -626,10 +678,10 @@ footer .flex .left p {
   line-height: 24px;
   color: #555B47;
 }
-.container-index .animations .wrap .animations-left .button {
+.animations .wrap .animations-left .button {
   margin-top: 64px;
 }
-.container-index .animations .wrap .animations-left .button a {
+.animations .wrap .animations-left .button a {
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 400;
@@ -642,7 +694,7 @@ footer .flex .left p {
   text-decoration: none;
   transition: all 500ms;
 }
-.container-index .animations .wrap .animations-left a:hover {
+.animations .wrap .animations-left a:hover {
   background-color: #1d1e1b;
 }
 
@@ -654,7 +706,7 @@ footer .flex .left p {
 }
 .container-acces .acces h1 {
   padding-top: 100px;
-  font-family: "Gilmer";
+  font-family: "Gilmer Bold";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -693,6 +745,7 @@ footer .flex .left p {
 .container-acces .acces .content .images .image img {
   width: 100%;
   display: flex;
+  box-shadow: 0px 0px 60px 10px rgba(0, 0, 0, 0.25);
 }
 .container-acces .acces .content .images .image legend {
   font-family: "Gilmer";
@@ -707,7 +760,7 @@ footer .flex .left p {
   width: 50%;
 }
 .container-acces .acces .texte p {
-  font-family: "Gilmer";
+  font-family: "Gilmer Bold";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -774,7 +827,7 @@ footer .flex .left p {
 .container-acces .itineraires .itineraire .middle p {
   text-align: left;
   padding: 8px 96px;
-  font-family: "Gilmer";
+  font-family: "Gilmer Bold";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -830,7 +883,7 @@ footer .flex .left p {
 }
 .container-acces .itineraires .itineraire .right p {
   text-align: left;
-  font-family: "Gilmer";
+  font-family: "Gilmer Medium";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -946,7 +999,7 @@ footer .flex .left p {
   position: relative;
 }
 .animation .intro h1 {
-  font-family: "Gilmer";
+  font-family: "Gilmer Bold";
   font-style: normal;
   font-weight: 700;
   font-size: 64px;

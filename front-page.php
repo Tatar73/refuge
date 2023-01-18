@@ -50,6 +50,10 @@ $slider = get_field('slider');
     <div class="background">
         <!-- <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/fond.svg" alt="background"> -->
         <section class="intro">
+            <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/intro_topo_left.svg" alt=""
+                id="topo_left">
+            <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/intro_topo_right.svg" alt=""
+                id="topo_right">
             <div class="intro-slider">
                 <div class="main-carousel"
                     data-flickity='{ "cellAlign": "right", "contain": true, "wrapAround": true }'>
@@ -67,22 +71,17 @@ $slider = get_field('slider');
                     <?php the_field('un_lieu_unique') ?>
                 </h3>
                 <p>
-                    <?php the_field('intro_texte_1') ?>
+                    <?php the_field('text') ?>
                 </p>
-                <br>
-                <p>
-                    <?php the_field('intro_texte_2') ?>
-                </p>
-                <br>
-                <p><?php the_field('intro_texte_3') ?></p>
-                <p>
-                    <?php the_field('intro_texte_4') ?>
-                </p>
+                <button>
+                    <a href="acces">Comment venir</a>
+                </button>
             </div>
         </section>
 
         <section class="services">
-
+            <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/service_topo_gauche.svg" alt=""
+                id="service_topo_gauche">
             <div class="wrap">
                 <h3>
                     <?php the_field('services_title') ?>
@@ -95,7 +94,9 @@ $slider = get_field('slider');
                             <h4>
                                 <?php the_field('gardiennage') ?>
                             </h4>
-                            <legend><?php the_field('periode_gardiennage') ?></legend>
+                            <legend>
+                                <?php the_field('periode_gardiennage') ?>
+                            </legend>
                             <div class="conditions">
                                 <div class="condition">
                                     <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/lit.svg"
@@ -175,7 +176,7 @@ $slider = get_field('slider');
                                     <p>Chauffage poêle</p>
                                 </div>
                                 <div class="condition">
-                                    <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/wc.svg"
+                                    <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/WC.svg"
                                         alt="wc" style="margin-left: 4px;">
                                     <p>WC secs</p>
                                 </div>
@@ -220,14 +221,10 @@ $slider = get_field('slider');
 
                 <div class="animations-left">
                     <h3>Nos animations</h3>
-                    <p>Nous proposons une programmation estivale de «soirées mémorables» culturelles, artistiques, et
-                        patrimoniales, participant au dynamisme de la commune de Courchevel</p>
+                    <p>Une fois par semaine, nous proposons une « soirée mémorable » au refuge : spectacles, concerts,
+                        conférences-débat, … (insérer le lien vers programmation ?).</p>
                     <br>
-                    <p>Une fois par semaine, une soirée à thème est proposée au refuge des Lacs Merlet.
-                    </p>
-                    <p>Il s'agit d'une animation gratuite, pour les randonneurs qui le souhaitent, sur des thématiques
-                        culturelles,
-                        artistiques, et patrimoniales.
+                    <p>Venez échanger, vous émerveiller, apprendre dans un cadre intimiste et exceptionnel !
                     </p>
                     <div class="button">
                         <a href="animation">En savoir plus</a>

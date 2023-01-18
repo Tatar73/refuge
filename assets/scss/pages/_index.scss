@@ -193,11 +193,27 @@
     .intro{
         display: flex;
         flex-direction: row;
-        width: 100%;
-        background: #F8F4EC;
-        height: 100vh;
         align-items: center;
-
+        width: 100%;
+        height: 100vh;
+        background: #F8F4EC;
+        position: relative;
+        // background-image: url("../../assets/img/intro_topo_left.svg");
+        // background-position: -10% -60%;
+        // background-repeat: no-repeat;
+        #topo_left{
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(-20%, -10%);
+        }
+        #topo_right{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            opacity: 0.1;
+            transform: translate(40%, 10%);
+        }
         .intro-slider{
             width: 55%;
         }
@@ -223,6 +239,31 @@
                 line-height: 24px;
                 color: #555B47;
             }
+            button{
+                margin-top: 64px;
+                border: none;
+                background: none;
+                a{
+                    width: 100%;
+                    font-family: 'Gilmer';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    color: #F8F4EC;
+                    padding: 10px 25px;
+                    background: #3A3D35;
+                    border-radius: 1px;
+                    text-align: center;
+                    text-decoration: none;
+                    transition: all 500ms;
+                    :hover{
+                        cursor: pointer;
+                        background-color: #1d1e1b;
+                    }
+                }
+            }
+
+        }
         }
 
         .main-carousel .carousel-cell {
@@ -254,6 +295,19 @@
         background-color: #555B47;;
         position: relative;
         z-index: 2;
+
+        #service_topo_gauche{
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(-50%, 0);
+        }
+        #service_topo_droite{
+            position: absolute;
+            right: 0;
+            transform: translate(60%, 0);
+            object-fit: contain;
+        }
         .wrap{
             padding: 0 64px;
             h3{
@@ -532,4 +586,3 @@
         }
 
     }
-}
