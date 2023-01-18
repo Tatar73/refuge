@@ -32,11 +32,11 @@ $slider = get_field('slider');
         </div>
         <div class="panorama">
             <button id="pano_plus">
-                <img src="http://127.0.0.1/refuge/wordpress/wp-content/themes/refuge/assets/img/panorama_button.svg"
+                <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/panorama_button.svg"
                     alt="bouton panorama">
             </button>
             <button id="pano_moins" style="display: none">
-                <img src="http://127.0.0.1/refuge/wordpress/wp-content/themes/refuge/assets/img/panorama_button_moins.svg"
+                <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/panorama_button_moins.svg"
                     alt="bouton panorama">
             </button>
             <p>Panorama</p>

@@ -56,11 +56,11 @@ table {
 
 @font-face {
   font-family: "Athelas";
-  src: url(../assets/Athelas-Regular.woff);
+  src: url(../font/Athelas-Regular.woff);
 }
 @font-face {
   font-family: "Gilmer";
-  src: url(../assets/GilmerRegular.woff);
+  src: url(../font/GilmerRegular.woff);
 }
 html {
   overflow-x: hidden;

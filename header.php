@@ -22,7 +22,6 @@
                     alt="">
             </a>
 
-
             <ul>
                 <li><a href="acces">Accès</a></li>
                 <li><a href="cuisine">Notre Cuisine</a></li>
