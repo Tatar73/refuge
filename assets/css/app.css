@@ -760,7 +760,7 @@ footer .flex .left p {
   width: 50%;
 }
 .container-acces .acces .texte p {
-  font-family: "Gilmer Bold";
+  font-family: "Gilmer Medium";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -1032,7 +1032,7 @@ footer .flex .left p {
 
 .programme {
   background: #555B47;
-  height: 90vh;
+  height: 100vh;
 }
 .programme .ligne {
   height: 0px;
@@ -1043,7 +1043,6 @@ footer .flex .left p {
   margin-bottom: 128px;
   position: relative;
   bottom: 28px;
-  z-index: 5;
 }
 .programme .animation-slider .main-carousel .carousel-cell {
   padding: 0 32px;
