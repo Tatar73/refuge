@@ -105,7 +105,10 @@ $slider = get_field('slider');
                                 <div class="condition">
                                     <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/couette.svg"
                                         alt="couette">
-                                    <p>Couettes</p>
+                                    <div class="legends">
+                                        <p>Couettes</p>
+                                        <legend>Prenez votre drap-sac</legend>
+                                    </div>
                                 </div>
                                 <div class="condition">
                                     <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/tente.svg"
@@ -123,8 +126,8 @@ $slider = get_field('slider');
                                     <p>Chauffage poêle</p>
                                 </div>
                                 <div class="condition">
-                                    <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/wc.svg"
-                                        alt="wc">
+                                    <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/WC.svg"
+                                        alt="wc" style="margin-left: 4px;">
                                     <p>WC secs</p>
                                 </div>
                             </div>
@@ -148,7 +151,10 @@ $slider = get_field('slider');
                                 <div class="condition">
                                     <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/couverture.svg"
                                         alt="Couverture">
-                                    <p>Couverture</p>
+                                    <div class="legends">
+                                        <p>Couvertures</p>
+                                        <legend>Prenez votre sac de couchage</legend>
+                                    </div>
                                 </div>
                                 <div class="condition">
                                     <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/tente.svg"
@@ -158,7 +164,10 @@ $slider = get_field('slider');
                                 <div class="condition">
                                     <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/gaziniere.svg"
                                         alt="gazinière">
-                                    <p>Gazinière</p>
+                                    <div class="legends">
+                                        <p>Gazinière</p>
+                                        <legend>Accessible</legend>
+                                    </div>
                                 </div>
                                 <div class="condition">
                                     <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/chauffage.svg"
@@ -167,7 +176,7 @@ $slider = get_field('slider');
                                 </div>
                                 <div class="condition">
                                     <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/wc.svg"
-                                        alt="wc">
+                                        alt="wc" style="margin-left: 4px;">
                                     <p>WC secs</p>
                                 </div>
                             </div>
@@ -195,13 +204,11 @@ $slider = get_field('slider');
         <section class="cuisine">
             <h3>Notre Cuisine</h3>
             <div class="texte">
-                <p>Du côté cuisine, notre objectif est de mettre en avant la cuisine locale et durable en proposant des
-                    plats
-                    faits maison à base de produits locaux et bio.</p>
+                <p>Nous proposons des plats 100% faits maison, à base de produits locaux et en très grande majorité
+                    biologiques.</p>
                 <br>
-                <p>Cette démarche est en adéquation avec les objectifs de développement durable de la commune de
-                    Courchevel
-                    pour promouvoir l'agriculture locale respectueuse de l'environnement.</p>
+                <p>Pour partager un déjeuner ou pour la gourmandise d’une part de tarte, venez découvrir notre cuisine
+                    simple, bonne et saine !</p>
 
                 <a href="cuisine">En savoir plus</a>
             </div>

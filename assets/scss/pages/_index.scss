@@ -296,7 +296,7 @@
                             font-size: 32px;
                             color: #555B47;
                         }                                
-                        legend{
+                        >legend{
                             padding: 8px 0;
                             font-family: 'Gilmer Bold';
                             font-style: normal;
@@ -315,18 +315,35 @@
                                 align-items: center;
                                 vertical-align: middle;
                                 gap: 24px;
-
-                                p{
+                                >p{
                                     padding: 12px 0;
                                     text-align: center;
-                                    font-family: 'Gilmer Bold';
+                                    font-family: 'Gilmer Medium';
                                     font-style: normal;
-                                    font-weight: 700;
+                                    font-weight: 600;
                                     line-height: 24px;
                                     font-size: 20px;
                                     color: #555B47;
-                                    
                                 }
+                                .legends{
+                                    p{
+                                        font-family: 'Gilmer Medium';
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 20px;
+                                        color: #555B47;
+                                    }
+                                    legend{
+                                        font-family: 'Gilmer Medium';
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 12px;
+                                        color: #555B47;
+                                        opacity: 0.8;
+                                    }
+                                }
+
+
                                 
     
                             }
@@ -398,8 +415,9 @@
         background-color: #555B47;;
         position: relative;
         z-index: 1;
-        padding-top: 256px;
+        flex-wrap: wrap;
         h3{
+            padding-top: 64px;
             text-align: center;
             font-family: 'Athelas';
             font-style: normal;
@@ -408,7 +426,6 @@
             line-height: 54px;
             /* identical to box height */
             color: #F8F4EC;
-            margin-bottom: 24px;
 
         }
         .texte{
@@ -417,7 +434,7 @@
             flex-direction: column;
             align-items: center;
             p{
-                width: 35%;
+                width: 502px;
                 font-family: 'Gilmer';
                 font-style: normal;
                 font-weight: 400;
@@ -434,7 +451,8 @@
                 font-weight: 400;
                 font-size: 20px;
                 color: #F8F4EC;
-                padding: 10px 32px;
+                width: 195px;
+                padding: 10px 0;
                 background: #3A3D35;
                 border-radius: 1px;
                 text-align: center;
