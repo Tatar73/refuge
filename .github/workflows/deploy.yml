@@ -1,0 +1,49 @@
+on:
+  push:
+    branches:
+      - main
+name: 🚀 Deploy on production
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    env:
+      DEPLOY: true
+      DEPLOY_PATH: www/wp-content/themes/refuge/
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v3
+
+      - name: 📂 Sync files
+        if: ${{env.DEPLOY}}
+        uses: SamKirkland/FTP-Deploy-Action@4.3.2
+        with:
+          server: ${{ secrets.DEV_SERVER_HOST }}
+          username: ${{ secrets.DEV_SERVER_LOGIN }}
+          password: ${{ secrets.DEV_SERVER_PASS }}
+          server-dir: ${{env.DEPLOY_PATH}}
+          dry-run: false
+          log-level: minimal
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            package.json
+            package-lock.json
+            phpstan.neon
+            .babelrc
+            .eslintignore
+            .eslintrc.js
+            .gitignore
+            .phpunit.result.cache
+            .prettierrc.js
+            jest.config.js
+            phpunit.xml
+            postcss.config.js
+            tailwind.config.js
+            webpack.config.js
+            webpack.gutenberg.config.js
+            **/tests/**
+            **/assets/**
+            **/.vscode/**
+            **/vendor/**
