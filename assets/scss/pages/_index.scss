@@ -14,7 +14,6 @@
     }
 
     .acceuil{
-        // background-image: url("../../assets/img/acceuil_background.jpg");
         background-size: cover;
         background-position: 25% 90%;
         background-repeat: no-repeat;
@@ -59,7 +58,7 @@
             transform: translate(-50%, -50%);
             color: white;
             text-align: center;
-            font-family: 'Gilmer';
+            font-family: 'Gilmer Bold';
             font-style: normal;
             font-weight: 700;
             font-size: 64px;
@@ -206,6 +205,7 @@
         .intro-right{
             padding-left: 48px;
             width: 45%;
+            padding: 0 64px;
             h3{
                 font-family: 'Athelas';
                 font-style: normal;
@@ -291,14 +291,14 @@
                         justify-content: center;
                         h4{
                             text-align: center;
-                            font-family: 'Gilmer';
+                            font-family: 'Gilmer Bold';
                             font-weight: 700;
                             font-size: 32px;
                             color: #555B47;
                         }                                
                         legend{
                             padding: 8px 0;
-                            font-family: 'Gilmer';
+                            font-family: 'Gilmer Bold';
                             font-style: normal;
                             font-weight: 700;
                             font-size: 16px;
@@ -319,9 +319,9 @@
                                 p{
                                     padding: 12px 0;
                                     text-align: center;
-                                    font-family: 'Gilmer';
+                                    font-family: 'Gilmer Bold';
                                     font-style: normal;
-                                    font-weight: 600;
+                                    font-weight: 700;
                                     line-height: 24px;
                                     font-size: 20px;
                                     color: #555B47;
