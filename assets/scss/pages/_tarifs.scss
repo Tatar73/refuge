@@ -219,8 +219,9 @@
     .resa{
         display: flex;
         flex-direction: row;
+        gap: 128px;
         .resa-left{
-            width: 55%;
+            width: 70%;
             display: flex;
             flex-wrap: wrap;
             clear: both;
@@ -258,24 +259,31 @@
                     margin-top: 16px;
                     display: flex;
                     justify-content: space-between;
+                    flex-wrap: wrap;
                     .right{
+                        width: 224px;
                         >p{
                             color: white;
-                            padding: 12px 75px;
+                            width: 224px;
+                            padding: 12px 0;
                             background: #555B47;
                         }
                     }
                     .middle{
+                        width: 224px;
                         >p{
                             color: white;
-                            padding: 12px 75px;
+                            width: 224px;
+                            padding: 12px 0;
                             background: #555B47;
                         }
                     }
                     .left{
+                        width: 224px;
                         >p{
                             color: white;
-                            padding: 12px 75px;
+                            width: 224px;
+                            padding: 12px 0;
                             background: #555B47;
                         }
                     }
@@ -286,15 +294,20 @@
                         justify-content: space-between;
                         align-items: center;
                         button{
+                            width: 33%;
                             border: none;
                             background: none;
                         }
-                        p{
+                        input{
+                            text-align: center;
+                            border: none;
+                            width: 33%;
                             font-family: 'Gilmer';
                             font-style: normal;
                             font-weight: 700;
                             font-size: 48px;
                             color: #555B47;
+                            background: none;
                         }
                     }
                 }
@@ -330,6 +343,43 @@
                     color: #555B47;
                 }
             }
+            .infos{
+                margin-top: 50px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 50px;
+                p{
+                    font-family: 'Gilmer';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 135%;
+                    color: #555B47;
+                    text-align: center;
+                }
+                input{
+                    display: none;
+                    text-align: center;
+                    padding: 12px 50px;
+                    font-family: 'Gilmer';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 135%;
+                    border: 5px solid #555B47;
+                    &:checked + label{
+                        color: white;
+                        background:#555B47 ;
+                    }
+                }
+                label{
+                    padding: 12px 50px;
+                    border: 3px solid #555B47;
+                    cursor: pointer;
+                }
+            }
             .message{
                 margin-top: 50px;
                 display: flex;
@@ -354,6 +404,8 @@
             .submit{
                 margin-top: 50px;
                 display: flex;
+                width: 100%;
+                justify-content: space-between;
                 input{
                     font-family: 'Gilmer';
                     font-style: normal;
@@ -369,34 +421,28 @@
         .resa-right{
             display: flex;
             flex-direction: column;
-            width: 45%;
-            ul{
-                align-self: end;
-                width: 50%;
-                list-style: square;
-                li:nth-child(1){
-                    font-family: 'Gilmer';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 20px;
-                    color: #3A2E2E;
-                }
-                li:nth-child(3){
-                    font-family: 'Gilmer';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 20px;
-                    color: #8E7A7A;
-                }
+            flex-wrap: wrap;
+            width: 30%;
+            p{
+                margin-left: auto;
+                margin-right: auto;
+                font-family: 'Gilmer';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 150%;
+                color: #555B47;
             }
             h3{
-                align-self: end;
-                margin-right: 80px;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
                 font-family: 'Athelas';
                 font-style: normal;
                 font-weight: 700;
                 font-size: 48px;
                 color: #555B47;
+                margin-bottom: 25px;
             }
         }
     }

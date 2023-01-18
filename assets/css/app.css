@@ -1413,9 +1413,10 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
 .reservation .resa {
   display: flex;
   flex-direction: row;
+  gap: 128px;
 }
 .reservation .resa .resa-left {
-  width: 55%;
+  width: 70%;
   display: flex;
   flex-wrap: wrap;
   clear: both;
@@ -1455,20 +1456,33 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   margin-top: 16px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+.reservation .resa .resa-left .nb-personnes .flex .right {
+  width: 224px;
 }
 .reservation .resa .resa-left .nb-personnes .flex .right > p {
   color: white;
-  padding: 12px 75px;
+  width: 224px;
+  padding: 12px 0;
   background: #555B47;
+}
+.reservation .resa .resa-left .nb-personnes .flex .middle {
+  width: 224px;
 }
 .reservation .resa .resa-left .nb-personnes .flex .middle > p {
   color: white;
-  padding: 12px 75px;
+  width: 224px;
+  padding: 12px 0;
   background: #555B47;
+}
+.reservation .resa .resa-left .nb-personnes .flex .left {
+  width: 224px;
 }
 .reservation .resa .resa-left .nb-personnes .flex .left > p {
   color: white;
-  padding: 12px 75px;
+  width: 224px;
+  padding: 12px 0;
   background: #555B47;
 }
 .reservation .resa .resa-left .nb-personnes .flex .quantite {
@@ -1478,15 +1492,20 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   align-items: center;
 }
 .reservation .resa .resa-left .nb-personnes .flex .quantite button {
+  width: 33%;
   border: none;
   background: none;
 }
-.reservation .resa .resa-left .nb-personnes .flex .quantite p {
+.reservation .resa .resa-left .nb-personnes .flex .quantite input {
+  text-align: center;
+  border: none;
+  width: 33%;
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
   color: #555B47;
+  background: none;
 }
 .reservation .resa .resa-left .nb-personnes p {
   font-family: "Gilmer";
@@ -1518,6 +1537,43 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   font-size: 20px;
   color: #555B47;
 }
+.reservation .resa .resa-left .infos {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.reservation .resa .resa-left .infos p {
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 135%;
+  color: #555B47;
+  text-align: center;
+}
+.reservation .resa .resa-left .infos input {
+  display: none;
+  text-align: center;
+  padding: 12px 50px;
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 135%;
+  border: 5px solid #555B47;
+}
+.reservation .resa .resa-left .infos input:checked + label {
+  color: white;
+  background: #555B47;
+}
+.reservation .resa .resa-left .infos label {
+  padding: 12px 50px;
+  border: 3px solid #555B47;
+  cursor: pointer;
+}
 .reservation .resa .resa-left .message {
   margin-top: 50px;
   display: flex;
@@ -1542,6 +1598,8 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
 .reservation .resa .resa-left .submit {
   margin-top: 50px;
   display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 .reservation .resa .resa-left .submit input {
   font-family: "Gilmer";
@@ -1555,35 +1613,29 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
 .reservation .resa .resa-right {
   display: flex;
   flex-direction: column;
-  width: 45%;
+  flex-wrap: wrap;
+  width: 30%;
 }
-.reservation .resa .resa-right ul {
-  align-self: end;
-  width: 50%;
-  list-style: square;
-}
-.reservation .resa .resa-right ul li:nth-child(1) {
+.reservation .resa .resa-right p {
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  color: #3A2E2E;
-}
-.reservation .resa .resa-right ul li:nth-child(3) {
-  font-family: "Gilmer";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  color: #8E7A7A;
+  line-height: 150%;
+  color: #555B47;
 }
 .reservation .resa .resa-right h3 {
-  align-self: end;
-  margin-right: 80px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Athelas";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
   color: #555B47;
+  margin-bottom: 25px;
 }
 
 .nuit {
