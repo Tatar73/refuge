@@ -203,7 +203,7 @@ $slider = get_field('slider');
                     Courchevel
                     pour promouvoir l'agriculture locale respectueuse de l'environnement.</p>
 
-                <a href="#">En savoir plus</a>
+                <a href="cuisine">En savoir plus</a>
             </div>
 
         </section>
@@ -223,7 +223,7 @@ $slider = get_field('slider');
                         artistiques, et patrimoniales.
                     </p>
                     <div class="button">
-                        <a href="#">En savoir plus</a>
+                        <a href="animation">En savoir plus</a>
                     </div>
                 </div>
                 <div class="animations-right">

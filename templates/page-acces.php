@@ -87,7 +87,7 @@ $reglements = get_field('reglements');
         </div>
 
         <p>
-            <?php the_field('reglement_infos'); ?><a href="">Site Web</a>
+            <?php the_field('reglement_infos'); ?><a href="http://www.vanoise-parcnational.fr/fr" target="_blank">Site Web</a>
         </p>
     </section>
 
@@ -95,7 +95,9 @@ $reglements = get_field('reglements');
         <h2>Carte</h2>
         <div id="map">
         </div>
+        <a href="<?php echo (get_template_directory_uri()); ?>/assets/img/carte_refuge.pdf" target="_blank">
         <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/telecharger.svg" alt="">
+        </a>
         <!-- Leaflet map JavaScript -->
         <script>
             // L'id du container, par exemple <div id="map"></div>
