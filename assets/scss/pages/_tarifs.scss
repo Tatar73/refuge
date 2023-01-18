@@ -27,7 +27,6 @@
         align-items: center;
         flex-direction: column;
         padding: 0 115px;
-        height: 100vh;
         background: #555B47;
         position: relative;
         .parent {
@@ -69,6 +68,7 @@
                     background-repeat: no-repeat;
                     p{
                         font-family: 'Gilmer';
+                        font-weight: 700;
                         font-size: 96px;
                         line-height: 112px;
                         text-align: center;
@@ -100,6 +100,7 @@
                     p{
                         font-family: 'Gilmer';
                         font-size: 96px;
+                        font-weight: 700;
                         line-height: 112px;
                         text-align: center;
                         color: #F8F4EC;
@@ -129,6 +130,7 @@
                     background-repeat: no-repeat;
                     p{
                         font-family: 'Gilmer';
+                        font-weight: 700;
                         font-size: 96px;
                         line-height: 112px;
                         text-align: center;
@@ -168,6 +170,7 @@
                     p{
                         font-family: 'Gilmer';
                         font-size: 96px;
+                        font-weight: 700;
                         line-height: 112px;
                         text-align: center;
                         color: #F8F4EC;

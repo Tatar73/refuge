@@ -32,14 +32,24 @@
             height: 100%;
             object-fit: cover;
             .marker{
-                display: none;
-                :hover .text_hidden{
+                position: relative;
+                z-index: 100;
+                opacity: 0;
+                transition: opacity 0.5s ease-in, 0s visibility 0.5s;
+                visibility: hidden;
+                &.hidden{
+                    opacity: 1;
+                    visibility: visible;
+                    transition: opacity 0.5s ease-out;
+                }
+                .text_hidden{
+                    display: none;
+                }
+                &:hover .text_hidden{
                     display: block;
                 }
             }
-            .text_hidden{
-                display: none;
-            }
+
         }
         
         h1{ 
@@ -129,10 +139,16 @@
             }
         }
         
-        #content-index{ 
-            height: 100%;   
-            transition-property: opacity, left;
-            transition-duration: 1s;
+        #content-index { 
+            height: 100%;
+            transition: opacity 0.5s ease-out;
+            opacity: 1;
+            visibility: visible;
+            &.hidden{
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.5s ease-in, 0s visibility 0.5s;
+            }
         }
     
         #pano_moins{

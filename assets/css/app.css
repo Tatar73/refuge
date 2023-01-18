@@ -1,64 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Athelas";
-  src: url(../assets/Athelas-Regular.woff);
-}
-@font-face {
-  font-family: "Gilmer";
-  src: url(../assets/GilmerRegular.woff);
-}
-html {
-  overflow-x: hidden;
-  margin-top: 0;
-}
-
-header {
-  background-color: white;
-  width: 100%;
-  position: fixed;
-  z-index: 5;
-  transition: all 200ms;
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
-.home header.top {
-  opacity: 1;
-  background-color: transparent;
-}
-.home header.top a {
-  color: white;
-}
-.home header.top img {
-  opacity: 0;
-}
-header .nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 32px 64px;
-  transition-property: opacity, left;
-  transition-duration: 1s;
-  opacity: 1;
-}
-header .nav ul {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  gap: 25px;
-}
-header .nav li {
-  list-style-type: none;
-}
-header .nav li a {
-  text-decoration: none;
-  color: #555B47;
-  font-family: "Gilmer";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-}
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -112,6 +52,73 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Athelas";
+  src: url(../assets/Athelas-Regular.woff);
+}
+@font-face {
+  font-family: "Gilmer";
+  src: url(../assets/GilmerRegular.woff);
+}
+html {
+  overflow-x: hidden;
+  margin-top: 0;
+}
+
+header {
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  transition: all 200ms;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease-out;
+  opacity: 1;
+  visibility: visible;
+}
+header.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in, 0s visibility 0.5s;
+}
+header .home.top {
+  background-color: transparent;
+}
+header .home.top a {
+  color: white;
+}
+header .home.top img {
+  opacity: 0;
+}
+header .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+  padding: 0 64px;
+  transition-property: opacity, left;
+  transition-duration: 1s;
+  opacity: 1;
+}
+header .nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 25px;
+}
+header .nav li {
+  list-style-type: none;
+}
+header .nav li a {
+  text-decoration: none;
+  color: #555B47;
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 footer {
@@ -190,13 +197,22 @@ footer .flex .left p {
   object-fit: cover;
 }
 .container-index .acceuil .marker_layer .marker {
+  position: relative;
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.5s ease-in, 0s visibility 0.5s;
+  visibility: hidden;
+}
+.container-index .acceuil .marker_layer .marker.hidden {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease-out;
+}
+.container-index .acceuil .marker_layer .marker .text_hidden {
   display: none;
 }
-.container-index .acceuil .marker_layer .marker :hover .text_hidden {
+.container-index .acceuil .marker_layer .marker:hover .text_hidden {
   display: block;
-}
-.container-index .acceuil .marker_layer .text_hidden {
-  display: none;
 }
 .container-index .acceuil h1 {
   position: relative;
@@ -277,8 +293,14 @@ footer .flex .left p {
 }
 .container-index .acceuil #content-index {
   height: 100%;
-  transition-property: opacity, left;
-  transition-duration: 1s;
+  transition: opacity 0.5s ease-out;
+  opacity: 1;
+  visibility: visible;
+}
+.container-index .acceuil #content-index.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in, 0s visibility 0.5s;
 }
 .container-index .acceuil #pano_moins {
   display: none;
@@ -1215,7 +1237,6 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   align-items: center;
   flex-direction: column;
   padding: 0 115px;
-  height: 100vh;
   background: #555B47;
   position: relative;
 }
@@ -1261,6 +1282,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
 }
 .tarifs .forfaits .parent .tarif .prix p {
   font-family: "Gilmer";
+  font-weight: 700;
   font-size: 96px;
   line-height: 112px;
   text-align: center;
@@ -1288,6 +1310,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
 .tarifs .forfaits .parent .tarif2 .prix p {
   font-family: "Gilmer";
   font-size: 96px;
+  font-weight: 700;
   line-height: 112px;
   text-align: center;
   color: #F8F4EC;
@@ -1313,6 +1336,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
 }
 .tarifs .forfaits .parent .tarif3 .prix p {
   font-family: "Gilmer";
+  font-weight: 700;
   font-size: 96px;
   line-height: 112px;
   text-align: center;
@@ -1350,6 +1374,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
 .tarifs .forfaits .parent .tarif4 .prix p {
   font-family: "Gilmer";
   font-size: 96px;
+  font-weight: 700;
   line-height: 112px;
   text-align: center;
   color: #F8F4EC;

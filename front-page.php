@@ -17,12 +17,12 @@ $slider = get_field('slider');
 <!-- Section content-flexible -->
 <div class="container-index">
     <section class="acceuil">
-        <?php include 'base64.php';?>
+        <?php include 'base64.php'; ?>
 
 
 
         <!-- Animation panorama -->
-        <div id="content-index" style="opacity: 1">
+        <div id="content-index">
             <h1>REFUGE DES LACS MERLET</h1>
             <h2>Altitude : 2417m</h2>
             <div class="ouverture">
