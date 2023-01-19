@@ -9,13 +9,13 @@ quantitesEl.forEach(function(el){
     const button_moins = el.querySelector('.moins');
     const button_plus = el.querySelector('.plus');
 
-    button_moins.addEventListener('click', function(){
+    button_moins.addEventListener('click', function(evt){
         evt.preventDefault();
         evt.stopPropagation();
         quantity -= 1;
         inputEl.value = quantity;
     })
-    button_plus.addEventListener('click', function(){
+    button_plus.addEventListener('click', function(evt){
         evt.preventDefault();
         evt.stopPropagation();
         quantity += 1;

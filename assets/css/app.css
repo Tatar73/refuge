@@ -1658,6 +1658,10 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   border: 3px solid #555B47;
   cursor: pointer;
 }
+.reservation .resa .resa-left .infos .wpcf7-response-output {
+  border: none;
+  color: #3A472B;
+}
 .reservation .resa .resa-left .message {
   margin-top: 50px;
   display: flex;
