@@ -369,12 +369,13 @@
                     font-size: 20px;
                     line-height: 135%;
                     border: 5px solid #555B47;
-                    &:checked + label{
+                    &:checked + span{
                         color: white;
                         background:#555B47 ;
                     }
                 }
-                label{
+                .wpcf7-list-item-label{
+                    display: block;
                     padding: 12px 50px;
                     border: 3px solid #555B47;
                     cursor: pointer;

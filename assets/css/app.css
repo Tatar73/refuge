@@ -1648,11 +1648,12 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   line-height: 135%;
   border: 5px solid #555B47;
 }
-.reservation .resa .resa-left .infos input:checked + label {
+.reservation .resa .resa-left .infos input:checked + span {
   color: white;
   background: #555B47;
 }
-.reservation .resa .resa-left .infos label {
+.reservation .resa .resa-left .infos .wpcf7-list-item-label {
+  display: block;
   padding: 12px 50px;
   border: 3px solid #555B47;
   cursor: pointer;
