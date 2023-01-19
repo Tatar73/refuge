@@ -81,6 +81,9 @@ html {
   overflow-x: hidden;
   margin-top: 0;
 }
+html .grecaptcha-badge {
+  display: none;
+}
 
 header {
   background-color: white;
@@ -695,7 +698,7 @@ footer .flex .left a {
   margin-top: 64px;
 }
 .animations .wrap .animations-left .button a {
-  display: block;
+  display: inline-block;
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 400;
@@ -718,7 +721,10 @@ footer .flex .left a {
 .container-acces .acces {
   min-height: 90vh;
 }
-.container-acces .acces h1 {
+.container-acces .acces .titles {
+  text-align: center;
+}
+.container-acces .acces .titles h1 {
   padding-top: 100px;
   font-family: "Gilmer";
   font-style: normal;
@@ -726,8 +732,9 @@ footer .flex .left a {
   font-size: 48px;
   color: #555B47;
   text-align: center;
+  margin-bottom: 12px;
 }
-.container-acces .acces legend {
+.container-acces .acces .titles span {
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 600;

@@ -18,10 +18,12 @@ $reglements = get_field('reglements');
 
 <div class="container-acces">
     <section class="acces">
-        <h1>
-            <?php the_field('title'); ?>
-        </h1>
-        <legend><?php the_field('localisation') ?></legend>
+        <div class="titles">
+            <h1>
+                <?php the_field('title'); ?>
+            </h1>
+            <span><?php the_field('localisation') ?></span>
+        </div>
         <div class="content">
             <div class="images">
                 <?php foreach ($acces['images'] as $image): ?>
@@ -42,6 +44,7 @@ $reglements = get_field('reglements');
     </section>
 
     <section class="itineraires">
+
         <h2>Itinéraires</h2>
         <h3>DÉPARTS</h3>
         <?php foreach ($itineraires as $itineraire): ?>

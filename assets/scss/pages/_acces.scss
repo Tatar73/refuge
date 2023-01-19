@@ -2,25 +2,30 @@
     background-color: #F8F4EC;
     .acces{
         min-height: 90vh;
-        h1{
-            padding-top: 100px;
-            font-family: 'Gilmer';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 48px;
-            color: #555B47;
+        .titles{
             text-align: center;
+            h1{
+                padding-top: 100px;
+                font-family: 'Gilmer';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 48px;
+                color: #555B47;
+                text-align: center;
+                margin-bottom: 12px;
+            }
+            span{
+                font-family: 'Gilmer';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                color: #555B47;
+                opacity: 0.5;
+                text-align: center;
+                padding-top: 8px;
+            }
         }
-        legend{
-            font-family: 'Gilmer';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 20px;
-            color: #555B47;
-            opacity: 0.5;
-            text-align: center;
-            padding-top: 8px;
-        }
+
         .content{
             margin-top: 80px;
             display: flex;
