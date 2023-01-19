@@ -1,6 +1,10 @@
 (function () {
 const quantitesEl = document.querySelectorAll(".quantite");
 
+window.participantNumber = 0;
+const maxNumber = 14;
+const minNumber = 0;
+
 
 quantitesEl.forEach(function(el){
     const inputEl = el.querySelector('input');
@@ -12,13 +16,19 @@ quantitesEl.forEach(function(el){
     button_moins.addEventListener('click', function(evt){
         evt.preventDefault();
         evt.stopPropagation();
-        quantity -= 1;
+        if (quantity !== minNumber) {
+            quantity -= 1;
+            window.participantNumber -= 1;
+        }
         inputEl.value = quantity;
     })
     button_plus.addEventListener('click', function(evt){
         evt.preventDefault();
         evt.stopPropagation();
-        quantity += 1;
+        if (window.participantNumber != maxNumber){
+            quantity += 1;
+            window.participantNumber += 1;
+        }
         inputEl.value = quantity;
     })
 

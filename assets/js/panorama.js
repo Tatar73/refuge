@@ -7,7 +7,7 @@
   let pano = document.getElementById("content-pano");
   let header = document.querySelector("header");
 
-  var markers = [...document.querySelectorAll(".marker")];
+  var markers = document.querySelectorAll(".marker");
 
 
 

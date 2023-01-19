@@ -306,7 +306,7 @@ footer .flex .left a {
 }
 .container-index .acceuil .content-index .titles {
   -webkit-backdrop-filter: blur(1.8px);
-  backdrop-filter: blur(1.8px);
+  backdrop-filter: blur(1.2px);
   padding: 32px;
   border-radius: 140px;
   transition: backdrop-filter 0.5s ease-in;
@@ -1110,6 +1110,9 @@ footer .flex .left a {
 
 .cuisine {
   background: #555B47;
+  background-image: url("../../assets/img/cuisine_background.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 0 256px;
   display: flex;
   flex-direction: column;

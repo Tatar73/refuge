@@ -25,7 +25,9 @@ $slider = get_field('slider');
         <div id="content-index" class="content-index">
             <div class="titles">
                 <h1>REFUGE DES LACS MERLET</h1>
-                <h2>Altitude : 2417m</h2>
+                <h2>
+                    <?php _e('Altitude', 'refuge'); ?> : 2417m
+                </h2>
             </div>
             <div class="ouverture">
                 <p id="periode">Gardé de mi-juin à mi-septembre</p>
