@@ -39,7 +39,9 @@ footer{
             }
         }
 
-        .left{  
+        .left{ 
+            display: flex;
+            flex-direction: column;
             a{
                 font-family: 'Gilmer';
                 font-style: normal;
