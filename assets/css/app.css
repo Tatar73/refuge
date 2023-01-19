@@ -405,6 +405,7 @@ footer .flex .left a {
   background: none;
 }
 .container-index .intro .intro-right button a {
+  display: block;
   width: 100%;
   font-family: "Gilmer";
   font-style: normal;
