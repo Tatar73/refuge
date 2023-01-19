@@ -74,8 +74,8 @@
 
         .ouverture #acces{
             position: absolute;
-            top: 90%;
-            left: 157px;
+            top: 89%;
+            left: 155px;
             transform: translate(-50%, -50%);
             text-align: left;
             font-family: 'Gilmer';
@@ -83,25 +83,36 @@
             font-weight: 400;
             font-size: 16px;
             text-align: center;
-    
             color: #FFFFFF;
         }
 
         .panorama{
             position: absolute;
             top: 86%;
-            right: 80px;
+            right: 0;
             transform: translate(-50%, -50%);
+
             button{
-                width: 50px;
-                height: 50px;
+                margin-left: -50px;
+                width: 150px;
+                padding: 12px 0;
                 border: none;
                 cursor: pointer;
                 text-decoration: none;
-                background: none;
-                margin-left: 10px;
+                background-color: white;
+                border-radius: 16px;
+                transition: all 200ms ease-in;
+                p{
+                    color: #3A3D35;
+                }
             }
 
+            button:hover{
+                background-color: #3A3D35 ;
+                p{
+                    color: white;
+                }
+            }
             p{
                 font-family: 'Gilmer';
                 font-style: normal;
@@ -259,10 +270,10 @@
                     text-align: center;
                     text-decoration: none;
                     transition: all 500ms;
-                    :hover{
-                        cursor: pointer;
-                        background-color: #1d1e1b;
-                    }
+                }
+                a:hover{
+                    cursor: pointer;
+                    background-color: #1d1e1b;
                 }
             }
 
@@ -436,7 +447,7 @@
                     left: 50%;
                     transform: translate(-50%, -50%);
                     width: 256px;
-                    height: 205px;
+                    height: 225px;
 
                     img{
                         position: absolute;
@@ -445,15 +456,32 @@
                         transform: translate(-50%, -50%);
                     }
                     .warnings{
-                        margin: 28px 0 0 0;
+                        margin: 24px 0 0 0;
                         p{
                             font-family: 'Gilmer';
-                            font-weight: 600;
+                            font-weight: 500;
                             font-size: 16px;
                             line-height: 150%;
                             text-align: center;
                             color: #555B47;
                         }
+                        .reglementation{
+                            display: flex;
+                            justify-content: center;
+                            a{
+                                margin-top: 4px;
+                                text-align: center;
+                                font-family: 'Gilmer';
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 150%;
+                                text-align: center;
+                                color: #555B47;
+                                opacity: 0.5;
+                                text-decoration: none;
+                            }
+                        }
+
 
                     }
 
@@ -581,11 +609,15 @@
                         text-decoration: none;
                         transition: all 500ms;
                     }
+                    
+
+                    a:hover{
+                        cursor: pointer;
+                        background-color: #1d1e1b;
+                    }
+                    
                 }
 
-                a:hover{
-                    background-color: #1d1e1b;
-                }
             }
         }
 

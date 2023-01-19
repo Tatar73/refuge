@@ -12,10 +12,11 @@ Template name: Tarifs
     <div class="titre">
         <h1>TARIFS</h1>
         <p>
-            <?php the_field('modes_paiements') ?>
+            <?php the_field('mode_de_paiments') ?>
         </p>
     </div>
     <div class="forfaits">
+        <p><?php the_field('titre_tarifs') ?></p>
         <div class="parent">
             <div class="tarif">
                 <div class="infos">

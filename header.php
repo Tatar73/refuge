@@ -23,12 +23,22 @@
             </a>
 
             <ul>
-                <li><a href="acces">Accès</a></li>
-                <li><a href="cuisine">Notre Cuisine</a></li>
-                <li><a href="animation">Nos animations</a></li>
+                <li><a href="acces" <?php if (is_page()) {
+                    echo 'class="active"';
+                } ?>>Accès</a></li>
+                <li><a href="cuisine" <?php if (is_page()) {
+                    echo 'class="active"';
+                } ?>>Notre Cuisine</a></li>
+                <li><a href="animation" <?php if (is_page()) {
+                    echo 'class="active"';
+                } ?>>Nos animations</a></li>
 
-                <li><a href="tarifs">Tarifs/Réservation</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="tarifs" <?php if (is_page()) {
+                    echo 'class="active"';
+                } ?>>Tarifs/Réservation</a></li>
+                <li><a href="contact" <?php if (is_page()) {
+                    echo 'class="active"';
+                } ?>>Contact</a></li>
             </ul>
         </nav>
     </header>

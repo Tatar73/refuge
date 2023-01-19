@@ -1,0 +1,50 @@
+.confidentialite{
+    background: #555B47;
+    padding: 100px;
+    h1{
+        font-family: 'Gilmer';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        color: #F8F4EC;
+        margin-bottom: 32px;
+    }
+    .text{
+        width: 50%;
+        p{
+            font-family: 'Gilmer';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFFFF;
+    
+        }
+        ul{
+            margin-bottom: 16px;
+            margin-left: 12px;
+            margin-top: 12px;
+            li{
+                list-style: inside;
+                color: white;
+                font-family: 'Gilmer';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                color: #FFFFFF;
+                padding: 4px 0;
+                strong{
+                    margin-top: 32px;
+                    font-family: 'Athelas';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 38px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+}

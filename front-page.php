@@ -36,14 +36,12 @@ $slider = get_field('slider');
         </div>
         <div class="panorama">
             <button id="pano_plus">
-                <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/panorama_button.svg"
-                    alt="bouton panorama">
+                <p>Panorama</p>
             </button>
             <button id="pano_moins" style="display: none">
-                <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/panorama_button_moins.svg"
-                    alt="bouton panorama">
+                <p>Panorama</p>
             </button>
-            <p>Panorama</p>
+
         </div>
         <div class="content-pano" id="content-pano" style="display: none;">
 
@@ -200,6 +198,9 @@ $slider = get_field('slider');
                             <br>
                             <p>Animaux interdits</p>
                             <p>Drone interdits</p>
+                            <div class="reglementation">
+                                <a href="acces">Voir réglementation</a>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -110,6 +110,9 @@ header.hidden {
 .home header.top a {
   color: white;
 }
+.home header.top a:hover {
+  color: #3A3D35;
+}
 .home header.top img {
   opacity: 0;
 }
@@ -137,6 +140,10 @@ header .nav li a {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
+  transition: color 200ms ease-in;
+}
+header .nav li a:hover {
+  color: black;
 }
 
 footer {
@@ -257,8 +264,8 @@ footer .flex .left a {
 }
 .container-index .acceuil .ouverture #acces {
   position: absolute;
-  top: 90%;
-  left: 157px;
+  top: 89%;
+  left: 155px;
   transform: translate(-50%, -50%);
   text-align: left;
   font-family: "Gilmer";
@@ -271,17 +278,28 @@ footer .flex .left a {
 .container-index .acceuil .panorama {
   position: absolute;
   top: 86%;
-  right: 80px;
+  right: 0;
   transform: translate(-50%, -50%);
 }
 .container-index .acceuil .panorama button {
-  width: 50px;
-  height: 50px;
+  margin-left: -50px;
+  width: 150px;
+  padding: 12px 0;
   border: none;
   cursor: pointer;
   text-decoration: none;
-  background: none;
-  margin-left: 10px;
+  background-color: white;
+  border-radius: 16px;
+  transition: all 200ms ease-in;
+}
+.container-index .acceuil .panorama button p {
+  color: #3A3D35;
+}
+.container-index .acceuil .panorama button:hover {
+  background-color: #3A3D35;
+}
+.container-index .acceuil .panorama button:hover p {
+  color: white;
 }
 .container-index .acceuil .panorama p {
   font-family: "Gilmer";
@@ -422,7 +440,7 @@ footer .flex .left a {
   text-decoration: none;
   transition: all 500ms;
 }
-.container-index .intro .intro-right button a :hover {
+.container-index .intro .intro-right button a:hover {
   cursor: pointer;
   background-color: #1d1e1b;
 }
@@ -576,7 +594,7 @@ footer .flex .left a {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 256px;
-  height: 205px;
+  height: 225px;
 }
 .services .wrap .flex .rappels img {
   position: absolute;
@@ -585,15 +603,31 @@ footer .flex .left a {
   transform: translate(-50%, -50%);
 }
 .services .wrap .flex .rappels .warnings {
-  margin: 28px 0 0 0;
+  margin: 24px 0 0 0;
 }
 .services .wrap .flex .rappels .warnings p {
   font-family: "Gilmer";
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   text-align: center;
   color: #555B47;
+}
+.services .wrap .flex .rappels .warnings .reglementation {
+  display: flex;
+  justify-content: center;
+}
+.services .wrap .flex .rappels .warnings .reglementation a {
+  margin-top: 4px;
+  text-align: center;
+  font-family: "Gilmer";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #555B47;
+  opacity: 0.5;
+  text-decoration: none;
 }
 
 .cuisine {
@@ -711,7 +745,8 @@ footer .flex .left a {
   text-decoration: none;
   transition: all 500ms;
 }
-.animations .wrap .animations-left a:hover {
+.animations .wrap .animations-left .button a:hover {
+  cursor: pointer;
   background-color: #1d1e1b;
 }
 
@@ -955,7 +990,7 @@ footer .flex .left a {
   text-align: center;
   font-family: "Gilmer";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
   color: #F8F4EC;
 }
@@ -972,7 +1007,7 @@ footer .flex .left a {
   margin: 50px;
   font-family: "Gilmer";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
@@ -1109,6 +1144,7 @@ footer .flex .left a {
 }
 
 .cuisine {
+  position: relative;
   background: #555B47;
   background-image: url("../../assets/img/cuisine_background.svg");
   background-position: center;
@@ -1117,6 +1153,12 @@ footer .flex .left a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.cuisine img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-40%, -45%);
 }
 .cuisine h1 {
   padding-top: 230px;
@@ -1276,6 +1318,25 @@ body div.wpforms-container-full .wpforms-form .wpforms-field input {
   border: 3px solid #555B47;
   background: none;
   max-width: 100%;
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #555B47;
+  padding: 8px;
+}
+body div.wpforms-container-full .wpforms-form .wpforms-field textarea {
+  border: 3px solid #555B47;
+  background: none;
+  max-width: 100%;
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #555B47;
+  padding: 8px;
 }
 body div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-label {
   font-family: "Gilmer";
@@ -1326,6 +1387,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   font-size: 48px;
   text-align: center;
   color: #3A472B;
+  margin-bottom: 24px;
 }
 .tarifs .titre p {
   font-family: "Gilmer";
@@ -1333,6 +1395,9 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   line-height: 135%;
   text-align: center;
   color: #555B47;
+}
+.tarifs .titre p strong {
+  font-weight: 700;
 }
 .tarifs .forfaits {
   display: flex;
@@ -1342,8 +1407,17 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   background: #555B47;
   position: relative;
 }
+.tarifs .forfaits > p {
+  margin-top: 35px;
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  color: #FFFFFF;
+}
 .tarifs .forfaits .parent {
-  padding: 100px 0;
+  padding: 60px 0 100px 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
@@ -1503,6 +1577,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   font-size: 16px;
   line-height: 19px;
   color: #555B47;
+  padding: 0 8px;
 }
 .reservation h2 {
   font-family: "Gilmer";
@@ -1545,8 +1620,14 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
 .reservation .resa .resa-left .form-flex .form-left {
   width: 50%;
 }
+.reservation .resa .resa-left .form-flex .form-left input {
+  margin-bottom: 16px;
+}
 .reservation .resa .resa-left .form-flex .form-right {
   width: 50%;
+}
+.reservation .resa .resa-left .form-flex .form-right input {
+  margin-bottom: 16px;
 }
 .reservation .resa .resa-left .form-flex input {
   width: 100%;
@@ -1777,9 +1858,9 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   min-height: 100%;
   font-family: "Gilmer";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
-  color: #3A2E2E;
+  color: #555B47;
 }
 
 @media screen and (max-width: 1250px) {
@@ -1839,87 +1920,19 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   padding: 100px 64px;
   background-color: #555B47;
 }
-.mentions .container {
-  width: 50%;
-}
-.mentions .container h1 {
+.mentions h1 {
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
   color: #F8F4EC;
-  margin-bottom: 50px;
 }
-.mentions .container h3 {
+.mentions h2 {
   font-family: "Athelas";
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
-  color: white;
-}
-.mentions .container > p {
-  padding: 50px 0;
-  font-family: "Gilmer";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
   color: #FFFFFF;
-}
-.mentions .container a {
-  text-decoration: none;
-  color: white;
-  padding: 50px 0;
-  font-family: "Gilmer";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  color: #FFFFFF;
-  margin: 25px 0 50px 0;
-}
-.mentions .container .credits {
-  margin: 25px 0;
-}
-.mentions .container .credits .Nom {
-  padding-top: 10px;
-  font-family: "Gilmer";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  color: #FFFFFF;
-  line-height: 24px;
-}
-.mentions .container .credits .Mail {
-  font-family: "Gilmer";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  color: #FFFFFF;
-  line-height: 24px;
-  padding-bottom: 10px;
-}
-.mentions .container .credits .logos {
-  display: flex;
-  flex-direction: row;
-  gap: 32px;
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
-.mentions .container .icones {
-  margin: 25px 0;
-}
-.mentions .container .icones p {
-  font-family: "Gilmer";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: #FFFFFF;
-  padding: 10px 0;
-}
-.mentions .container #conception {
-  margin-top: 50px;
 }
 
 .plan {
@@ -1979,6 +1992,55 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+  color: #FFFFFF;
+}
+
+.confidentialite {
+  background: #555B47;
+  padding: 100px;
+}
+.confidentialite h1 {
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #F8F4EC;
+  margin-bottom: 32px;
+}
+.confidentialite .text {
+  width: 50%;
+}
+.confidentialite .text p {
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.confidentialite .text ul {
+  margin-bottom: 16px;
+  margin-left: 12px;
+  margin-top: 12px;
+}
+.confidentialite .text ul li {
+  list-style: inside;
+  color: white;
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 4px 0;
+}
+.confidentialite .text ul li strong {
+  margin-top: 32px;
+  font-family: "Athelas";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
   color: #FFFFFF;
 }
 

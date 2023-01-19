@@ -55,6 +55,9 @@ header{
             a{
                 color: white;
             }
+            a:hover{
+                color: #3A3D35;
+            }
             img{
                 opacity: 0;
             }
@@ -78,11 +81,18 @@ header{
             a{
                 text-decoration: none;
                 color: #555B47;
-
                 font-family: 'Gilmer';
                 font-style: normal;
                 font-weight: 400;
                 font-size: 20px;
+                transition: color 200ms ease-in;
+            }
+            
+            // .active{
+            //     border-bottom: 2px solid #3A3D35;
+            // }
+            a:hover{
+                color: black;
             }
         }
     }

@@ -10,18 +10,24 @@ get_header();
 $image = get_field("image");
 $repas = get_field('programme_repas');
 // debug($repas);
+$file = get_field('menu');
+
 ?>
 
 <section class="cuisine">
+    <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/illustration_cuisine.svg"
+        alt="illustration cuisine">
     <h1>
-        <?php the_field('titre_page') ?>
+        <?php the_field('titre_page'); ?>
     </h1>
-    <p><?php the_field('presentation') ?></p>
+    <p><?php the_field('presentation'); ?></p>
     <div class="ligne"></div>
 </section>
 
 <section class="menu">
-    <a href="<?php echo (get_template_directory_uri()); ?>/assets/img/menu.pdf" target="_blank">Télécharger le menu</a>
+    <?php if ($file): ?>
+        <a href="<?php echo $file['url']; ?>" target="_blank">Télécharger le menu</a>
+    <?php endif; ?>
     <div class="container">
 
         <div class="parent">

@@ -12,6 +12,7 @@
             font-size: 48px;
             text-align: center;
             color: #3A472B;
+            margin-bottom: 24px;
         }
         p{
             font-family: 'Gilmer';
@@ -19,7 +20,9 @@
             line-height: 135%;
             text-align: center;
             color: #555B47;
-
+            strong{
+                font-weight: 700;
+            }
         }
     }
     .forfaits{
@@ -29,8 +32,18 @@
         padding: 0 115px;
         background: #555B47;
         position: relative;
+        >p{
+            margin-top: 35px;
+            font-family: 'Gilmer';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            text-align: center;
+            color: #FFFFFF;
+
+        }
         .parent {
-            padding: 100px 0;
+            padding: 60px 0 100px 0;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: 1fr;
@@ -205,6 +218,7 @@
         font-size: 16px;
         line-height: 19px;
         color: #555B47;
+        padding: 0 8px;
     }
     h2{
         font-family: 'Gilmer';
@@ -243,9 +257,15 @@
                 width: 100%;
                 .form-left{
                     width: 50%;
+                    input{
+                        margin-bottom: 16px;
+                    }
                 }
                 .form-right{
                     width: 50%;
+                    input{
+                        margin-bottom: 16px;
+                    }
                 }
                 input{
                     width: 100%;
@@ -483,9 +503,9 @@
             min-height: 100%;
             font-family: 'Gilmer';
             font-style: normal;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 16px;
-            color: #3A2E2E;
+            color: #555B47;
         }
     }
 

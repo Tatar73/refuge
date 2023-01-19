@@ -3,7 +3,7 @@
         <div class="left">
             <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/logo_courchevel.svg"
                 alt="logo de Courchevel">
-            <a href="">Politique de confidentialité</a>
+            <a href="politique-de-confidentialite">Politique de confidentialité</a>
             <a href="plan-du-site">Plan du site</a>
             <a href="mentions">Mentions légales</a>
         </div>
