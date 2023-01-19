@@ -17,11 +17,7 @@ $slider = get_field('slider');
             NOS SOIRÉES MÉMORABLES
         </h1>
         <p>
-            Tout l'été nous proposons des soirées mémorables culturelles, artistiques et patrimoniales. Ces soirées sont
-            gratuites pour les randonneurs et ont lieu chaque semaine, offrant ainsi l'occasion de se divertir et de
-            passer
-            de
-            bon moment de convivialité.
+            <?php the_field('presentation'); ?>
         </p>
         <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/lune.svg" alt="illustration">
     </div>

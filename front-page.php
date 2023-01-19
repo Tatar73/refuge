@@ -71,7 +71,7 @@ $slider = get_field('slider');
                     <?php the_field('un_lieu_unique') ?>
                 </h3>
                 <p>
-                    <?php the_field('text') ?>
+                    <?php the_field('text_intro') ?>
                 </p>
                 <button>
                     <a href="acces">Comment venir</a>
@@ -205,11 +205,9 @@ $slider = get_field('slider');
         <section class="cuisine">
             <h3>Notre Cuisine</h3>
             <div class="texte">
-                <p>Nous proposons des plats 100% faits maison, à base de produits locaux et en très grande majorité
-                    biologiques.</p>
-                <br>
-                <p>Pour partager un déjeuner ou pour la gourmandise d’une part de tarte, venez découvrir notre cuisine
-                    simple, bonne et saine !</p>
+                <p>
+                    <?php the_field('cuisine_text') ?>
+                </p>
 
                 <a href="cuisine">En savoir plus</a>
             </div>
@@ -221,10 +219,8 @@ $slider = get_field('slider');
 
                 <div class="animations-left">
                     <h3>Nos animations</h3>
-                    <p>Une fois par semaine, nous proposons une « soirée mémorable » au refuge : spectacles, concerts,
-                        conférences-débat, … (insérer le lien vers programmation ?).</p>
-                    <br>
-                    <p>Venez échanger, vous émerveiller, apprendre dans un cadre intimiste et exceptionnel !
+                    <p>
+                        <?php the_field('texte') ?>
                     </p>
                     <div class="button">
                         <a href="animation">En savoir plus</a>

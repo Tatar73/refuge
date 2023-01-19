@@ -1,0 +1,49 @@
+.plan{
+    background-color: #F8F4EC;
+    padding: 100px 64px;
+    h1{
+        font-family: 'Gilmer Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        color: #555B47;
+    }
+    .parent {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 32px;
+        grid-row-gap: 0px;
+        height: 400px;
+        width: 192px;
+        .item1,
+        .item2,
+        .item3,
+        .item4,
+        .item5,
+        .item6{
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            background: #555B47;
+            padding: 10px;
+            width: 192px;
+            height: 400px;
+            h3{
+                font-family: 'Gilmer Bold';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                color: #FFFFFF;
+            }
+            p{
+            padding: 10px 8px;
+            font-family: 'Gilmer';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFFFF;
+            }
+        }
+    }
+}

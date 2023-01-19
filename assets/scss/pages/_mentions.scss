@@ -1,0 +1,72 @@
+.mentions{
+    padding: 100px 64px;
+    background-color: #555B47;
+    .container{
+        width: 50%;
+        h1{
+            font-family: 'Gilmer Bold';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            color: #F8F4EC;
+            margin-bottom: 50px;
+        }
+        h3{
+            font-family: 'Athelas';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            color: white;
+        }
+        >p{
+            padding: 50px 0;
+            font-family: 'Gilmer';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFFFF;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            padding: 50px 0;
+            font-family: 'Gilmer';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFFFF;
+            margin: 25px 0 50px 0;
+        }
+        .credits{
+            margin: 25px 0;
+            .Nom{
+                padding-top: 10px;
+                font-family: 'Gilmer Bold';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                color: #FFFFFF;
+                line-height: 24px;
+            }
+            .Mail{
+                font-family: 'Gilmer';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 20px;
+                color: #FFFFFF;
+                line-height: 24px;
+                padding-bottom: 10px;
+            }
+            .logos{
+                display: flex;
+                flex-direction: row;
+                gap: 32px;
+                margin-top: 20px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+   
+}

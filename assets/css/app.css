@@ -168,7 +168,7 @@ footer .flex .middle p {
   opacity: 0.5;
   margin-top: 170px;
 }
-footer .flex .left p {
+footer .flex .left a {
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 400;
@@ -176,6 +176,7 @@ footer .flex .left p {
   line-height: 20px;
   color: #555B47;
   margin-top: 16px;
+  text-decoration: none;
 }
 
 .container-index .background {
@@ -780,7 +781,7 @@ footer .flex .left p {
 }
 .container-acces .itineraires h3 {
   margin-top: 50px;
-  font-family: "Gilmer";
+  font-family: "Gilmer Bold";
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -1174,6 +1175,9 @@ footer .flex .left p {
 }
 .menu .container .parent .content {
   flex-direction: column;
+  background: #F8F4EC;
+  padding: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .menu .container .parent .content h3 {
   font-family: "Athelas";
@@ -1181,7 +1185,7 @@ footer .flex .left p {
   font-weight: 700;
   font-size: 48px;
   line-height: 135%;
-  color: #F8F4EC;
+  color: #555B47;
 }
 .menu .container .parent .content p {
   font-family: "Gilmer Regular";
@@ -1189,7 +1193,7 @@ footer .flex .left p {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #F8F4EC;
+  color: #555B47;
 }
 
 .contact {
@@ -1803,6 +1807,138 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   color: #F8F4EC;
   text-decoration: none;
   text-align: center;
+}
+
+.mentions {
+  padding: 100px 64px;
+  background-color: #555B47;
+}
+.mentions .container {
+  width: 50%;
+}
+.mentions .container h1 {
+  font-family: "Gilmer Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #F8F4EC;
+  margin-bottom: 50px;
+}
+.mentions .container h3 {
+  font-family: "Athelas";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: white;
+}
+.mentions .container > p {
+  padding: 50px 0;
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.mentions .container a {
+  text-decoration: none;
+  color: white;
+  padding: 50px 0;
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin: 25px 0 50px 0;
+}
+.mentions .container .credits {
+  margin: 25px 0;
+}
+.mentions .container .credits .Nom {
+  padding-top: 10px;
+  font-family: "Gilmer Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+  line-height: 24px;
+}
+.mentions .container .credits .Mail {
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: #FFFFFF;
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+.mentions .container .credits .logos {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.plan {
+  background-color: #F8F4EC;
+  padding: 100px 64px;
+}
+.plan h1 {
+  font-family: "Gilmer Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #555B47;
+}
+.plan .parent {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 32px;
+  grid-row-gap: 0px;
+  height: 400px;
+  width: 192px;
+}
+.plan .parent .item1,
+.plan .parent .item2,
+.plan .parent .item3,
+.plan .parent .item4,
+.plan .parent .item5,
+.plan .parent .item6 {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #555B47;
+  padding: 10px;
+  width: 192px;
+  height: 400px;
+}
+.plan .parent .item1 h3,
+.plan .parent .item2 h3,
+.plan .parent .item3 h3,
+.plan .parent .item4 h3,
+.plan .parent .item5 h3,
+.plan .parent .item6 h3 {
+  font-family: "Gilmer Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #FFFFFF;
+}
+.plan .parent .item1 p,
+.plan .parent .item2 p,
+.plan .parent .item3 p,
+.plan .parent .item4 p,
+.plan .parent .item5 p,
+.plan .parent .item6 p {
+  padding: 10px 8px;
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
 }
 
 /* Flickity horizontal scroll */

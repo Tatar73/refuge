@@ -68,9 +68,10 @@ Template name: Tarifs
     <div class="left">
     </div>
     <div class="right">
-        <h3>Seul avec les étoiles</h3>
-        <p>C’est à la nuit tombée que la magie opère. Les animaux dorment, plus aucun bruit et aucune lumière à
-            l’horizon.</p>
+        <h3><?php the_field('titre_section_nuit') ?></h3>
+        <p>
+            <?php the_field('texte_section_nuit') ?>
+        </p>
     </div>
 </section>
 <?php

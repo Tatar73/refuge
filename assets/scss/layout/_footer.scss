@@ -40,7 +40,7 @@ footer{
         }
 
         .left{  
-            p{
+            a{
                 font-family: 'Gilmer';
                 font-style: normal;
                 font-weight: 400;
@@ -48,6 +48,7 @@ footer{
                 line-height: 20px;
                 color: #555B47;
                 margin-top: 16px;
+                text-decoration: none;
             }
         }
     }

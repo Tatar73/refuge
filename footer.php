@@ -3,9 +3,9 @@
         <div class="left">
             <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/logo_courchevel.svg"
                 alt="logo de Courchevel">
-            <p>Politique de confidentialité</p>
-            <p>Plan du site</p>
-            <p>Mentions légales</p>
+            <a href="">Politique de confidentialité</a>
+            <a href="plan-du-site">Plan du site</a>
+            <a href="mentions">Mentions légales</a>
         </div>
         <div class="middle">
             <p>©Copyright 2023</p>
