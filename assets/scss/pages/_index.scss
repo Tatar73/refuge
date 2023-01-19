@@ -78,7 +78,7 @@
             left: 157px;
             transform: translate(-50%, -50%);
             text-align: left;
-            font-family: 'Gilmer Regular';
+            font-family: 'Gilmer';
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -123,19 +123,17 @@
                 opacity: 0;
                 visibility: hidden;
                 transition: opacity 0.5s ease-in, 0s visibility 0.5s;
-                .titles{
-                    backdrop-filter: blur(1.8px) opacity(0);
-                }
             }
             .titles{
-                backdrop-filter: blur(1.8px) opacity(1);
+                -webkit-backdrop-filter: blur(1.8px);
+                backdrop-filter: blur(1.8px);
                 padding: 32px;
                 border-radius: 140px;
                 transition: backdrop-filter 0.5s ease-in;
                 h1{ 
                     color: white;
                     text-align: center;
-                    font-family: 'Gilmer Bold';
+                    font-family: 'Gilmer';
                     font-style: normal;
                     font-weight: 700;
                     font-size: 64px;
@@ -349,14 +347,14 @@
                         justify-content: center;
                         h4{
                             text-align: center;
-                            font-family: 'Gilmer Bold';
+                            font-family: 'Gilmer';
                             font-weight: 700;
                             font-size: 32px;
                             color: #555B47;
                         }                                
                         >legend{
                             padding: 8px 0;
-                            font-family: 'Gilmer Bold';
+                            font-family: 'Gilmer';
                             font-style: normal;
                             font-weight: 700;
                             font-size: 16px;
@@ -376,25 +374,25 @@
                                 >p{
                                     padding: 12px 0;
                                     text-align: center;
-                                    font-family: 'Gilmer Medium';
+                                    font-family: 'Gilmer';
                                     font-style: normal;
-                                    font-weight: 600;
+                                    font-weight: 500;
                                     line-height: 24px;
                                     font-size: 20px;
                                     color: #555B47;
                                 }
                                 .legends{
                                     p{
-                                        font-family: 'Gilmer Medium';
+                                        font-family: 'Gilmer';
                                         font-style: normal;
-                                        font-weight: 600;
+                                        font-weight: 500;
                                         font-size: 20px;
                                         color: #555B47;
                                     }
                                     legend{
-                                        font-family: 'Gilmer Medium';
+                                        font-family: 'Gilmer';
                                         font-style: normal;
-                                        font-weight: 600;
+                                        font-weight: 500;
                                         font-size: 12px;
                                         color: #555B47;
                                         opacity: 0.8;
@@ -569,6 +567,7 @@
                 .button{
                     margin-top: 64px;
                     a{
+                        display: block;
                         font-family: 'Gilmer';
                         font-style: normal;
                         font-weight: 400;

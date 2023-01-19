@@ -54,6 +54,10 @@ table {
   border-spacing: 0;
 }
 
+button {
+  padding: 0;
+}
+
 @font-face {
   font-family: "Athelas";
   src: url(../font/Athelas-Regular.woff);
@@ -61,14 +65,17 @@ table {
 @font-face {
   font-family: "Gilmer";
   src: url(../font/GilmerRegular.woff);
+  font-weight: 400;
 }
 @font-face {
-  font-family: "Gilmer Bold";
+  font-family: "Gilmer";
   src: url(../font/GilmerBold.woff);
+  font-weight: 700;
 }
 @font-face {
-  font-family: "Gilmer Medium";
+  font-family: "Gilmer";
   src: url(../font/GilmerMedium.woff);
+  font-weight: 500;
 }
 html {
   overflow-x: hidden;
@@ -251,7 +258,7 @@ footer .flex .left a {
   left: 157px;
   transform: translate(-50%, -50%);
   text-align: left;
-  font-family: "Gilmer Regular";
+  font-family: "Gilmer";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -294,11 +301,9 @@ footer .flex .left a {
   visibility: hidden;
   transition: opacity 0.5s ease-in, 0s visibility 0.5s;
 }
-.container-index .acceuil .content-index.hidden .titles {
-  backdrop-filter: blur(1.8px) opacity(0);
-}
 .container-index .acceuil .content-index .titles {
-  backdrop-filter: blur(1.8px) opacity(1);
+  -webkit-backdrop-filter: blur(1.8px);
+  backdrop-filter: blur(1.8px);
   padding: 32px;
   border-radius: 140px;
   transition: backdrop-filter 0.5s ease-in;
@@ -306,7 +311,7 @@ footer .flex .left a {
 .container-index .acceuil .content-index .titles h1 {
   color: white;
   text-align: center;
-  font-family: "Gilmer Bold";
+  font-family: "Gilmer";
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
@@ -491,14 +496,14 @@ footer .flex .left a {
 }
 .services .wrap .flex .services-left .content-right h4 {
   text-align: center;
-  font-family: "Gilmer Bold";
+  font-family: "Gilmer";
   font-weight: 700;
   font-size: 32px;
   color: #555B47;
 }
 .services .wrap .flex .services-left .content-right > legend {
   padding: 8px 0;
-  font-family: "Gilmer Bold";
+  font-family: "Gilmer";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -519,24 +524,24 @@ footer .flex .left a {
 .services .wrap .flex .services-left .content-right .conditions .condition > p {
   padding: 12px 0;
   text-align: center;
-  font-family: "Gilmer Medium";
+  font-family: "Gilmer";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 24px;
   font-size: 20px;
   color: #555B47;
 }
 .services .wrap .flex .services-left .content-right .conditions .condition .legends p {
-  font-family: "Gilmer Medium";
+  font-family: "Gilmer";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
   color: #555B47;
 }
 .services .wrap .flex .services-left .content-right .conditions .condition .legends legend {
-  font-family: "Gilmer Medium";
+  font-family: "Gilmer";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 12px;
   color: #555B47;
   opacity: 0.8;
@@ -689,6 +694,7 @@ footer .flex .left a {
   margin-top: 64px;
 }
 .animations .wrap .animations-left .button a {
+  display: block;
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 400;
@@ -713,7 +719,7 @@ footer .flex .left a {
 }
 .container-acces .acces h1 {
   padding-top: 100px;
-  font-family: "Gilmer Bold";
+  font-family: "Gilmer";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -767,9 +773,9 @@ footer .flex .left a {
   width: 50%;
 }
 .container-acces .acces .texte p {
-  font-family: "Gilmer Medium";
+  font-family: "Gilmer";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 200%;
   color: #555B47;
@@ -787,7 +793,7 @@ footer .flex .left a {
 }
 .container-acces .itineraires h3 {
   margin-top: 50px;
-  font-family: "Gilmer Bold";
+  font-family: "Gilmer";
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -818,9 +824,9 @@ footer .flex .left a {
 }
 .container-acces .itineraires .itineraire .left p {
   margin-top: 8px;
-  font-family: "Gilmer Medium";
+  font-family: "Gilmer";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
   color: #F8F4EC;
 }
@@ -834,7 +840,7 @@ footer .flex .left a {
 .container-acces .itineraires .itineraire .middle p {
   text-align: left;
   padding: 8px 96px;
-  font-family: "Gilmer Bold";
+  font-family: "Gilmer";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -890,9 +896,9 @@ footer .flex .left a {
 }
 .container-acces .itineraires .itineraire .right p {
   text-align: left;
-  font-family: "Gilmer Medium";
+  font-family: "Gilmer";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   color: #555B47;
 }
@@ -1006,7 +1012,7 @@ footer .flex .left a {
   position: relative;
 }
 .animation .intro h1 {
-  font-family: "Gilmer Bold";
+  font-family: "Gilmer";
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
@@ -1194,7 +1200,7 @@ footer .flex .left a {
   color: #555B47;
 }
 .menu .container .parent .content p {
-  font-family: "Gilmer Regular";
+  font-family: "Gilmer";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1217,7 +1223,7 @@ footer .flex .left a {
 }
 .contact h3 {
   margin-top: 8px;
-  font-family: "Gilmer Regular";
+  font-family: "Gilmer";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -1786,7 +1792,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   background-repeat: no-repeat;
 }
 .erreur h1 {
-  font-family: "Gilmer Bold";
+  font-family: "Gilmer";
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
@@ -1826,7 +1832,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   width: 50%;
 }
 .mentions .container h1 {
-  font-family: "Gilmer Bold";
+  font-family: "Gilmer";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -1866,7 +1872,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
 }
 .mentions .container .credits .Nom {
   padding-top: 10px;
-  font-family: "Gilmer Bold";
+  font-family: "Gilmer";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1910,7 +1916,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   padding: 100px 64px;
 }
 .plan h1 {
-  font-family: "Gilmer Bold";
+  font-family: "Gilmer";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -1944,7 +1950,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
 .plan .parent .item4 h3,
 .plan .parent .item5 h3,
 .plan .parent .item6 h3 {
-  font-family: "Gilmer Bold";
+  font-family: "Gilmer";
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
