@@ -62,13 +62,24 @@ Template name: Tarifs
     </div>
 </section>
 <section class="reservation">
-    <?php echo do_shortcode('[contact-form-7 id="182" title="Formulaire de contact 1"]'); ?>
+    <h2>RÉSERVATION</h2>
+    <div class="resa">
+        <?php echo do_shortcode('[contact-form-7 id="182" title="Formulaire de contact 1"]'); ?>
+        <div class="resa-right">
+            <h3><?php the_field('titre'); ?></h3>
+            <p>
+                <?php the_field('informations'); ?>
+            </p>
+        </div>
+    </div>
 </section>
 <section class="nuit">
     <div class="left">
     </div>
     <div class="right">
-        <h3><?php the_field('titre_section_nuit') ?></h3>
+        <h3>
+            <?php the_field('titre_section_nuit') ?>
+        </h3>
         <p>
             <?php the_field('texte_section_nuit') ?>
         </p>
