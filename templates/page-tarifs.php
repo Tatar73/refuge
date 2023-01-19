@@ -75,7 +75,6 @@ Template name: Tarifs
 </section>
 <section class="nuit">
     <div class="left">
-        <?php echo do_shortcode('[wpforms id="147" title="false"]'); ?>
     </div>
     <div class="right">
         <h3>

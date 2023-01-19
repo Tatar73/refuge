@@ -219,9 +219,8 @@
     .resa{
         display: flex;
         flex-direction: row;
-        gap: 128px;
+        gap: 64px;
         .resa-left{
-            width: 70%;
             display: flex;
             flex-wrap: wrap;
             clear: both;
@@ -428,7 +427,6 @@
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            width: 30%;
             p{
                 margin-left: auto;
                 margin-right: auto;

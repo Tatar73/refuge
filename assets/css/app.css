@@ -1496,10 +1496,9 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
 .reservation .resa {
   display: flex;
   flex-direction: row;
-  gap: 128px;
+  gap: 64px;
 }
 .reservation .resa .resa-left {
-  width: 70%;
   display: flex;
   flex-wrap: wrap;
   clear: both;
@@ -1702,7 +1701,6 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 30%;
 }
 .reservation .resa .resa-right p {
   margin-left: auto;
