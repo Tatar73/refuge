@@ -80,8 +80,7 @@ Template name: Tarifs
 <section class="reservation">
     <h2> <?php _e('RÉSERVATION', 'refuge'); ?></h2>
     <div class="resa">
-        <?php
-        // echo do_shortcode(get_field('form')); ?>
+        <?php echo do_shortcode(get_field('form')); ?>
         <!-- '[contact-form-7 id="182" title="Formulaire de contact 1"]' -->
         <div class="resa-right">
             <h3>
