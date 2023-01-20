@@ -137,9 +137,6 @@ header .nav .langs {
   line-height: 38px;
   color: #FFFFFF;
 }
-header .nav .langs ul {
-  display: flex;
-}
 header .nav .langs a {
   color: #555B47;
   text-decoration: none;
