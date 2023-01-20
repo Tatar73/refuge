@@ -86,7 +86,7 @@ html .grecaptcha-badge {
 }
 
 header {
-  background-color: red;
+  background-color: white;
   width: 100%;
   position: sticky;
   z-index: 5;
@@ -529,7 +529,7 @@ footer .flex .left a {
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 700;
-  font-size: 300px;
+  font-size: 64px;
 }
 .container-index .acceuil .content-index .titles h2 {
   text-align: center;
