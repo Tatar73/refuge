@@ -56,7 +56,9 @@ Template name: Tarifs
                     <p>14€</p>
                 </div>
                 <div class="categorie">
-                    <p><?php _e('Membre CAF', 'refuge'); ?></p>
+                    <p>
+                        <?php _e('Membre CAF', 'refuge'); ?>
+                    </p>
                     <legend>
                         <?php _e('FFME*/FFS*Scolaire étudiants/ enfants(12-15ans)', 'refuge'); ?>
                     </legend>
@@ -78,7 +80,9 @@ Template name: Tarifs
 <section class="reservation">
     <h2> <?php _e('RÉSERVATION', 'refuge'); ?></h2>
     <div class="resa">
-        <?php echo do_shortcode('[contact-form-7 id="182" title="Formulaire de contact 1"]'); ?>
+        <?php
+        // echo do_shortcode(get_field('form')); ?>
+        <!-- '[contact-form-7 id="182" title="Formulaire de contact 1"]' -->
         <div class="resa-right">
             <h3>
                 <?php the_field('titre'); ?>

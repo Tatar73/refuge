@@ -136,8 +136,8 @@
                 transition: opacity 0.5s ease-in, 0s visibility 0.5s;
             }
             .titles{
-                -webkit-backdrop-filter: blur(1.8px);
-                backdrop-filter: blur(1.2px);
+                -webkit-backdrop-filter: blur(0.8px);
+                backdrop-filter: blur(0.8px);
                 padding: 32px;
                 border-radius: 140px;
                 transition: backdrop-filter 0.5s ease-in;
