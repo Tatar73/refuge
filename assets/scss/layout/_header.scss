@@ -52,6 +52,12 @@ header{
         position: fixed;
         &.top{
             background-color: transparent;
+            .nav{
+              .langs{
+                display: block;
+                position: absolute;
+              }
+            }
             .nav a{
                 color: white;
             }
@@ -71,13 +77,15 @@ header{
         padding: 0 64px;    
         opacity: 1;
         .langs{
+          display: none;
           font-family: 'Gilmer';
           font-style: normal;
           font-weight: 500;
-          font-size: 32px;
+          font-size: 20px;
           line-height: 38px;
           color: #FFFFFF;
           a{
+            color: #555B47;
             text-decoration: none;
           }
         }
@@ -278,7 +286,7 @@ header{
 
     .logo{
         position: absolute;
-        right: 129px;
+        right: 0;
         top: 8px;
         font-size: 1.2rem;
         color: #0e2431;

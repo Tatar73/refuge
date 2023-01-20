@@ -14,14 +14,14 @@ $slider = get_field('slider');
 <section class="animation">
     <div class="intro">
         <h1>
-            NOS SOIRÉES MÉMORABLES
+            <?php the_field('title1'); ?>
         </h1>
         <p>
             <?php the_field('presentation'); ?>
         </p>
         <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/lune.svg" alt="illustration">
     </div>
-    <h2>PROGRAMME</h2>
+    <h2><?php the_field('titre2'); ?></h2>
 </section>
 <section class="programme">
     <div class="ligne"></div>

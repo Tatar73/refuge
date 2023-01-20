@@ -45,8 +45,8 @@ $reglements = get_field('reglements');
 
     <section class="itineraires">
 
-        <h2>Itinéraires</h2>
-        <h3>DÉPARTS</h3>
+        <h2><?php _e('Itinéraires', 'refuge'); ?></h2>
+        <h3><?php _e('DÉPARTS', 'refuge'); ?></h3>
         <?php foreach ($itineraires as $itineraire): ?>
             <div class="itineraire">
 
@@ -74,7 +74,7 @@ $reglements = get_field('reglements');
     </section>
 
     <section class="reglementation">
-        <h2>Réglementation du parc national de la Vanoise</h2>
+        <h2><?php _e('Réglementation du parc national de la Vanoise', 'refuge'); ?></h2>
 
         <div class="parent">
         
@@ -90,12 +90,12 @@ $reglements = get_field('reglements');
         </div>
 
         <p>
-            <?php the_field('reglement_infos'); ?><a href="http://www.vanoise-parcnational.fr/fr" target="_blank">Site Web</a>
+            <?php the_field('reglement_infos'); ?><a href="http://www.vanoise-parcnational.fr/fr" target="_blank"><?php _e('Site Web', 'refuge'); ?></a>
         </p>
     </section>
 
     <section class="carte">
-        <h2>Carte</h2>
+        <h2><?php _e('Carte', 'refuge'); ?></h2>
         <div id="map">
         </div>
         <a href="<?php echo (get_template_directory_uri()); ?>/assets/img/carte_refuge.pdf" target="_blank">
