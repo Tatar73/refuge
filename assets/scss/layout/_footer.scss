@@ -54,5 +54,32 @@ footer{
             }
         }
     }
+    @media screen and (max-width: 768px) {
+        .flex{
+            flex-direction: column-reverse;
+            gap: 32px;
+            margin: 0 128px ;
+            .left img{
+                width: 50%;
+            }
+            .middle{
+                display: none;
+            }
+            .right{
+                h4{
+                    padding: 0;
+                }
+            }
+            
+        }
+        .container-index .animations{
+            display: block;
+        }
+    
+        header .nav{
+            display: none;
+        }
+
+      }
 
 }

@@ -21,7 +21,6 @@
                 <img id="logo_refuge" src="<?php echo (get_template_directory_uri()); ?>/assets/img/logo_refuge.svg"
                     alt="">
             </a>
-            
             <ul>
                 <li><a href="acces" <?php if (is_page()) {
                     echo 'class="active"';
@@ -40,6 +39,42 @@
                     echo 'class="active"';
                 } ?>>Contact</a></li>
             </ul>
+        </nav>
+        <nav class="nav-mobile">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <div class="logo">
+                    <a href="<?php echo get_home_url(); ?>">
+                        <img id="logo_refuge" src="<?php echo (get_template_directory_uri()); ?>/assets/img/logo_refuge.svg"
+                            alt="">
+                    </a>
+                </div>
+                <div class="menu-items">
+                    <ul>
+                        <li><a href="acces" <?php if (is_page()) {
+                            echo 'class="active"';
+                        } ?>>Accès</a></li>
+                        <li><a href="cuisine" <?php if (is_page()) {
+                            echo 'class="active"';
+                        } ?>>Notre Cuisine</a></li>
+                        <li><a href="animation" <?php if (is_page()) {
+                            echo 'class="active"';
+                        } ?>>Nos animations</a></li>
+
+                        <li><a href="tarifs" <?php if (is_page()) {
+                            echo 'class="active"';
+                        } ?>>Tarifs/Réservation</a></li>
+                        <li><a href="contact" <?php if (is_page()) {
+                            echo 'class="active"';
+                        } ?>>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
