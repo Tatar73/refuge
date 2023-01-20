@@ -16,8 +16,12 @@ function debug($vars)
 add_filter('wpcf7_autop_or_not', '__return_false');
 
 
-add_filter('wpcf7_form_elements', function($content) {
+add_filter('wpcf7_form_elements', function ($content) {
      $content = preg_replace('/<(span).*?class="\s*(?:.*\s)?wpcf7-form-control-wrap(?:\s[^"]+)?\s*"[^\>]*>(.*)<\/\1>/i', '\2', $content);
- 
+
      return $content;
- });
+});
+
+add_action('after_setup_theme', function () {
+     load_theme_textdomain('refuge', get_template_directory());
+});
