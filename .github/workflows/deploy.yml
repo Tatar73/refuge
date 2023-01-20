@@ -14,6 +14,15 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v3
 
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "7.4"
+          tools: phpunit, composer
+
+      - name: Generate .pot
+        run: php wp-cli.phar i18n make-pot .
+
       - name: 📂 Sync files
         if: ${{env.DEPLOY}}
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
