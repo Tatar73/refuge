@@ -22,8 +22,9 @@
                     alt="">
             </a>
             <div class="langs">
-                <a href="<?php echo get_home_url(); ?>">Fr /</a>
-                <a href="en">En</a>
+                <?php
+                pll_the_languages([]);
+                ?>
             </div>
             <?php wp_nav_menu(array('theme_location' => 'primary_menu', 'menu_class' => 'nav_menu')); ?>
         </nav>
