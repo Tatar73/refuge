@@ -65,7 +65,6 @@
                         <li><a href="animation" <?php if (is_page()) {
                             echo 'class="active"';
                         } ?>>Nos animations</a></li>
-
                         <li><a href="tarifs" <?php if (is_page()) {
                             echo 'class="active"';
                         } ?>>Tarifs/Réservation</a></li>
