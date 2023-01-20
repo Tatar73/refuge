@@ -23,7 +23,7 @@
             </a>
             <div class="langs">
                 <?php
-                pll_the_languages([]);
+                pll_the_languages(['show_flags' => 1, 'show_names' => 0 ]);
                 ?>
             </div>
             <?php wp_nav_menu(array('theme_location' => 'primary_menu', 'menu_class' => 'nav_menu')); ?>
