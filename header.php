@@ -25,24 +25,7 @@
                 <a href="<?php echo get_home_url(); ?>">Fr /</a>
                 <a href="en">En</a>
             </div>
-            <ul>
-                <li><a href="acces" <?php if (is_page()) {
-                    echo 'class="active"';
-                } ?>>Accès</a></li>
-                <li><a href="cuisine" <?php if (is_page()) {
-                    echo 'class="active"';
-                } ?>>Notre Cuisine</a></li>
-                <li><a href="animation" <?php if (is_page()) {
-                    echo 'class="active"';
-                } ?>>Nos animations</a></li>
-
-                <li><a href="tarifs" <?php if (is_page()) {
-                    echo 'class="active"';
-                } ?>>Tarifs/Réservation</a></li>
-                <li><a href="contact" <?php if (is_page()) {
-                    echo 'class="active"';
-                } ?>>Contact</a></li>
-            </ul>
+            <?php wp_nav_menu(array('theme_location' => 'primary_menu', 'menu_class' => 'nav_menu')); ?>
         </nav>
         <nav class="nav-mobile">
             <div class="container nav-container">

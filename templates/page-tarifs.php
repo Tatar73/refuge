@@ -37,7 +37,7 @@ Template name: Tarifs
                 </div>
                 <div class="categorie">
                     <p>
-                        <?php _e('Enfant -12 ans', 'refuge'); ?>Enfant -12 ans
+                        <?php _e('Enfant -12 ans', 'refuge'); ?>
                     </p>
                 </div>
             </div>

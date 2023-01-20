@@ -25,3 +25,13 @@ add_filter('wpcf7_form_elements', function ($content) {
 add_action('after_setup_theme', function () {
      load_theme_textdomain('refuge', get_template_directory());
 });
+
+
+function custom_register_nav_menu()
+{
+     register_nav_menus(
+          array(
+               'primary_menu' => 'Menu principal',
+          ));
+}
+add_action('after_setup_theme', 'custom_register_nav_menu', 0);
