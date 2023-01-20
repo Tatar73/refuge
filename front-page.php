@@ -24,13 +24,17 @@ $slider = get_field('slider');
         <!-- Animation panorama -->
         <div id="content-index" class="content-index">
             <div class="titles">
-                <h1>REFUGE DES LACS MERLET</h1>
+                <h1>
+                    <?php _e('REFUGE DES LACS MERLET', 'refuge'); ?>
+                </h1>
                 <h2>
                     <?php _e('Altitude', 'refuge'); ?> : 2417m
                 </h2>
             </div>
             <div class="ouverture">
-                <p id="periode"><?php _e('Gardé de mi-juin à mi-septembre', 'refuge'); ?></p>
+                <p id="periode">
+                    <?php _e('Gardé de mi-juin à mi-septembre', 'refuge'); ?>
+                </p>
                 <p id="acces">
                     <?php _e('Non gardé hors saisons', 'refuge'); ?>
                 </p>

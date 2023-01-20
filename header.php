@@ -21,6 +21,10 @@
                 <img id="logo_refuge" src="<?php echo (get_template_directory_uri()); ?>/assets/img/logo_refuge.svg"
                     alt="">
             </a>
+            <div class="langs">
+                <a href="fr">Fr /</a>
+                <a href="en">En</a>
+            </div>
             <ul>
                 <li><a href="acces" <?php if (is_page()) {
                     echo 'class="active"';
