@@ -10,21 +10,26 @@ Template name: Tarifs
 
 <section class="tarifs">
     <div class="titre">
-        <h1>TARIFS</h1>
+        <h1>
+            <?php _e('TARIFS', 'refuge'); ?>
+        </h1>
         <p>
             <?php the_field('mode_de_paiments') ?>
         </p>
     </div>
     <div class="forfaits">
-        <p><?php the_field('titre_tarifs') ?></p>
+        <p>
+            <?php the_field('titre_tarifs') ?>
+        </p>
         <div class="parent">
             <div class="tarif">
                 <div class="infos">
                     <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/interrogation.svg"
                         alt="icon aide">
                     <div class="taxes">
-                        <p>+ taxe de séjour = 0,4€ (mineurs exonérés)</p>
-                        <p>+ supplément de 2€ pour régimes spéciaux.</p>
+                        <p>
+                            <?php the_field('tarifs_infos') ?>
+                        </p>
                     </div>
                 </div>
                 <div class="prix">

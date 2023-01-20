@@ -26,7 +26,9 @@ $file = get_field('menu');
 
 <section class="menu">
     <?php if ($file): ?>
-        <a href="<?php echo $file['url']; ?>" target="_blank">Télécharger le menu</a>
+        <a href="<?php echo $file['url']; ?>" target="_blank">
+            <?php _e('Télécharger le menu', 'refuge'); ?>
+        </a>
     <?php endif; ?>
     <div class="container">
 
