@@ -21,7 +21,7 @@ jobs:
           tools: phpunit, composer
 
       - name: Generate .pot
-        run: php wp-cli.phar i18n make-pot . --domain=refuge
+        run: php wp-cli.phar i18n make-pot .
 
       - name: 📂 Sync files
         if: ${{env.DEPLOY}}
