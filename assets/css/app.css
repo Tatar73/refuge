@@ -460,8 +460,7 @@ footer .flex .left a {
   color: #35392E;
   opacity: 0.3;
 }
-
-.services {
+.container-index .services {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -469,22 +468,22 @@ footer .flex .left a {
   position: relative;
   z-index: 2;
 }
-.services #service_topo_gauche {
+.container-index .services #service_topo_gauche {
   position: absolute;
   top: 0;
   left: 0;
   transform: translate(-50%, 0);
 }
-.services #service_topo_droite {
+.container-index .services #service_topo_droite {
   position: absolute;
   right: 0;
   transform: translate(60%, 0);
   object-fit: contain;
 }
-.services .wrap {
+.container-index .services .wrap {
   padding: 0 64px;
 }
-.services .wrap h3 {
+.container-index .services .wrap h3 {
   margin-top: 80px;
   text-align: center;
   font-family: "Athelas";
@@ -495,14 +494,14 @@ footer .flex .left a {
   /* identical to box height */
   color: #F8F4EC;
 }
-.services .wrap .flex {
+.container-index .services .wrap .flex {
   margin-top: 80px;
   display: flex;
   gap: 32px;
   flex-direction: row;
   position: relative;
 }
-.services .wrap .flex .services-left {
+.container-index .services .wrap .flex .services-left {
   display: flex;
   flex-direction: row;
   width: 50%;
@@ -510,20 +509,20 @@ footer .flex .left a {
   background: #F8F4EC;
   box-shadow: 0px 0px 60px 20px rgba(0, 0, 0, 0.25);
 }
-.services .wrap .flex .services-left .content-right {
+.container-index .services .wrap .flex .services-left .content-right {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.services .wrap .flex .services-left .content-right h4 {
+.container-index .services .wrap .flex .services-left .content-right h4 {
   text-align: center;
   font-family: "Gilmer";
   font-weight: 700;
   font-size: 32px;
   color: #555B47;
 }
-.services .wrap .flex .services-left .content-right > legend {
+.container-index .services .wrap .flex .services-left .content-right > legend {
   padding: 8px 0;
   font-family: "Gilmer";
   font-style: normal;
@@ -533,17 +532,17 @@ footer .flex .left a {
   text-align: center;
   color: #555B47;
 }
-.services .wrap .flex .services-left .content-right .conditions {
+.container-index .services .wrap .flex .services-left .content-right .conditions {
   margin-left: auto;
   margin-right: auto;
 }
-.services .wrap .flex .services-left .content-right .conditions .condition {
+.container-index .services .wrap .flex .services-left .content-right .conditions .condition {
   display: flex;
   align-items: center;
   vertical-align: middle;
   gap: 24px;
 }
-.services .wrap .flex .services-left .content-right .conditions .condition > p {
+.container-index .services .wrap .flex .services-left .content-right .conditions .condition > p {
   padding: 12px 0;
   text-align: center;
   font-family: "Gilmer";
@@ -553,14 +552,14 @@ footer .flex .left a {
   font-size: 20px;
   color: #555B47;
 }
-.services .wrap .flex .services-left .content-right .conditions .condition .legends p {
+.container-index .services .wrap .flex .services-left .content-right .conditions .condition .legends p {
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   color: #555B47;
 }
-.services .wrap .flex .services-left .content-right .conditions .condition .legends legend {
+.container-index .services .wrap .flex .services-left .content-right .conditions .condition .legends legend {
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 500;
@@ -568,25 +567,25 @@ footer .flex .left a {
   color: #555B47;
   opacity: 0.8;
 }
-.services .wrap .flex .services-left .content-left {
+.container-index .services .wrap .flex .services-left .content-left {
   width: 50%;
   background-image: url("../../assets/img/gardiennage.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.services .wrap .flex .services-left #gardiennage {
+.container-index .services .wrap .flex .services-left #gardiennage {
   width: 50%;
   background-image: url("../../assets/img/hors_gardiennage.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.services .wrap .flex .services-right {
+.container-index .services .wrap .flex .services-right {
   width: 50%;
   height: 100%;
 }
-.services .wrap .flex .rappels {
+.container-index .services .wrap .flex .rappels {
   background: #F8F4EC;
   box-shadow: 0px 0px 60px 10px rgba(0, 0, 0, 0.25);
   position: absolute;
@@ -596,16 +595,16 @@ footer .flex .left a {
   width: 256px;
   height: 225px;
 }
-.services .wrap .flex .rappels img {
+.container-index .services .wrap .flex .rappels img {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.services .wrap .flex .rappels .warnings {
+.container-index .services .wrap .flex .rappels .warnings {
   margin: 24px 0 0 0;
 }
-.services .wrap .flex .rappels .warnings p {
+.container-index .services .wrap .flex .rappels .warnings p {
   font-family: "Gilmer";
   font-weight: 500;
   font-size: 16px;
@@ -613,11 +612,11 @@ footer .flex .left a {
   text-align: center;
   color: #555B47;
 }
-.services .wrap .flex .rappels .warnings .reglementation {
+.container-index .services .wrap .flex .rappels .warnings .reglementation {
   display: flex;
   justify-content: center;
 }
-.services .wrap .flex .rappels .warnings .reglementation a {
+.container-index .services .wrap .flex .rappels .warnings .reglementation a {
   margin-top: 4px;
   text-align: center;
   font-family: "Gilmer";
@@ -629,17 +628,15 @@ footer .flex .left a {
   opacity: 0.5;
   text-decoration: none;
 }
-
-.cuisine {
-  height: 100vh;
+.container-index .cuisine {
   display: flex;
   flex-direction: column;
   background-color: #555B47;
   position: relative;
   z-index: 1;
-  flex-wrap: wrap;
+  padding: 100px 0;
 }
-.cuisine h3 {
+.container-index .cuisine h3 {
   padding-top: 64px;
   text-align: center;
   font-family: "Athelas";
@@ -650,13 +647,13 @@ footer .flex .left a {
   /* identical to box height */
   color: #F8F4EC;
 }
-.cuisine .texte {
+.container-index .cuisine .texte {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.cuisine .texte p {
+.container-index .cuisine .texte p {
   width: 502px;
   font-family: "Gilmer";
   font-style: normal;
@@ -666,7 +663,7 @@ footer .flex .left a {
   color: #F8F4EC;
   text-align: left;
 }
-.cuisine .texte a {
+.container-index .cuisine .texte a {
   margin-top: 42px;
   font-family: "Gilmer";
   font-style: normal;
@@ -683,11 +680,10 @@ footer .flex .left a {
   height: 43px;
   transition: all 500ms;
 }
-.cuisine .texte a:hover {
+.container-index .cuisine .texte a:hover {
   background-color: #1d1e1b;
 }
-
-.animations {
+.container-index .animations {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -695,7 +691,7 @@ footer .flex .left a {
   height: 100vh;
   align-items: center;
 }
-.animations .wrap {
+.container-index .animations .wrap {
   display: flex;
   flex-direction: row;
   padding: 0 64px;
@@ -703,7 +699,7 @@ footer .flex .left a {
   margin-left: auto;
   justify-content: space-between;
 }
-.animations .wrap h3 {
+.container-index .animations .wrap h3 {
   font-family: "Athelas";
   font-style: normal;
   font-weight: 700;
@@ -711,15 +707,15 @@ footer .flex .left a {
   color: #555B47;
   padding-bottom: 32px;
 }
-.animations .wrap .animations-right {
+.container-index .animations .wrap .animations-right {
   width: 50%;
   display: flex;
   justify-content: right;
 }
-.animations .wrap .animations-left {
+.container-index .animations .wrap .animations-left {
   width: 50%;
 }
-.animations .wrap .animations-left p {
+.container-index .animations .wrap .animations-left p {
   text-align: left;
   font-family: "Gilmer";
   font-style: normal;
@@ -728,10 +724,10 @@ footer .flex .left a {
   line-height: 24px;
   color: #555B47;
 }
-.animations .wrap .animations-left .button {
+.container-index .animations .wrap .animations-left .button {
   margin-top: 64px;
 }
-.animations .wrap .animations-left .button a {
+.container-index .animations .wrap .animations-left .button a {
   display: inline-block;
   font-family: "Gilmer";
   font-style: normal;
@@ -745,11 +741,135 @@ footer .flex .left a {
   text-decoration: none;
   transition: all 500ms;
 }
-.animations .wrap .animations-left .button a:hover {
+.container-index .animations .wrap .animations-left .button a:hover {
   cursor: pointer;
   background-color: #1d1e1b;
 }
 
+@media screen and (max-width: 768px) {
+  .container-index .intro {
+    padding: 64px 0;
+    height: unset;
+    flex-direction: column-reverse;
+  }
+  .container-index .intro .intro-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container-index .intro .intro-right h3 {
+    text-align: center;
+    width: unset;
+  }
+  .container-index .intro .intro-right p {
+    width: unset;
+    margin-bottom: 32px;
+  }
+  .container-index .intro .intro-right button {
+    display: unset;
+    margin-top: 64px;
+    border: none;
+    background: none;
+    margin: auto;
+    margin-bottom: 32px;
+  }
+  .container-index .services .wrap .flex .services-left {
+    width: 100%;
+  }
+  .container-index .cuisine {
+    flex-wrap: unset;
+    padding: 164px 0;
+  }
+  .container-index .cuisine h3 {
+    font-size: 36px;
+    padding: 96px 0 0 0;
+  }
+  .container-index .cuisine .texte p {
+    font-size: 16px;
+  }
+  .container-index .intro #topo_right {
+    display: none;
+  }
+  .container-index .services #service_topo_gauche {
+    display: none;
+  }
+  .container-index .animations {
+    flex-direction: column;
+    padding: 100px 0;
+    height: unset;
+  }
+  .container-index .animations .wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-index .animations .wrap .animations-left {
+    width: unset;
+  }
+  .container-index .animations .wrap .animations-left h3 {
+    text-align: center;
+  }
+  .container-index .animations .wrap .animations-left .button {
+    display: flex;
+    justify-content: center;
+    margin: 12px 0 64px 0;
+  }
+  .container-index .animations .wrap .animations-right {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container-index .intro .intro-right {
+    padding: 0 64px;
+  }
+  .container-index .services .wrap .flex .services-left .content-right h4 {
+    font-size: 24px;
+  }
+  .container-index .services .wrap .flex .services-left .content-right .conditions .condition p {
+    font-size: 16px;
+  }
+  .container-index .services .wrap .flex .services-left .content-right .conditions .condition .legends p {
+    font-size: 14px;
+  }
+  .container-index .services .wrap .flex .services-left .content-right .conditions {
+    margin-left: 10px;
+  }
+  .container-index .services .wrap .flex {
+    flex-direction: column;
+  }
+  .container-index .services .wrap .flex .services-left {
+    margin: auto;
+  }
+  .container-index .services .wrap .flex .rappels .warnings p {
+    font-size: 12px;
+  }
+  .container-index .services .wrap .flex .rappels .warnings .reglementation a {
+    font-size: 12px;
+  }
+  .container-index .services .wrap .flex .rappels {
+    top: 1000px;
+    width: 256px;
+    height: 191px;
+  }
+  .container-index .services {
+    height: auto;
+  }
+  .container-index .services .wrap .flex .services-left .content-right .conditions .condition > p {
+    text-align: left;
+  }
+  .container-index .intro .intro-right h3 {
+    font-size: 36px;
+  }
+  .container-index .intro .intro-right p {
+    font-size: 16px;
+  }
+  .container-index .intro .intro-right button a {
+    font-size: 16px;
+  }
+  .container-index .cuisine h3 {
+    font-size: 36px;
+    padding: 96px 0 0 0;
+  }
+}
 .container-acces {
   background-color: #F8F4EC;
 }
@@ -1123,6 +1243,7 @@ footer .flex .left a {
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
+  margin: 8px 0;
 }
 .programme .animation-slider .main-carousel .carousel-cell .titre {
   margin-top: 25px;

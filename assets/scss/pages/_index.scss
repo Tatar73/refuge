@@ -201,8 +201,6 @@
     
     }
     
-
-
     .intro{
         display: flex;
         flex-direction: row;
@@ -280,25 +278,24 @@
         }
         }
 
-        .main-carousel .carousel-cell {
-            padding: 0 32px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            // .flex-direction{
-            //     display: flex;
-            //     flex-direction: colum;
-            // }
-            p{
-                flex-direction: column;
-                font-family: 'Gilmer';
-                font-style: normal;
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 135%;
-                color: #35392E;
-                opacity: 0.3;
-            }
+    .main-carousel .carousel-cell {
+        padding: 0 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // .flex-direction{
+        //     display: flex;
+        //     flex-direction: colum;
+        // }
+        p{
+            flex-direction: column;
+            font-family: 'Gilmer';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 135%;
+            color: #35392E;
+            opacity: 0.3;
         }
     }
 
@@ -494,13 +491,12 @@
     }
 
     .cuisine{
-        height: 100vh;
         display: flex;
         flex-direction: column;
         background-color: #555B47;;
         position: relative;
         z-index: 1;
-        flex-wrap: wrap;
+        padding: 100px 0;
         h3{
             padding-top: 64px;
             text-align: center;
@@ -622,3 +618,150 @@
         }
 
     }
+
+
+
+}
+
+
+        //iPads, Tablets
+        @media screen and (max-width: 480px) {
+
+        }
+    
+        //iPads, Tablets
+        @media screen and (max-width: 768px) {
+            .container-index .intro{
+                padding: 64px 0; 
+                height: unset;
+                flex-direction:  column-reverse;
+                .intro-right{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    h3{
+                        text-align: center;
+                        width: unset;
+                    }
+                    p{
+                        width: unset;
+                        margin-bottom: 32px;
+                    }   
+                    button{
+                        display: unset;
+                        margin-top: 64px;   
+                        border: none;
+                        background: none;
+                        margin: auto;
+                        margin-bottom: 32px;
+                    }
+                }
+            }
+            .container-index .services .wrap .flex .services-left{
+                width: 100%;
+            }
+            .container-index .cuisine{
+                flex-wrap: unset;
+                padding: 164px 0;
+            }
+            .container-index .cuisine h3{
+                font-size: 36px;
+                padding: 96px 0 0 0 ;
+            }
+            .container-index .cuisine .texte p{
+                font-size: 16px;
+            }
+            .container-index .intro #topo_right{
+                display: none;
+            }
+
+            .container-index .services #service_topo_gauche{
+                display: none;
+            }
+
+            .container-index .animations{
+                flex-direction: column;
+                padding: 100px 0;
+                height: unset;
+            }
+
+            .container-index .animations .wrap{
+                flex-direction: column;
+                align-items: center;
+            }
+            .container-index .animations .wrap .animations-left{
+                width: unset;
+                h3{
+                    text-align: center;
+                }
+            }
+            .container-index .animations .wrap .animations-left .button{
+                display: flex;
+                justify-content: center;
+                margin: 12px 0 64px 0;
+            }
+            .container-index .animations .wrap .animations-right {
+                justify-content: center;
+            }
+        }
+
+    
+        @media screen and (max-width: 1024px) {
+            .container-index .intro .intro-right{
+                padding: 0 64px;
+            }
+            .container-index .services .wrap .flex .services-left .content-right h4{
+                font-size: 24px;
+            }
+            .container-index .services .wrap .flex .services-left .content-right .conditions .condition p{
+                font-size: 16px;
+            }
+            .container-index .services .wrap .flex .services-left .content-right .conditions .condition .legends p{
+                font-size: 14px;
+
+            }
+            .container-index .services .wrap .flex .services-left .content-right .conditions{
+                margin-left: 10px;
+            }
+
+            .container-index .services .wrap .flex{
+                flex-direction: column;
+            }
+            .container-index .services .wrap .flex .services-left {
+                margin: auto;
+            }
+
+            .container-index .services .wrap .flex .rappels .warnings p{
+                font-size: 12px;
+            }
+            .container-index .services .wrap .flex .rappels .warnings .reglementation a{
+                font-size: 12px;
+            }
+
+            .container-index .services .wrap .flex .rappels{
+                top: 1000px;
+                width: 256px;
+                height: 191px;
+            }
+
+            .container-index .services{
+                height: auto;
+            }
+            .container-index .services .wrap .flex .services-left .content-right .conditions .condition > p{
+                text-align: left;
+            }
+            .container-index .intro .intro-right h3{
+                font-size: 36px;
+            }
+            .container-index .intro .intro-right p{
+                font-size: 16px;
+            }
+            .container-index .intro .intro-right button a{
+                font-size: 16px;
+            }
+
+            .container-index .cuisine h3{
+                font-size: 36px;
+                padding: 96px 0 0 0 ;
+            }
+        }
