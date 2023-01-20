@@ -84,10 +84,19 @@ header{
           font-size: 20px;
           line-height: 38px;
           color: #FFFFFF;
+          ul{
+            display: flex;
+          }
           a{
             color: #555B47;
             text-decoration: none;
+            img{
+              opacity: 1;
+              width: 20px;
+              height: 15px;
+            }
           }
+          
         }
         ul{
             display: flex;
