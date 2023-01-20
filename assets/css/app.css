@@ -137,11 +137,14 @@ header .nav .langs {
   line-height: 38px;
   color: #FFFFFF;
 }
-header .nav .langs a {
+header .nav .langs ul {
+  display: flex;
+}
+header .nav .langs ul a {
   color: #555B47;
   text-decoration: none;
 }
-header .nav .langs a img {
+header .nav .langs ul a img {
   opacity: 1 !important;
   width: 20px !important;
   height: 15px !important;

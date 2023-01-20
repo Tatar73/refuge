@@ -85,17 +85,19 @@ header{
           font-size: 20px;
           line-height: 38px;
           color: #FFFFFF;
-          a{
-            color: #555B47;
-            text-decoration: none;
-
-            img{
-              opacity: 1 !important;
-              width: 20px !important;
-              height: 15px !important;
+          ul{
+            display: flex;
+            a{
+              color: #555B47;
+              text-decoration: none;
+          
+              img{
+                opacity: 1 !important;
+                width: 20px !important;
+                height: 15px !important;
+              }
             }
           }
-          
         }
         ul{
             display: flex;
