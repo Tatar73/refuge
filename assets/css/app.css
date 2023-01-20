@@ -124,6 +124,17 @@ header .nav {
   padding: 0 64px;
   opacity: 1;
 }
+header .nav .langs {
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+header .nav .langs a {
+  text-decoration: none;
+}
 header .nav ul {
   display: flex;
   align-items: center;

@@ -22,7 +22,7 @@
                     alt="">
             </a>
             <div class="langs">
-                <a href="fr">Fr /</a>
+                <a href="<?php echo get_home_url(); ?>">Fr /</a>
                 <a href="en">En</a>
             </div>
             <ul>

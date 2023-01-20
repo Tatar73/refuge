@@ -70,6 +70,17 @@ header{
         height: 150px;
         padding: 0 64px;    
         opacity: 1;
+        .langs{
+          font-family: 'Gilmer';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 38px;
+          color: #FFFFFF;
+          a{
+            text-decoration: none;
+          }
+        }
         ul{
             display: flex;
             align-items: center;
