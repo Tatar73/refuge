@@ -36,7 +36,9 @@ Template name: Tarifs
                     <p>10€</p>
                 </div>
                 <div class="categorie">
-                    <p>Enfant -12 ans</p>
+                    <p>
+                        <?php _e('Enfant -12 ans', 'refuge'); ?>Enfant -12 ans
+                    </p>
                 </div>
             </div>
             <div class="tarif2">
@@ -44,7 +46,9 @@ Template name: Tarifs
                     <p>16€</p>
                 </div>
                 <div class="categorie">
-                    <p>Adulte +16 ans</p>
+                    <p>
+                        <?php _e('Adulte +16 ans', 'refuge'); ?>
+                    </p>
                 </div>
             </div>
             <div class="tarif3">
@@ -52,8 +56,10 @@ Template name: Tarifs
                     <p>14€</p>
                 </div>
                 <div class="categorie">
-                    <p>Membre CAF</p>
-                    <legend>FFME*/FFS*Scolaire étudiants/ enfants(12-15ans)</legend>
+                    <p><?php _e('Membre CAF', 'refuge'); ?></p>
+                    <legend>
+                        <?php _e('FFME*/FFS*Scolaire étudiants/ enfants(12-15ans)', 'refuge'); ?>
+                    </legend>
                 </div>
             </div>
             <div class="tarif4">
@@ -61,18 +67,22 @@ Template name: Tarifs
                     <p>6€</p>
                 </div>
                 <div class="categorie">
-                    <p>Emplacement Bivouac</p>
+                    <p>
+                        <?php _e('Emplacement Bivouac', 'refuge'); ?>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 <section class="reservation">
-    <h2>RÉSERVATION</h2>
+    <h2> <?php _e('RÉSERVATION', 'refuge'); ?></h2>
     <div class="resa">
         <?php echo do_shortcode('[contact-form-7 id="182" title="Formulaire de contact 1"]'); ?>
         <div class="resa-right">
-            <h3><?php the_field('titre'); ?></h3>
+            <h3>
+                <?php the_field('titre'); ?>
+            </h3>
             <p>
                 <?php the_field('informations'); ?>
             </p>

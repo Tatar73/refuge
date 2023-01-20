@@ -6,8 +6,10 @@
 get_header();
 ?>
 <section class="contact">
-    <h1>Contact</h1>
-    <h3>Pour plus d’informations, n’hésitez pas à nous contacter</h3>
+    <h1>
+        <?php _e('Contact', 'refuge'); ?>
+    </h1>
+    <h3><?php _e('Pour plus d’informations, n’hésitez pas à nous contacter', 'refuge'); ?></h3>
     <h2>
         <?php the_field('title') ?>
     </h2>
