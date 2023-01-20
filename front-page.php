@@ -30,16 +30,20 @@ $slider = get_field('slider');
                 </h2>
             </div>
             <div class="ouverture">
-                <p id="periode">Gardé de mi-juin à mi-septembre</p>
-                <p id="acces">Non gardé hors saisons</p>
+                <p id="periode"><?php _e('Gardé de mi-juin à mi-septembre', 'refuge'); ?></p>
+                <p id="acces">
+                    <?php _e('Non gardé hors saisons', 'refuge'); ?>
+                </p>
             </div>
         </div>
         <div class="panorama">
             <button id="pano_plus">
-                <p>Panorama</p>
+                <p>
+                    <?php _e('Panorama', 'refuge'); ?>
+                </p>
             </button>
             <button id="pano_moins" style="display: none">
-                <p>Panorama</p>
+                <p><?php _e('Panorama', 'refuge'); ?></p>
             </button>
 
         </div>
@@ -76,7 +80,9 @@ $slider = get_field('slider');
                     <?php the_field('text_intro') ?>
                 </p>
                 <button>
-                    <a href="acces">Comment venir</a>
+                    <a href="acces">
+                        <?php _e('Comment venir', 'refuge'); ?>
+                    </a>
                 </button>
             </div>
         </section>
@@ -103,35 +109,47 @@ $slider = get_field('slider');
                                 <div class="condition">
                                     <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/lit.svg"
                                         alt="lit">
-                                    <p>14 couchages</p>
+                                    <p>
+                                        <?php _e('14 couchages', 'refuge'); ?>
+                                    </p>
                                 </div>
                                 <div class="condition">
                                     <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/couette.svg"
                                         alt="couette">
                                     <div class="legends">
-                                        <p>Couettes</p>
+                                        <p>
+                                            <?php _e('Couettes', 'refuge'); ?>
+                                        </p>
                                         <legend>Prenez votre drap-sac</legend>
                                     </div>
                                 </div>
                                 <div class="condition">
                                     <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/tente.svg"
                                         alt="tente">
-                                    <p>Bivouac</p>
+                                    <p>
+                                        <?php _e('Bivouac', 'refuge'); ?>
+                                    </p>
                                 </div>
                                 <div class="condition">
                                     <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/restauration.svg"
                                         alt="restauration">
-                                    <p>Restauration</p>
+                                    <p>
+                                        <?php _e('Restauration', 'refuge'); ?>
+                                    </p>
                                 </div>
                                 <div class="condition">
                                     <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/chauffage.svg"
                                         alt="chauffage">
-                                    <p>Chauffage poêle</p>
+                                    <p>
+                                        <?php _e('Chauffage poêle', 'refuge'); ?>
+                                    </p>
                                 </div>
                                 <div class="condition">
                                     <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/WC.svg"
                                         alt="wc" style="margin-left: 4px;">
-                                    <p>WC secs</p>
+                                    <p>
+                                        <?php _e('WC secs', 'refuge'); ?>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -149,38 +167,50 @@ $slider = get_field('slider');
                                 <div class="condition">
                                     <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/lit.svg"
                                         alt="lit">
-                                    <p>14 couchages</p>
+                                    <p>
+                                        <?php _e('14 couchages', 'refuge'); ?>
+                                    </p>
                                 </div>
                                 <div class="condition">
                                     <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/couverture.svg"
                                         alt="Couverture">
                                     <div class="legends">
-                                        <p>Couvertures</p>
-                                        <legend>Prenez votre sac de couchage</legend>
+                                        <p>
+                                            <?php _e('Couvertures', 'refuge'); ?>
+                                        </p>
+                                        <legend><?php _e('Prenez votre sac de couchage', 'refuge'); ?></legend>
                                     </div>
                                 </div>
                                 <div class="condition">
                                     <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/tente.svg"
                                         alt="tente">
-                                    <p>Bivouac</p>
+                                    <p>
+                                        <?php _e('Bivouac', 'refuge'); ?>
+                                    </p>
                                 </div>
                                 <div class="condition">
                                     <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/gaziniere.svg"
                                         alt="gazinière">
                                     <div class="legends">
-                                        <p>Gazinière</p>
-                                        <legend>Accessible</legend>
+                                        <p>
+                                            <?php _e('Gazinière', 'refuge'); ?>
+                                        </p>
+                                        <legend><?php _e('Accessible', 'refuge'); ?></legend>
                                     </div>
                                 </div>
                                 <div class="condition">
                                     <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/chauffage.svg"
                                         alt="chauffage">
-                                    <p>Chauffage poêle</p>
+                                    <p>
+                                        <?php _e('Chauffage poêle', 'refuge'); ?>
+                                    </p>
                                 </div>
                                 <div class="condition">
                                     <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/WC.svg"
                                         alt="wc" style="margin-left: 4px;">
-                                    <p>WC secs</p>
+                                    <p>
+                                        <?php _e('WC secs', 'refuge'); ?>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -191,15 +221,23 @@ $slider = get_field('slider');
                         <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/warning.svg"
                             alt="warning">
                         <div class="warnings">
-                            <p>Pas de douches</p>
-                            <p>Pas de recharges électriques</p>
-                            <p>Pas de vaisselle</p>
-                            <p>Pas de wifi</p>
+                            <p>
+                                <?php _e('Pas de douches', 'refuge'); ?>
+                            </p>
+                            <p><?php _e('Pas de recharges électriques', 'refuge'); ?></p>
+                            <p>
+                                <?php _e('Pas de vaisselle', 'refuge'); ?>
+                            </p>
+                            <p><?php _e('Pas de wifi', 'refuge'); ?></p>
                             <br>
-                            <p>Animaux interdits</p>
-                            <p>Drone interdits</p>
+                            <p>
+                                <?php _e('Animaux interdits', 'refuge'); ?>
+                            </p>
+                            <p><?php _e('Drone interdits', 'refuge'); ?></p>
                             <div class="reglementation">
-                                <a href="acces">Voir réglementation</a>
+                                <a href="acces">
+                                    <?php _e('Voir réglementation', 'refuge'); ?>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -208,13 +246,17 @@ $slider = get_field('slider');
         </section>
 
         <section class="cuisine">
-            <h3>Notre Cuisine</h3>
+            <h3>
+                <?php _e('Notre Cuisine', 'refuge'); ?>
+            </h3>
             <div class="texte">
                 <p>
                     <?php the_field('cuisine_text') ?>
                 </p>
 
-                <a href="cuisine">En savoir plus</a>
+                <a href="cuisine">
+                    <?php _e('En savoir plus', 'refuge'); ?>
+                </a>
             </div>
 
         </section>
@@ -223,12 +265,16 @@ $slider = get_field('slider');
             <div class="wrap">
 
                 <div class="animations-left">
-                    <h3>Nos animations</h3>
+                    <h3>
+                        <?php _e('Nos animations', 'refuge'); ?>
+                    </h3>
                     <p>
                         <?php the_field('texte') ?>
                     </p>
                     <div class="button">
-                        <a href="animation">En savoir plus</a>
+                        <a href="animation">
+                            <?php _e('En savoir plus', 'refuge'); ?>
+                        </a>
                     </div>
                 </div>
                 <div class="animations-right">
