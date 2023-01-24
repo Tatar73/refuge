@@ -53,6 +53,9 @@ $reglements = get_field('reglements');
         <h3>
             <?php _e('DÉPARTS', 'refuge'); ?>
         </h3>
+        <p id="carte">
+            <?php the_field('carte'); ?>
+        </p>
         <?php foreach ($itineraires as $itineraire): ?>
             <div class="itineraire">
 
@@ -73,9 +76,6 @@ $reglements = get_field('reglements');
                     </p>
                     <p id="difficulte">
                         <?php echo ($itineraire['difficulte']); ?>
-                    </p>
-                    <p id="carte">
-                        <?php echo ($itineraire['carte']); ?>
                     </p>
                 </div>
                 <div class="right">

@@ -1192,6 +1192,16 @@ footer .flex .left a {
   text-align: left;
   color: rgba(85, 91, 71, 0.9);
 }
+.container-acces .itineraires #carte::before {
+  content: "";
+  background-image: url("../../assets/img/icon/carte.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px; /* Taille de l'icône */
+  height: 32px; /* Taille de l'icône */
+  margin-right: 8px; /* Espacement à droite de l'icône */
+}
 .container-acces .itineraires .itineraire {
   width: 100%;
   min-height: 35vh;
@@ -1261,16 +1271,6 @@ footer .flex .left a {
 .container-acces .itineraires .itineraire .middle #difficulte::before {
   content: "";
   background-image: url("../../assets/img/icon/difficulte.svg");
-  background-repeat: no-repeat;
-  display: inline-block;
-  vertical-align: middle;
-  width: 32px; /* Taille de l'icône */
-  height: 32px; /* Taille de l'icône */
-  margin-right: 8px; /* Espacement à droite de l'icône */
-}
-.container-acces .itineraires .itineraire .middle #carte::before {
-  content: "";
-  background-image: url("../../assets/img/icon/carte.svg");
   background-repeat: no-repeat;
   display: inline-block;
   vertical-align: middle;
