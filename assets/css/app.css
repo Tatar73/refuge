@@ -1192,6 +1192,15 @@ footer .flex .left a {
   text-align: left;
   color: rgba(85, 91, 71, 0.9);
 }
+.container-acces .itineraires > p {
+  text-align: left;
+  padding: 8px 96px;
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #555B47;
+}
 .container-acces .itineraires #carte::before {
   content: "";
   background-image: url("../../assets/img/icon/carte.svg");
