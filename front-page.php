@@ -47,7 +47,9 @@ $slider = get_field('slider');
                 </p>
             </button>
             <button id="pano_moins" style="display: none">
-                <p><?php _e('Panorama', 'refuge'); ?></p>
+                <p>
+                    <?php _e('Panorama', 'refuge'); ?>
+                </p>
             </button>
 
         </div>
@@ -58,7 +60,6 @@ $slider = get_field('slider');
                 </script>
     </section>
     <div class="background">
-        <!-- <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/fond.svg" alt="background"> -->
         <section class="intro">
             <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/intro_topo_left.svg" alt=""
                 id="topo_left">
@@ -124,7 +125,9 @@ $slider = get_field('slider');
                                         <p>
                                             <?php _e('Couettes', 'refuge'); ?>
                                         </p>
-                                        <legend>Prenez votre drap-sac</legend>
+                                        <legend>
+                                            <?php _e('Prenez votre drap-sac', 'refuge'); ?>
+                                        </legend>
                                     </div>
                                 </div>
                                 <div class="condition">
@@ -166,7 +169,9 @@ $slider = get_field('slider');
                             <h4>
                                 <?php the_field('hors_gardiennage') ?>
                             </h4>
-                            <legend><?php the_field('periode_hors_gardiennage') ?></legend>
+                            <legend>
+                                <?php the_field('periode_hors_gardiennage') ?>
+                            </legend>
                             <div class="conditions">
                                 <div class="condition">
                                     <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/lit.svg"
@@ -182,7 +187,9 @@ $slider = get_field('slider');
                                         <p>
                                             <?php _e('Couvertures', 'refuge'); ?>
                                         </p>
-                                        <legend><?php _e('Prenez votre sac de couchage', 'refuge'); ?></legend>
+                                        <legend>
+                                            <?php _e('Prenez votre sac de couchage', 'refuge'); ?>
+                                        </legend>
                                     </div>
                                 </div>
                                 <div class="condition">
@@ -199,7 +206,9 @@ $slider = get_field('slider');
                                         <p>
                                             <?php _e('Gazinière', 'refuge'); ?>
                                         </p>
-                                        <legend><?php _e('Accessible', 'refuge'); ?></legend>
+                                        <legend>
+                                            <?php _e('Accessible', 'refuge'); ?>
+                                        </legend>
                                     </div>
                                 </div>
                                 <div class="condition">
@@ -228,16 +237,22 @@ $slider = get_field('slider');
                             <p>
                                 <?php _e('Pas de douches', 'refuge'); ?>
                             </p>
-                            <p><?php _e('Pas de recharges électriques', 'refuge'); ?></p>
+                            <p>
+                                <?php _e('Pas de recharges électriques', 'refuge'); ?>
+                            </p>
                             <p>
                                 <?php _e('Pas de vaisselle', 'refuge'); ?>
                             </p>
-                            <p><?php _e('Pas de wifi', 'refuge'); ?></p>
+                            <p>
+                                <?php _e('Pas de wifi', 'refuge'); ?>
+                            </p>
                             <br>
                             <p>
                                 <?php _e('Animaux interdits', 'refuge'); ?>
                             </p>
-                            <p><?php _e('Drone interdits', 'refuge'); ?></p>
+                            <p>
+                                <?php _e('Drone interdits', 'refuge'); ?>
+                            </p>
                             <div class="reglementation">
                                 <a href="acces">
                                     <?php _e('Voir réglementation', 'refuge'); ?>
@@ -292,7 +307,7 @@ $slider = get_field('slider');
 
 <script type="text/javascript" src="<?php echo (get_template_directory_uri()); ?>/assets/js/libs/flickity.js"
     async></script>
-    
+
 <?php
 // Footer
 get_footer();

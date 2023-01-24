@@ -22,14 +22,10 @@
             </a>
             <div class="langs">
                 <ul>
-                    <?php
-
-                    pll_current_language( $value );         
-
+                    <?php  
                     if(function_exists('pll_the_languages')) {
                         pll_the_languages( array( 'dropdown' => 1 ) );
                     }
-                    
                     ?>
                 </ul>
             </div>

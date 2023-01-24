@@ -230,6 +230,7 @@
         text-align: center;
         padding-bottom: 100px;
     }
+
     .resa{
         display: flex;
         flex-direction: row;
@@ -447,6 +448,14 @@
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
+            p:nth-child(1){
+                margin-top: 8px;
+                font-family: 'Gilmer';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                color: #555B47;
+            }
             p{
                 margin-left: auto;
                 margin-right: auto;

@@ -13,7 +13,7 @@
 
         <div class="right">
             <h4>Contact</h4>
-            <p>04 79 06 56 76</p>
+            <p>06 67 53 59 24</p>
             <p>info@refugedeslacsmerlet.com</p>
             <p>Courchevel, 73120</p>
         </div>
