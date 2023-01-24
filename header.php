@@ -8,14 +8,6 @@
     <title>Refuge des lacs Merlet</title>
     <?php wp_head(); ?>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
-    <link rel="apple-touch-icon" sizes="180×180" href="/apple-touch-icon.png"> 
-    <link rel="icon" type=" image/png" sizes="16×16" href="assets/favicon/favicon-16×16. png">
-    <link rel="icon" type=" image/png" sizes="32×32" href="assets/favicon/favicon-32×32. png"> 
-    <link rel="icon" type=" image/png" sizes="16×16" href="assets/favicon/favicon-16×16. png"> 
-    <link rel="manifest" href="assets/favicon/site.webmanifest"> 
-    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#ffffff">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
     <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
     <script type="text/javascript" src="<?php echo (get_template_directory_uri()); ?>/assets/js/header-sticky.js"
         async></script>
@@ -33,7 +25,7 @@
                     <?php
 
                     if(function_exists('pll_the_languages')) {
-                        pll_the_languages(['show_flags' => 0, 'show_names' => 1]);
+                        pll_the_languages(['Français', 'Anglais']);
                     }
                     
                     ?>
