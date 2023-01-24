@@ -1467,11 +1467,21 @@ footer .flex .left a {
   flex-direction: column;
   width: 33%;
 }
-.programme .animation-slider .main-carousel .carousel-cell img:first-child {
+.programme .animation-slider .main-carousel .carousel-cell .date {
+  font-family: "Gilmer";
+  font-style: normal;
+  text-align: left;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.programme .animation-slider .main-carousel .carousel-cell .selecteur {
   width: 50px;
   height: 86px;
+  margin-top: -16px;
 }
-.programme .animation-slider .main-carousel .carousel-cell img:last-child {
+.programme .animation-slider .main-carousel .carousel-cell .illustration {
   box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.25);
   width: 100%;
 }
@@ -1599,7 +1609,7 @@ footer .flex .left a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 32px;
+  grid-column-gap: 64px;
   grid-row-gap: 0px;
   min-height: 306px;
 }
