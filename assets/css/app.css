@@ -1162,6 +1162,7 @@ footer .flex .left a {
   text-align: right;
 }
 .container-acces .acces .texte {
+  text-align: justify;
   width: 50%;
 }
 .container-acces .acces .texte p {
@@ -1194,7 +1195,7 @@ footer .flex .left a {
 }
 .container-acces .itineraires > p {
   text-align: left;
-  padding: 8px 96px;
+  padding: 12px 0;
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 700;
@@ -1296,7 +1297,7 @@ footer .flex .left a {
   width: 33.3%;
 }
 .container-acces .itineraires .itineraire .right p {
-  text-align: left;
+  text-align: justify;
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 500;
@@ -1421,6 +1422,7 @@ footer .flex .left a {
   color: #F8F4EC;
 }
 .animation .intro p {
+  text-align: justify;
   margin-top: 25px;
   font-family: "Gilmer";
   font-style: normal;
@@ -1493,6 +1495,7 @@ footer .flex .left a {
   color: #FFFFFF;
 }
 .programme .animation-slider .main-carousel .carousel-cell .text {
+  text-align: justify;
   margin-top: 25px;
   font-family: "Gilmer";
   font-style: normal;
@@ -1528,6 +1531,7 @@ footer .flex .left a {
   color: #F8F4EC;
 }
 .cuisine p {
+  text-align: justify;
   margin-top: 50px;
   font-family: "Gilmer";
   font-style: normal;
@@ -1612,6 +1616,7 @@ footer .flex .left a {
   color: #555B47;
 }
 .menu .container .parent .content p {
+  text-align: justify;
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 400;
@@ -2175,6 +2180,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  text-align: justify;
 }
 .reservation .resa .resa-right p:nth-child(1) {
   margin-top: 8px;
