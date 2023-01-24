@@ -1,7 +1,7 @@
 <?php
 
 /*
-    Template name: Acces
+Template name: Acces
 */
 
 // Header
@@ -22,7 +22,9 @@ $reglements = get_field('reglements');
             <h1>
                 <?php the_field('title'); ?>
             </h1>
-            <span><?php the_field('localisation') ?></span>
+            <span>
+                <?php the_field('localisation') ?>
+            </span>
         </div>
         <div class="content">
             <div class="images">
@@ -45,8 +47,12 @@ $reglements = get_field('reglements');
 
     <section class="itineraires">
 
-        <h2><?php _e('Itinéraires', 'refuge'); ?></h2>
-        <h3><?php _e('DÉPARTS', 'refuge'); ?></h3>
+        <h2>
+            <?php _e('Itinéraires', 'refuge'); ?>
+        </h2>
+        <h3>
+            <?php _e('DÉPARTS', 'refuge'); ?>
+        </h3>
         <?php foreach ($itineraires as $itineraire): ?>
             <div class="itineraire">
 
@@ -59,13 +65,23 @@ $reglements = get_field('reglements');
                     </p>
                 </div>
                 <div class="middle">
-                    <p id="duree"><?php echo ($itineraire['time']); ?></p>
-                    <p id="distance"><?php echo ($itineraire['distance']); ?></p>
-                    <p id="difficulte"><?php echo ($itineraire['difficulte']); ?></p>
-                    <p id="carte"><?php echo ($itineraire['carte']); ?></p>
+                    <p id="duree">
+                        <?php echo ($itineraire['time']); ?>
+                    </p>
+                    <p id="distance">
+                        <?php echo ($itineraire['distance']); ?>
+                    </p>
+                    <p id="difficulte">
+                        <?php echo ($itineraire['difficulte']); ?>
+                    </p>
+                    <p id="carte">
+                        <?php echo ($itineraire['carte']); ?>
+                    </p>
                 </div>
                 <div class="right">
-                    <p><?php echo ($itineraire['texte']); ?></p>
+                    <p>
+                        <?php echo ($itineraire['texte']); ?>
+                    </p>
                 </div>
             </div>
             <?php
@@ -74,32 +90,42 @@ $reglements = get_field('reglements');
     </section>
 
     <section class="reglementation">
-        <h2><?php _e('Réglementation du parc national de la Vanoise', 'refuge'); ?></h2>
+        <h2>
+            <?php _e('Réglementation du Parc national de la Vanoise', 'refuge'); ?>
+        </h2>
 
         <div class="parent">
-        
-        <?php foreach ($reglements as $reglement): ?>
-            <div class="item">
-                <img src="<?php echo ($reglement['illustration']); ?>" alt="">
-                <p><?php echo ($reglement['titre']); ?></p>
-                <legend><?php echo ($reglement['legende']); ?></legend>
-            </div>
-            <?php
-        endforeach;
-        ?>
+
+            <?php foreach ($reglements as $reglement): ?>
+                <div class="item">
+                    <img src="<?php echo ($reglement['illustration']); ?>" alt="">
+                    <p>
+                        <?php echo ($reglement['titre']); ?>
+                    </p>
+                    <legend>
+                        <?php echo ($reglement['legende']); ?>
+                    </legend>
+                </div>
+                <?php
+            endforeach;
+            ?>
         </div>
 
         <p>
-            <?php the_field('reglement_infos'); ?><a href="http://www.vanoise-parcnational.fr/fr" target="_blank"><?php _e('Site Web', 'refuge'); ?></a>
+            <?php the_field('reglement_infos'); ?><a href="http://www.vanoise-parcnational.fr/fr" target="_blank">
+                <?php _e('Site Internet', 'refuge'); ?>
+            </a>
         </p>
     </section>
 
     <section class="carte">
-        <h2><?php _e('Carte', 'refuge'); ?></h2>
+        <h2>
+            <?php _e('Carte', 'refuge'); ?>
+        </h2>
         <div id="map">
         </div>
         <a href="<?php echo (get_template_directory_uri()); ?>/assets/img/carte_refuge.pdf" target="_blank">
-        <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/telecharger.svg" alt="">
+            <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/telecharger.svg" alt="">
         </a>
         <!-- Leaflet map JavaScript -->
         <script>
