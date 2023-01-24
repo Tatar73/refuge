@@ -340,29 +340,33 @@
                     text-align: center;
                 }
             }
-            .date{
-                margin-top: 50px;
-                width: 100%;
-                text-align: center;
+            .date-flex{
                 display: flex;
-                flex-direction: column;
-                label{
+                margin: auto;
+                gap: 32px;
+                .date{
+                    margin-top: 50px;
+                    width: 50%;
                     text-align: center;
-                    margin-bottom: 10px;
-                }
-                input{
-
-                    text-align: center;
-                    width: 100%;
-                    margin: auto;
-                    width: 30%;
-                    font-family: 'Gilmer';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 20px;
-                    color: #555B47;
+                    display: flex;
+                    flex-direction: column;
+                    label{
+                        text-align: center;
+                        margin-bottom: 10px;
+                    }
+                    input{
+                        text-align: center;
+                        width: 100%;
+                        margin: auto;
+                        font-family: 'Gilmer';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 20px;
+                        color: #555B47;
+                    }
                 }
             }
+            
             .infos{
                 margin-top: 50px;
                 width: 100%;

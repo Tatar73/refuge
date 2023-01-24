@@ -2057,22 +2057,26 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   color: #555B47;
   text-align: center;
 }
-.reservation .resa .resa-left .date {
+.reservation .resa .resa-left .date-flex {
+  display: flex;
+  margin: auto;
+  gap: 32px;
+}
+.reservation .resa .resa-left .date-flex .date {
   margin-top: 50px;
-  width: 100%;
+  width: 50%;
   text-align: center;
   display: flex;
   flex-direction: column;
 }
-.reservation .resa .resa-left .date label {
+.reservation .resa .resa-left .date-flex .date label {
   text-align: center;
   margin-bottom: 10px;
 }
-.reservation .resa .resa-left .date input {
+.reservation .resa .resa-left .date-flex .date input {
   text-align: center;
   width: 100%;
   margin: auto;
-  width: 30%;
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 700;
