@@ -87,6 +87,16 @@ header{
           color: #FFFFFF;
           ul{
             display: flex;
+            select{
+              border: none;
+              background: none;
+              font-family: Gilmer;
+              color: white;
+              option{
+                color: black;
+                border: none;
+              }
+            }
             a{
               color: #555B47;
               text-decoration: none;

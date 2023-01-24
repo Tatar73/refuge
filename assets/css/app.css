@@ -140,6 +140,16 @@ header .nav .langs {
 header .nav .langs ul {
   display: flex;
 }
+header .nav .langs ul select {
+  border: none;
+  background: none;
+  font-family: Gilmer;
+  color: white;
+}
+header .nav .langs ul select option {
+  color: black;
+  border: none;
+}
 header .nav .langs ul a {
   color: #555B47;
   text-decoration: none;
