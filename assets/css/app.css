@@ -181,7 +181,7 @@ header .nav li a:hover {
   color: black;
 }
 
-.container {
+.nav-mobile .container {
   max-width: 1050px;
   width: 90%;
   margin: auto;
@@ -1591,8 +1591,10 @@ footer .flex .left a {
 .menu a:hover {
   background-color: #1d1e1b;
 }
-.menu .container .parent {
+.menu .container {
   padding: 0 64px;
+}
+.menu .container .parent {
   margin-top: 100px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1605,7 +1607,8 @@ footer .flex .left a {
   flex-direction: column;
   background: #F8F4EC;
   padding: 20px;
-  width: 325px;
+  width: 110%;
+  height: 110%;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .menu .container .parent .content h3 {
