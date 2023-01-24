@@ -24,8 +24,10 @@
                 <ul>
                     <?php
 
+                    pll_current_language( $value );         
+
                     if(function_exists('pll_the_languages')) {
-                        pll_the_languages(['Français', 'Anglais']);
+                        pll_the_languages( array( 'dropdown' => 1 ) );
                     }
                     
                     ?>
