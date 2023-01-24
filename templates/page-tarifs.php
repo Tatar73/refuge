@@ -79,7 +79,7 @@ Template name: Tarifs
 </section>
 <section class="reservation">
     <h2>
-        <?php _e('RÉSERVATION', 'refuge'); ?>
+        <?php _e('DEMANDE DE RÉSERVATION', 'refuge'); ?>
     </h2>
     <div class="resa">
         <?php echo do_shortcode(get_field('form')); ?>
