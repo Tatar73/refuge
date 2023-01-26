@@ -518,7 +518,6 @@ footer .flex .left a {
   cursor: pointer;
   text-decoration: none;
   background-color: white;
-  border-radius: 16px;
   transition: all 200ms ease-in;
 }
 .container-index .acceuil .panorama button p {
@@ -1470,7 +1469,7 @@ footer .flex .left a {
 .programme .animation-slider .main-carousel .carousel-cell .date {
   font-family: "Gilmer";
   font-style: normal;
-  text-align: left;
+  text-align: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -1759,6 +1758,9 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   background-color: #1d1e1b;
 }
 
+.tarifs {
+  background: #555B47;
+}
 .tarifs .titre {
   height: 30vh;
   background: #F8F4EC;
@@ -1803,7 +1805,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   color: #FFFFFF;
 }
 .tarifs .forfaits .parent {
-  padding: 60px 0 100px 0;
+  padding: 60px 0 128px 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
@@ -1949,6 +1951,33 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   font-size: 20px;
   text-align: center;
   color: #555B47;
+}
+.tarifs .hors_repas {
+  background-color: #7E8170;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+.tarifs .hors_repas p:first-child {
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  color: #555B47;
+  border-radius: 100px;
+  background: #F8F4EC;
+  width: 79px;
+  padding: 15px 0;
+}
+.tarifs .hors_repas p:nth-child(2) {
+  font-family: "Gilmer";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #F8F4EC;
 }
 
 .reservation {

@@ -1,4 +1,5 @@
 .tarifs{
+    background: #555B47;
     .titre{
         height: 30vh;
         background: #F8F4EC;
@@ -43,7 +44,7 @@
 
         }
         .parent {
-            padding: 60px 0 100px 0;
+            padding: 60px 0 128px 0;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: 1fr;
@@ -203,6 +204,33 @@
     
                 }
             }
+        }
+    }
+    .hors_repas{
+        background-color: #7E8170;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px 0;
+        p:first-child{
+            font-family: 'Gilmer';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            text-align: center;
+            color: #555B47;
+            border-radius: 100px;
+            background: #F8F4EC;
+            width: 79px;
+            padding: 15px 0;
+        }
+        p:nth-child(2){
+            font-family: 'Gilmer';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;  
+            text-align: center;
+            color: #F8F4EC;       
         }
     }
 }

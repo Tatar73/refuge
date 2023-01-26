@@ -6,6 +6,9 @@ get_header();
 Template name: Tarifs
 */
 
+$tarifs = get_field('tarifs');
+
+
 ?>
 
 <section class="tarifs">
@@ -33,27 +36,45 @@ Template name: Tarifs
                     </div>
                 </div>
                 <div class="prix">
-                    <p>10€</p>
+                    <p>
+                        <?php the_field('tarif1') ?>
+                    </p>
                 </div>
                 <div class="categorie">
                     <p>
                         <?php _e('Enfant -12 ans', 'refuge'); ?>
                     </p>
                 </div>
+                <div class="hors_repas">
+                    <p>Hors Repas</p>
+                    <p>
+                        <?php the_field('demie_pension_tarif1') ?>
+                    </p>
+                </div>
             </div>
             <div class="tarif2">
                 <div class="prix">
-                    <p>16€</p>
+                    <p>
+                        <?php the_field('tarif2') ?>
+                    </p>
                 </div>
                 <div class="categorie">
                     <p>
                         <?php _e('Adulte +16 ans', 'refuge'); ?>
                     </p>
                 </div>
+                <div class="hors_repas">
+                    <p>Hors Repas</p>
+                    <p>
+                        <?php the_field('demie_pension_tarif2') ?>
+                    </p>
+                </div>
             </div>
             <div class="tarif3">
                 <div class="prix">
-                    <p>14€</p>
+                    <p>
+                        <?php the_field('tarif3') ?>
+                    </p>
                 </div>
                 <div class="categorie">
                     <p>
@@ -63,14 +84,29 @@ Template name: Tarifs
                         <?php _e('FFME*/FFS*Scolaire étudiants/ enfants(12-15ans)', 'refuge'); ?>
                     </legend>
                 </div>
+                <div class="hors_repas">
+                    <p>Hors Repas</p>
+                    <p>
+                        <?php the_field('demie_pension_tarif3') ?>
+                    </p>
+                </div>
             </div>
             <div class="tarif4">
                 <div class="prix">
-                    <p>6€</p>
+                    <p>
+                        <?php the_field('tarif4') ?>
+                    </p>
+
                 </div>
                 <div class="categorie">
                     <p>
                         <?php _e('Emplacement Bivouac', 'refuge'); ?>
+                    </p>
+                </div>
+                <div class="hors_repas">
+                    <p>Hors Repas</p>
+                    <p>
+                        <?php the_field('demie_pension_tarif4') ?>
                     </p>
                 </div>
             </div>
