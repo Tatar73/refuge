@@ -10,7 +10,7 @@ get_header();
 $slider = get_field('slider');
 
 $modalites = get_field('modalites');
-debug($modalites);
+debug($slider);
 //var_dump($slider);
 ?>
 
@@ -117,7 +117,7 @@ debug($modalites);
 
                                 <?php foreach ($modalites['modalite'] as $modalite): ?>
                                     <div class="condition">
-                                        <img src="<?php echo ($modalite['icon']['url']); ?>" height="" width="" alt="">
+                                        <img src="<?php echo ($modalite['image']['url']); ?>" height="" width="" alt="">
                                         <p>
                                             <?php echo ($modalite['texte']); ?>
                                         </p>
