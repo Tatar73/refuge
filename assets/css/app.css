@@ -183,7 +183,7 @@ header .nav li a:hover {
 
 .nav-mobile .container {
   max-width: 1050px;
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 
@@ -1013,6 +1013,8 @@ footer .flex .left a {
     padding: 96px 0 0 0;
   }
   .container-index .cuisine .texte p {
+    width: unset;
+    padding: 0 64px;
     font-size: 16px;
   }
   .container-index .intro #topo_right {
@@ -1028,13 +1030,8 @@ footer .flex .left a {
   }
   .container-index .animations .wrap {
     flex-direction: column;
+    width: 100%;
     align-items: center;
-  }
-  .container-index .animations .wrap .animations-left {
-    width: unset;
-  }
-  .container-index .animations .wrap .animations-left h3 {
-    text-align: center;
   }
   .container-index .animations .wrap .animations-left .button {
     display: flex;
@@ -1043,6 +1040,9 @@ footer .flex .left a {
   }
   .container-index .animations .wrap .animations-right {
     justify-content: center;
+  }
+  .container-index .services .wrap .flex .services-left .content-right {
+    width: 80%;
   }
 }
 @media screen and (max-width: 1024px) {
