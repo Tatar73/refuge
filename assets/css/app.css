@@ -1853,6 +1853,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   color: #F8F4EC;
 }
 .tarifs .forfaits .parent .tarif .categorie p {
+  margin-top: 12px;
   padding: 32px 0;
   font-family: "Gilmer";
   font-style: normal;
@@ -1880,6 +1881,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   color: #F8F4EC;
 }
 .tarifs .forfaits .parent .tarif2 .categorie p {
+  margin-top: 12px;
   padding: 32px 0;
   font-family: "Gilmer";
   font-style: normal;
@@ -1944,6 +1946,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   color: #F8F4EC;
 }
 .tarifs .forfaits .parent .tarif4 .categorie p {
+  margin-top: 12px;
   padding: 32px 0;
   font-family: "Gilmer";
   font-style: normal;
@@ -1966,7 +1969,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   font-size: 12px;
   text-align: center;
   color: #555B47;
-  border-radius: 100px;
+  border-radius: 4px;
   background: #F8F4EC;
   width: 79px;
   padding: 15px 0;
