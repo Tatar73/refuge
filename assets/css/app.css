@@ -408,7 +408,6 @@ footer .flex .left a {
   footer .flex {
     flex-direction: column-reverse;
     gap: 32px;
-    margin: 0 128px;
   }
   footer .flex .left img {
     width: 50%;
@@ -427,6 +426,17 @@ footer .flex .left a {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .right {
+    text-align: center;
+  }
+  .left {
+    text-align: center;
+  }
+  .left img {
+    margin: auto;
+  }
+}
 .container-index .background {
   position: relative;
 }

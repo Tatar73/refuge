@@ -58,7 +58,6 @@ footer{
         .flex{
             flex-direction: column-reverse;
             gap: 32px;
-            margin: 0 128px ;
             .left img{
                 width: 50%;
             }
@@ -81,5 +80,20 @@ footer{
         }
 
       }
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .right{
+        text-align: center;
+    }
+    .left{
+        text-align: center;
+        img{
+            margin: auto;
+        }
+    }
+
 
 }

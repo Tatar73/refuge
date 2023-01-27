@@ -36,6 +36,7 @@ $reglements = get_field('reglements');
                         </legend>
                     </div>
                 <?php endforeach; ?>
+
             </div>
             <div class="texte">
                 <p>
