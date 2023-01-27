@@ -101,7 +101,33 @@
                         text-align: center;
                         color: #555B47;
                     }
-    
+                }
+                .hors_repas{
+                    background-color: #7E8170;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    padding: 10px 0;
+                    p:first-child{
+                        font-family: 'Gilmer';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 12px;
+                        text-align: center;
+                        color: #555B47;
+                        border-radius: 4px;
+                        background: #F8F4EC;
+                        width: 79px;
+                        padding: 15px 0;
+                    }
+                    p:nth-child(2){
+                        font-family: 'Gilmer';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 32px;  
+                        text-align: center;
+                        color: #F8F4EC;       
+                    }
                 }
             }
             .tarif2{
@@ -134,6 +160,33 @@
                         color: #555B47;
                     }
     
+                }
+                .hors_repas{
+                    background-color: #7E8170;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    padding: 10px 0;
+                    p:first-child{
+                        font-family: 'Gilmer';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 12px;
+                        text-align: center;
+                        color: #555B47;
+                        border-radius: 4px;
+                        background: #F8F4EC;
+                        width: 79px;
+                        padding: 15px 0;
+                    }
+                    p:nth-child(2){
+                        font-family: 'Gilmer';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 32px;  
+                        text-align: center;
+                        color: #F8F4EC;       
+                    }
                 }
             }
             .tarif3{
@@ -174,6 +227,33 @@
                         padding-bottom: 16px;
                     }
                 }
+                .hors_repas{
+                    background-color: #7E8170;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    padding: 10px 0;
+                    p:first-child{
+                        font-family: 'Gilmer';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 12px;
+                        text-align: center;
+                        color: #555B47;
+                        border-radius: 4px;
+                        background: #F8F4EC;
+                        width: 79px;
+                        padding: 15px 0;
+                    }
+                    p:nth-child(2){
+                        font-family: 'Gilmer';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 32px;  
+                        text-align: center;
+                        color: #F8F4EC;       
+                    }
+                }
             }
             .tarif4{
                 background: #F8F4EC;
@@ -205,34 +285,34 @@
                         color: #555B47;
                     }
                 }
+                .hors_repas{
+                    background-color: #7E8170;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    padding: 10px 0;
+                    p:first-child{
+                        font-family: 'Gilmer';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 12px;
+                        text-align: center;
+                        color: #555B47;
+                        border-radius: 4px;
+                        background: #F8F4EC;
+                        width: 79px;
+                        padding: 15px 0;
+                    }
+                    p:nth-child(2){
+                        font-family: 'Gilmer';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 32px;  
+                        text-align: center;
+                        color: #F8F4EC;       
+                    }
+                }
             }
-        }
-    }
-    .hors_repas{
-        background-color: #7E8170;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        padding: 10px 0;
-        p:first-child{
-            font-family: 'Gilmer';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 12px;
-            text-align: center;
-            color: #555B47;
-            border-radius: 4px;
-            background: #F8F4EC;
-            width: 79px;
-            padding: 15px 0;
-        }
-        p:nth-child(2){
-            font-family: 'Gilmer';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 32px;  
-            text-align: center;
-            color: #F8F4EC;       
         }
     }
 }
