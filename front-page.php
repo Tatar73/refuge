@@ -10,6 +10,7 @@ get_header();
 $slider = get_field('slider');
 
 $modalites = get_field('modalites');
+debug($modalites);
 //var_dump($slider);
 ?>
 
@@ -62,7 +63,6 @@ $modalites = get_field('modalites');
                 </script>
     </section>
     <div class="background">
-        <?php debug($modalite); ?>
         <section class="intro">
             <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/intro_topo_left.svg" alt=""
                 id="topo_left">
