@@ -1963,6 +1963,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   color: #F8F4EC;
 }
 .tarifs .forfaits .parent .tarif3 .categorie p {
+  margin-top: 14px;
   padding: 32px 0 0 0;
   font-family: "Gilmer";
   font-style: normal;

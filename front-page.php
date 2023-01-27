@@ -8,6 +8,8 @@ Template name: Accueil
 get_header();
 
 $slider = get_field('slider');
+
+$modalites = get_field('modalites');
 //var_dump($slider);
 ?>
 
@@ -111,53 +113,13 @@ $slider = get_field('slider');
                                 <?php the_field('periode_gardiennage') ?>
                             </legend>
                             <div class="conditions">
-                                <div class="condition">
-                                    <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/lit.svg"
-                                        alt="lit">
+                                <?php foreach ($modalites['modalite'] as $modalites): ?>
+                                    <img src="<?php echo ($modalites['icon']['url']); ?>" height="" width="" alt="">
                                     <p>
-                                        <?php _e('14 couchages', 'refuge'); ?>
+                                        <?php echo ($modalites['texte']); ?>
                                     </p>
-                                </div>
-                                <div class="condition">
-                                    <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/couette.svg"
-                                        alt="couette">
-                                    <div class="legends">
-                                        <p>
-                                            <?php _e('Couettes', 'refuge'); ?>
-                                        </p>
-                                        <legend>
-                                            <?php _e('Prenez votre drap-sac', 'refuge'); ?>
-                                        </legend>
-                                    </div>
-                                </div>
-                                <div class="condition">
-                                    <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/tente.svg"
-                                        alt="tente">
-                                    <p>
-                                        <?php _e('Bivouac', 'refuge'); ?>
-                                    </p>
-                                </div>
-                                <div class="condition">
-                                    <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/restauration.svg"
-                                        alt="restauration">
-                                    <p>
-                                        <?php _e('Restauration', 'refuge'); ?>
-                                    </p>
-                                </div>
-                                <div class="condition">
-                                    <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/chauffage.svg"
-                                        alt="chauffage">
-                                    <p>
-                                        <?php _e('Chauffage poêle', 'refuge'); ?>
-                                    </p>
-                                </div>
-                                <div class="condition">
-                                    <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/WC.svg"
-                                        alt="wc" style="margin-left: 4px;">
-                                    <p>
-                                        <?php _e('WC secs', 'refuge'); ?>
-                                    </p>
-                                </div>
+                                <?php endforeach; ?>
+
                             </div>
                         </div>
                     </div>
