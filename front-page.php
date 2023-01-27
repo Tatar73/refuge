@@ -10,7 +10,7 @@ get_header();
 $slider = get_field('slider');
 
 $modalites = get_field('modalites');
-debug($slider);
+//debug($slider);
 //var_dump($slider);
 ?>
 
