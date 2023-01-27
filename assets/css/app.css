@@ -1036,6 +1036,18 @@ footer .flex .left a {
   .container-index .animations .wrap .animations-left {
     width: unset;
   }
+  .container-index .animations .wrap h3 {
+    text-align: center;
+  }
+  .container-index .animations .wrap .animations-left p {
+    text-align: center;
+  }
+  .container-index .animations .wrap .animations-right img {
+    width: 150%;
+  }
+  .container-index .intro #topo_left {
+    display: none;
+  }
   .container-index .animations .wrap .animations-left .button {
     display: flex;
     justify-content: center;
