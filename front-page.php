@@ -113,11 +113,14 @@ $modalites = get_field('modalites');
                                 <?php the_field('periode_gardiennage') ?>
                             </legend>
                             <div class="conditions">
-                                <?php foreach ($modalites['modalite'] as $modalites): ?>
-                                    <img src="<?php echo ($modalites['icon']['url']); ?>" height="" width="" alt="">
-                                    <p>
-                                        <?php echo ($modalites['texte']); ?>
-                                    </p>
+
+                                <?php foreach ($modalites['modalite'] as $modalite): ?>
+                                    <div class="condition">
+                                        <img src="<?php echo ($modalite['icon']['url']); ?>" height="" width="" alt="">
+                                        <p>
+                                            <?php echo ($modalite['texte']); ?>
+                                        </p>
+                                    </div>
                                 <?php endforeach; ?>
 
                             </div>
