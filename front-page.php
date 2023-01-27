@@ -9,7 +9,8 @@ get_header();
 
 $slider = get_field('slider');
 
-$modalites = get_field('modalites');
+$modalitesGardiennage = get_field('modalites_gardiennage');
+$modalitesHorsGardiennage = get_field('modalites_hors_gardiennage');
 //debug($slider);
 //var_dump($slider);
 ?>
@@ -115,7 +116,7 @@ $modalites = get_field('modalites');
                             </legend>
                             <div class="conditions">
 
-                                <?php foreach ($modalites['modalite'] as $modalite): ?>
+                                <?php foreach ($modalitesGardiennage['modalite'] as $modalite): ?>
                                     <div class="condition">
                                         <img src="<?php echo ($modalite['image']['url']); ?>" height="" width="" alt="">
                                         <p>
@@ -139,58 +140,14 @@ $modalites = get_field('modalites');
                                 <?php the_field('periode_hors_gardiennage') ?>
                             </legend>
                             <div class="conditions">
-                                <div class="condition">
-                                    <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/lit.svg"
-                                        alt="lit">
-                                    <p>
-                                        <?php _e('14 couchages', 'refuge'); ?>
-                                    </p>
-                                </div>
-                                <div class="condition">
-                                    <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/couverture.svg"
-                                        alt="Couverture">
-                                    <div class="legends">
+                                <?php foreach ($modalitesHorsGardiennage['modalite'] as $modalite): ?>
+                                    <div class="condition">
+                                        <img src="<?php echo ($modalite['image']['url']); ?>" height="" width="" alt="">
                                         <p>
-                                            <?php _e('Couvertures', 'refuge'); ?>
+                                            <?php echo ($modalite['texte']); ?>
                                         </p>
-                                        <legend>
-                                            <?php _e('Prenez votre sac de couchage', 'refuge'); ?>
-                                        </legend>
                                     </div>
-                                </div>
-                                <div class="condition">
-                                    <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/tente.svg"
-                                        alt="tente">
-                                    <p>
-                                        <?php _e('Bivouac', 'refuge'); ?>
-                                    </p>
-                                </div>
-                                <div class="condition">
-                                    <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/gaziniere.svg"
-                                        alt="gazinière">
-                                    <div class="legends">
-                                        <p>
-                                            <?php _e('Gazinière', 'refuge'); ?>
-                                        </p>
-                                        <legend>
-                                            <?php _e('Accessible', 'refuge'); ?>
-                                        </legend>
-                                    </div>
-                                </div>
-                                <div class="condition">
-                                    <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/chauffage.svg"
-                                        alt="chauffage">
-                                    <p>
-                                        <?php _e('Chauffage poêle', 'refuge'); ?>
-                                    </p>
-                                </div>
-                                <div class="condition">
-                                    <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/icon/WC.svg"
-                                        alt="wc" style="margin-left: 4px;">
-                                    <p>
-                                        <?php _e('WC secs', 'refuge'); ?>
-                                    </p>
-                                </div>
+                                <?php endforeach; ?>
                             </div>
                         </div>
 
