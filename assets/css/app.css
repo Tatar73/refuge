@@ -1033,6 +1033,9 @@ footer .flex .left a {
     width: 100%;
     align-items: center;
   }
+  .container-index .animations .wrap .animations-left {
+    width: unset;
+  }
   .container-index .animations .wrap .animations-left .button {
     display: flex;
     justify-content: center;
