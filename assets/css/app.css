@@ -1073,10 +1073,13 @@ footer .flex .left a {
     justify-content: center;
   }
   .container-index .services .wrap .flex .services-left .content-right {
-    width: 80%;
+    width: 70%;
+  }
+  .container-index .services .wrap .flex .services-left .content-left {
+    width: 30%;
   }
   .container-index .acceuil .ouverture {
-    top: 24%;
+    top: 12%;
   }
   .container-index .acceuil .ouverture p:nth-child(1) {
     text-align: center;
@@ -2742,6 +2745,10 @@ https://flickity.metafizzy.co
 @media screen and (max-width: 768px) {
   .flickity-prev-next-button.previous {
     opacity: 1;
+    left: 0;
+  }
+  .flickity-prev-next-button.next {
+    right: 0;
   }
 }
 
