@@ -296,7 +296,8 @@ header{
 
   @media screen and (max-width: 768px) {
     .nav-mobile{
-        display: block;
+      padding-top: 12px;      
+      display: block;
     }
 
     header .nav{

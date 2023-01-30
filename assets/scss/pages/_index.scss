@@ -56,34 +56,33 @@
             height: 100vh;
         }
 
-        .ouverture #periode{
-            position: absolute;
-            top: 86%;
-            left: 256px;
-            transform: translate(-50%, -50%);
-            text-align: left;
-            font-family: 'Gilmer';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 29px;
-            text-align: center;
+        .ouverture{
+            z-index: 1;
+            width: 100%;
+            display: flex;
+            justify-content: left;
+            flex-direction: column;
+            position: relative;
+            top: 28%;
+            padding: 0 64px;
+            p:nth-child(1){
+                font-family: 'Gilmer';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 29px;
+                text-align: left;
+                color: #FFFFFF;
+            }
+            p:nth-child(2){
+                font-family: 'Gilmer';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                text-align: left;
+                color: #FFFFFF;
+            }
     
-            color: #FFFFFF;
-        }
-
-        .ouverture #acces{
-            position: absolute;
-            top: 89%;
-            left: 155px;
-            transform: translate(-50%, -50%);
-            text-align: left;
-            font-family: 'Gilmer';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            text-align: center;
-            color: #FFFFFF;
         }
 
         .panorama{
@@ -125,6 +124,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
             height: 100%;
             transition: opacity 0.5s ease-out;
             opacity: 1;
@@ -629,6 +629,12 @@
                 
             }
         }
+        @media screen and (max-width: 930px) {
+            .container-index .acceuil .ouverture{
+                top: 24%;
+            }
+        }
+
     
         //iPads, Tablets
         @media screen and (max-width: 768px) {
@@ -720,6 +726,20 @@
             .container-index .services .wrap .flex .services-left .content-right{
                 width: 80%;
             }
+
+            .container-index .acceuil .ouverture{
+                top: 24%;
+            }
+
+            .container-index .acceuil .ouverture p{
+            }
+            .container-index .acceuil .ouverture p:nth-child(1){
+                text-align: center;
+            }
+            .container-index .acceuil .ouverture p:nth-child(2){
+                text-align: center;
+            }
+
         }
 
     

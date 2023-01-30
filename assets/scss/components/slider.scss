@@ -123,3 +123,10 @@ https://flickity.metafizzy.co
     height: 60%;
 }
 
+//iPads, Tablets
+@media screen and (max-width: 768px) {
+    .flickity-prev-next-button.previous {
+        opacity: 1;
+    }
+}
+

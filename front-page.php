@@ -36,10 +36,10 @@ $modalitesHorsGardiennage = get_field('modalites_hors_gardiennage');
                 </h2>
             </div>
             <div class="ouverture">
-                <p id="periode">
+                <p>
                     <?php _e('Gardé de mi-juin à mi-septembre', 'refuge'); ?>
                 </p>
-                <p id="acces">
+                <p>
                     <?php _e('Non gardé hors saisons', 'refuge'); ?>
                 </p>
             </div>
@@ -55,7 +55,6 @@ $modalitesHorsGardiennage = get_field('modalites_hors_gardiennage');
                     <?php _e('Panorama', 'refuge'); ?>
                 </p>
             </button>
-
         </div>
         <div class="content-pano" id="content-pano" style="display: none;">
 
@@ -71,7 +70,13 @@ $modalitesHorsGardiennage = get_field('modalites_hors_gardiennage');
                 id="topo_right">
             <div class="intro-slider">
                 <div class="main-carousel"
-                    data-flickity='{ "cellAlign": "right", "contain": true, "wrapAround": true }'>
+                    data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true }'>
+                    <?php foreach ($slider['images'] as $image): ?>
+                        <div id="horizontal_img" class="carousel-cell">
+                            <img src="<?php echo ($image['image']['url']); ?>" height="" width="" alt="">
+                            <!-- <p><?php echo ($image['copyright']); ?></p> -->
+                        </div>
+                    <?php endforeach; ?>
                     <?php foreach ($slider['images'] as $image): ?>
                         <div id="horizontal_img" class="carousel-cell">
                             <img src="<?php echo ($image['image']['url']); ?>" height="" width="" alt="">

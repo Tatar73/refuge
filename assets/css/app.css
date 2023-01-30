@@ -336,6 +336,7 @@ header .nav-mobile ul {
 
 @media screen and (max-width: 768px) {
   .nav-mobile {
+    padding-top: 12px;
     display: block;
   }
   header .nav {
@@ -486,31 +487,31 @@ footer .flex .left a {
   width: 100%;
   height: 100vh;
 }
-.container-index .acceuil .ouverture #periode {
-  position: absolute;
-  top: 86%;
-  left: 256px;
-  transform: translate(-50%, -50%);
-  text-align: left;
+.container-index .acceuil .ouverture {
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  position: relative;
+  top: 28%;
+  padding: 0 64px;
+}
+.container-index .acceuil .ouverture p:nth-child(1) {
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
-  text-align: center;
+  text-align: left;
   color: #FFFFFF;
 }
-.container-index .acceuil .ouverture #acces {
-  position: absolute;
-  top: 89%;
-  left: 155px;
-  transform: translate(-50%, -50%);
-  text-align: left;
+.container-index .acceuil .ouverture p:nth-child(2) {
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  text-align: center;
+  text-align: left;
   color: #FFFFFF;
 }
 .container-index .acceuil .panorama {
@@ -549,6 +550,7 @@ footer .flex .left a {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   height: 100%;
   transition: opacity 0.5s ease-out;
   opacity: 1;
@@ -983,6 +985,11 @@ footer .flex .left a {
   background-color: #1d1e1b;
 }
 
+@media screen and (max-width: 930px) {
+  .container-index .acceuil .ouverture {
+    top: 24%;
+  }
+}
 @media screen and (max-width: 768px) {
   .container-index .intro {
     padding: 64px 0;
@@ -1067,6 +1074,15 @@ footer .flex .left a {
   }
   .container-index .services .wrap .flex .services-left .content-right {
     width: 80%;
+  }
+  .container-index .acceuil .ouverture {
+    top: 24%;
+  }
+  .container-index .acceuil .ouverture p:nth-child(1) {
+    text-align: center;
+  }
+  .container-index .acceuil .ouverture p:nth-child(2) {
+    text-align: center;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -2721,6 +2737,12 @@ https://flickity.metafizzy.co
   top: 20%;
   width: 60%;
   height: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  .flickity-prev-next-button.previous {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
