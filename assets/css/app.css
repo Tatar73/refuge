@@ -435,13 +435,13 @@ footer .flex .left a {
 }
 
 @media screen and (max-width: 480px) {
-  .right {
+  footer .right {
     text-align: center;
   }
-  .left {
+  footer .left {
     text-align: center;
   }
-  .left img {
+  footer .left img {
     margin: auto;
   }
 }
@@ -1486,7 +1486,7 @@ footer .flex .left a {
   padding: 100px 64px;
 }
 .animation .intro {
-  min-height: 50vh;
+  margin-bottom: 64px;
   position: relative;
 }
 .animation .intro h1 {
@@ -1591,6 +1591,22 @@ footer .flex .left a {
   color: #FFFFFF;
 }
 
+@media screen and (max-width: 1024px) {
+  .animation .intro img {
+    display: none;
+  }
+  .animation .intro h1 {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .animation .intro p {
+    text-align: center;
+    margin: auto;
+  }
+  .programme .animation-slider .main-carousel .carousel-cell .text {
+    text-align: left;
+  }
+}
 .cuisine {
   position: relative;
   background: #555B47;
@@ -1835,6 +1851,17 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   background-color: #1d1e1b;
 }
 
+@media screen and (max-width: 768px) {
+  body div.wpforms-container-full .wpforms-form .wpforms-field input {
+    font-size: 12px;
+  }
+  body div.wpforms-container-full .wpforms-form .wpforms-field textarea {
+    font-size: 12px;
+  }
+  .contact .form .left {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1024px) {
   .contact .form {
     flex-direction: column;
@@ -1842,6 +1869,24 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   .contact h2,
   .contact p {
     text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contact .form .right {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+  }
+  .contact .form .right img {
+    width: 50%;
+  }
+  body div.wpforms-container-full .wpforms-form .wpforms-field-container {
+    --gap-field: 25px;
+  }
+  body div.wpforms-container-full .wpforms-form .wpforms-submit-container {
+    display: flex;
+    justify-content: center;
+    float: none;
   }
 }
 .tarifs {

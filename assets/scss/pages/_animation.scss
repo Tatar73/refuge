@@ -2,7 +2,7 @@
     background: #555B47;
     padding: 100px 64px;
     .intro{
-        min-height: 50vh;
+        margin-bottom: 64px;
         position: relative;
         h1{
             font-family: 'Gilmer';
@@ -111,4 +111,33 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+    .animation .intro img{
+        display: none;
+    }
+
+    .animation .intro h1{
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .animation .intro p{
+        text-align: center;
+        margin: auto;
+    }
+
+    .programme .animation-slider .main-carousel .carousel-cell .text{
+        text-align: left;
+    }
+
 }

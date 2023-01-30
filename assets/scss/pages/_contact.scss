@@ -130,6 +130,19 @@ body div.wpforms-container-full .wpforms-form{
     }
 }
 
+@media screen and (max-width: 768px) {
+    body div.wpforms-container-full .wpforms-form .wpforms-field input{
+        font-size: 12px;
+    }
+    body div.wpforms-container-full .wpforms-form .wpforms-field textarea{
+        font-size: 12px;
+
+    }
+    .contact .form .left{
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .contact .form{
         flex-direction: column;
@@ -139,3 +152,27 @@ body div.wpforms-container-full .wpforms-form{
         text-align: center;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .contact .form .right{
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+        img{
+            width: 50%;
+        }
+    }
+
+    body div.wpforms-container-full .wpforms-form .wpforms-field-container {
+        --gap-field: 25px;
+    }
+
+    body div.wpforms-container-full .wpforms-form .wpforms-submit-container{
+        display: flex;
+        justify-content: center;
+        float: none;
+    }
+
+    
+}
+
