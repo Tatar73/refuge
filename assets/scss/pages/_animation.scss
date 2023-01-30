@@ -40,8 +40,8 @@
 }
 
 .programme{
+    padding: 0 0 64px 0;
     background: #555B47;
-    height: 100vh;
     .ligne{
         height: 0px;
         border: 3px solid #F8F4EC;
@@ -114,11 +114,24 @@
 }
 
 @media screen and (max-width: 480px) {
-
+    .programme{
+        .animation-slider{
+            .main-carousel .carousel-cell {
+                .text{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
-
+    .programme .animation-slider .main-carousel .carousel-cell .text{
+        font-size: 14px;
+    }
+    .programme .animation-slider .main-carousel .carousel-cell{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -129,15 +142,21 @@
     .animation .intro h1{
         text-align: center;
         margin-bottom: 32px;
+        font-size: 36px;
     }
 
     .animation .intro p{
         text-align: center;
         margin: auto;
+        font-size: 16px
+    }
+    .animation h2{
+        font-size: 36px;
     }
 
     .programme .animation-slider .main-carousel .carousel-cell .text{
         text-align: left;
+        font-size: 14px;
     }
 
 }

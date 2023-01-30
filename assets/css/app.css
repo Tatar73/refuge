@@ -1523,8 +1523,8 @@ footer .flex .left a {
 }
 
 .programme {
+  padding: 0 0 64px 0;
   background: #555B47;
-  height: 100vh;
 }
 .programme .ligne {
   height: 0px;
@@ -1591,6 +1591,19 @@ footer .flex .left a {
   color: #FFFFFF;
 }
 
+@media screen and (max-width: 480px) {
+  .programme .animation-slider .main-carousel .carousel-cell .text {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .programme .animation-slider .main-carousel .carousel-cell .text {
+    font-size: 14px;
+  }
+  .programme .animation-slider .main-carousel .carousel-cell {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1024px) {
   .animation .intro img {
     display: none;
@@ -1598,13 +1611,19 @@ footer .flex .left a {
   .animation .intro h1 {
     text-align: center;
     margin-bottom: 32px;
+    font-size: 36px;
   }
   .animation .intro p {
     text-align: center;
     margin: auto;
+    font-size: 16px;
+  }
+  .animation h2 {
+    font-size: 36px;
   }
   .programme .animation-slider .main-carousel .carousel-cell .text {
     text-align: left;
+    font-size: 14px;
   }
 }
 .cuisine {
@@ -1701,7 +1720,7 @@ footer .flex .left a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 64px;
+  grid-column-gap: 32px;
   grid-row-gap: 0px;
   min-height: 306px;
 }
@@ -1709,8 +1728,8 @@ footer .flex .left a {
   flex-direction: column;
   background: #F8F4EC;
   padding: 20px;
-  width: 110%;
-  height: 110%;
+  width: 100%;
+  height: 100%;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .menu .container .parent .content h3 {
@@ -1731,6 +1750,36 @@ footer .flex .left a {
   color: #555B47;
 }
 
+@media screen and (max-width: 768px) {
+  .cuisine {
+    padding: 0 64px;
+  }
+  .menu a {
+    width: unset;
+    font-size: 14px;
+  }
+  .cuisine img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .menu .container .parent {
+    display: unset;
+  }
+  .menu .container .parent .content {
+    margin-top: 32px;
+    width: 100%;
+    height: 100%;
+  }
+  .menu .container .parent {
+    grid-template-columns: unset;
+    grid-template-rows: 1;
+    grid-row-gap: 64px;
+  }
+  .cuisine {
+    padding: 0 64px;
+  }
+}
 .contact {
   background: #F8F4EC;
   padding: 0 64px;
