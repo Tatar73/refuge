@@ -336,7 +336,6 @@ header .nav-mobile ul {
 
 @media screen and (max-width: 768px) {
   .nav-mobile {
-    margin-top: 80px;
     display: block;
   }
   header .nav {
