@@ -58,13 +58,20 @@ footer{
         .flex{
             flex-direction: column-reverse;
             gap: 32px;
-            .left img{
-                width: 50%;
+            .left{
+                margin: auto;
+                text-align: center;
+                .left img{
+                    width: 50%;
+                }
             }
+            
             .middle{
                 display: none;
             }
             .right{
+                margin: auto;
+                text-align: center;
                 h4{
                     padding: 0;
                 }
@@ -94,6 +101,4 @@ footer{
             margin: auto;
         }
     }
-
-
 }

@@ -409,11 +409,19 @@ footer .flex .left a {
     flex-direction: column-reverse;
     gap: 32px;
   }
-  footer .flex .left img {
+  footer .flex .left {
+    margin: auto;
+    text-align: center;
+  }
+  footer .flex .left .left img {
     width: 50%;
   }
   footer .flex .middle {
     display: none;
+  }
+  footer .flex .right {
+    margin: auto;
+    text-align: center;
   }
   footer .flex .right h4 {
     padding: 0;
@@ -985,9 +993,24 @@ footer .flex .left a {
   background-color: #1d1e1b;
 }
 
-@media screen and (max-width: 930px) {
-  .container-index .acceuil .ouverture {
-    top: 24%;
+@media screen and (max-width: 480px) {
+  .container-index .acceuil .content-index .titles h1 {
+    font-size: 36px;
+  }
+  .container-index .acceuil .content-index .titles h2 {
+    font-size: 24px;
+  }
+  .container-index .acceuil .ouverture p:nth-child(1) {
+    font-size: 20px;
+  }
+  .container-index .acceuil .ouverture p:nth-child(2) {
+    font-size: 12px;
+  }
+  .container-index .services .wrap .flex .services-left .content-right h4 {
+    font-size: 16px;
+  }
+  .container-index .services .wrap .flex .services-left .content-right .conditions .condition > p {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1078,6 +1101,12 @@ footer .flex .left a {
   .container-index .services .wrap .flex .services-left .content-left {
     width: 30%;
   }
+  .container-index .services .wrap .flex .services-right .content-right {
+    width: 70%;
+  }
+  .container-index .services .wrap .flex .services-right .content-left {
+    width: 30%;
+  }
   .container-index .acceuil .ouverture {
     top: 12%;
   }
@@ -1086,6 +1115,11 @@ footer .flex .left a {
   }
   .container-index .acceuil .ouverture p:nth-child(2) {
     text-align: center;
+  }
+}
+@media screen and (max-width: 930px) {
+  .container-index .acceuil .ouverture {
+    top: 24%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1117,7 +1151,7 @@ footer .flex .left a {
     font-size: 12px;
   }
   .container-index .services .wrap .flex .rappels {
-    top: 1000px;
+    top: 1050px;
     width: 256px;
     height: 191px;
   }
@@ -1801,6 +1835,15 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   background-color: #1d1e1b;
 }
 
+@media screen and (max-width: 1024px) {
+  .contact .form {
+    flex-direction: column;
+  }
+  .contact h2,
+  .contact p {
+    text-align: center;
+  }
+}
 .tarifs {
   background: #555B47;
 }

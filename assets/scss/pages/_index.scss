@@ -625,17 +625,25 @@
 
         //iPads, Tablets
         @media screen and (max-width: 480px) {
-            .container-index{
-                
+            .container-index .acceuil .content-index .titles h1{
+                font-size: 36px;
+            }
+            .container-index .acceuil .content-index .titles h2{
+                font-size: 24px;
+            }
+            .container-index .acceuil .ouverture p:nth-child(1) {
+                font-size: 20px;
+            }
+            .container-index .acceuil .ouverture p:nth-child(2){
+                font-size: 12px;
+            }
+            .container-index .services .wrap .flex .services-left .content-right h4{
+                font-size: 16px;
+            }
+            .container-index .services .wrap .flex .services-left .content-right .conditions .condition > p{
+                font-size: 12px;
             }
         }
-        @media screen and (max-width: 930px) {
-            .container-index .acceuil .ouverture{
-                top: 24%;
-            }
-        }
-
-    
         //iPads, Tablets
         @media screen and (max-width: 768px) {
             .container-index .intro{
@@ -731,6 +739,15 @@
                 width: 30%;
             }
 
+            .container-index .services .wrap .flex .services-right .content-right{
+                width: 70%;
+            }
+
+            .container-index .services .wrap .flex .services-right .content-left{
+                width: 30%;
+            }
+
+
             .container-index .acceuil .ouverture{
                 top: 12%;
             }
@@ -744,7 +761,15 @@
                 text-align: center;
             }
 
+
         }
+
+        @media screen and (max-width: 930px) {
+            .container-index .acceuil .ouverture{
+                top: 24%;
+            }
+        }
+
 
     
         @media screen and (max-width: 1024px) {
@@ -780,7 +805,7 @@
             }
 
             .container-index .services .wrap .flex .rappels{
-                top: 1000px;
+                top: 1050px;
                 width: 256px;
                 height: 191px;
             }
