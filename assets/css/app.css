@@ -1015,9 +1015,6 @@ footer .flex .left a {
   .container-index .services .wrap .flex .services-left .content-right {
     width: 70%;
   }
-  .container-index .services .wrap .flex .services-left .content-left {
-    width: 30%;
-  }
 }
 @media screen and (max-width: 768px) {
   .container-index .intro {
