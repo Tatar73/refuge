@@ -1015,6 +1015,12 @@ footer .flex .left a {
   .container-index .services .wrap .flex .services-left .content-right {
     width: 70%;
   }
+  .container-index .services .wrap {
+    padding: 0 32px;
+  }
+  .container-index .services .wrap .flex .services-left .content-right .conditions {
+    margin-left: unset;
+  }
 }
 @media screen and (max-width: 768px) {
   .container-index .intro {
@@ -1123,13 +1129,13 @@ footer .flex .left a {
   .container-index .services .wrap .flex .services-left .content-right .conditions .condition .legends p {
     font-size: 14px;
   }
+  .container-index .services .wrap .flex .services-left .content-right .conditions {
+    margin-left: 10px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .container-index .intro .intro-right {
     padding: 0 64px;
-  }
-  .container-index .services .wrap .flex .services-left .content-right .conditions {
-    margin-left: 10px;
   }
   .container-index .services .wrap .flex {
     flex-direction: column;
