@@ -649,12 +649,12 @@
             .container-index .services .wrap{
                 padding: 0 32px;
             }
-            .container-index .services .wrap .flex .services-left .content-right .conditions{
-                margin-left: unset;
-            }
         }
         //iPads, Tablets
         @media screen and (max-width: 768px) {
+            .container-index .services .wrap .flex .services-left .content-right .conditions{
+                margin: auto;
+            }
             .container-index .intro{
                 padding: 64px 0; 
                 height: unset;
