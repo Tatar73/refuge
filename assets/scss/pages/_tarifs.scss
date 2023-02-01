@@ -669,7 +669,7 @@
     }
 }
 
-@media screen (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .reservation .resa .resa-left .form-flex{
         gap: 64px;
     }
@@ -684,7 +684,6 @@
         width: 100%;
     }
 }
-
 @media screen and (max-width: 480px) {
 
 }
