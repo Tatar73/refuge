@@ -1481,6 +1481,117 @@ footer .flex .left a {
   transform: translate(-30%, -50%);
 }
 
+@media screen and (max-width: 1024px) {
+  .container-acces .acces .content {
+    flex-direction: column;
+    margin-bottom: 64px;
+  }
+  .container-acces .itineraires .itineraire {
+    flex-direction: column;
+  }
+  .container-acces .itineraires .itineraire .left {
+    padding: 32px 0;
+    width: 100%;
+  }
+  .container-acces .itineraires .itineraire .middle {
+    padding: 20px 32px;
+    width: 100%;
+    align-items: center;
+  }
+  .container-acces .itineraires .itineraire .right {
+    background: rgba(217, 217, 217, 0.5);
+    padding: 20px 32px;
+    width: 100%;
+    flex-direction: row;
+  }
+  .container-acces .itineraires .itineraire .right p {
+    text-align: left;
+  }
+  .container-acces .acces .texte {
+    width: 100%;
+  }
+  .container-acces .acces .content .images {
+    width: 100%;
+  }
+  .container-acces .reglementation .parent {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container-acces .reglementation .parent .item {
+    padding: 32px 0;
+  }
+  .container-acces .itineraires .itineraire .left h4 {
+    text-align: center;
+  }
+  .container-acces .itineraires .itineraire .left p {
+    text-align: center;
+  }
+  .container-acces .itineraires .itineraire .middle p {
+    padding: 8px 0;
+  }
+  .container-acces .itineraires .itineraire .right p {
+    padding: 8px 0;
+  }
+  .container-acces .itineraires .itineraire .left p {
+    padding: 8px 0;
+  }
+  .container-acces .reglementation > p {
+    margin: 0;
+    margin-top: 64px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container-acces .acces .titles h1 {
+    font-size: 36px;
+  }
+  .container-acces .acces .titles span {
+    font-size: 16px;
+  }
+  .container-acces .acces .texte p {
+    font-size: 14px;
+  }
+  .container-acces .itineraires h2 {
+    font-size: 36px;
+  }
+  .container-acces .itineraires h3 {
+    font-size: 20px;
+  }
+  .container-acces .itineraires .itineraire .left h4 {
+    font-size: 24px;
+  }
+  .container-acces .itineraires .itineraire .left p {
+    font-size: 20px;
+  }
+  .container-acces .itineraires .itineraire .middle p {
+    font-size: 16px;
+  }
+  .container-acces .itineraires .itineraire .right p {
+    font-size: 14px;
+  }
+  .container-acces .reglementation h2 {
+    font-size: 36px;
+  }
+  .container-acces .reglementation .parent .item p {
+    font-size: 16px;
+  }
+  .container-acces .reglementation .parent .item legend {
+    font-size: 14px;
+  }
+  .container-acces .reglementation > p {
+    font-size: 16px;
+  }
+  .container-acces .carte h2 {
+    font-size: 36px;
+  }
+  .container-acces .acces .content {
+    padding: 0 32px;
+  }
+  .container-acces .itineraires {
+    padding: 0 32px;
+  }
+  .container-acces .reglementation {
+    padding: 0 32px;
+  }
+}
 .animation {
   background: #555B47;
   padding: 100px 64px;
