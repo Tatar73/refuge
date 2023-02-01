@@ -645,3 +645,46 @@
         grid-row-gap: 32px;
     }
 }
+
+
+
+@media screen and (max-width: 1024px) {
+    .reservation .resa{
+        flex-direction: column-reverse;
+        text-align: left;
+    }
+    .reservation .resa .resa-right p{
+        margin: 0;
+    }
+
+    .reservation .resa .resa-left .nb-personnes .flex{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reservation .resa .resa-left .nb-personnes .flex .left,
+    .reservation .resa .resa-left .nb-personnes .flex .middle,
+    .reservation .resa .resa-left .nb-personnes .flex .right{
+        margin: 16px 0;
+    }
+}
+
+@media screen (max-width: 768px) {
+    .reservation .resa .resa-left .form-flex{
+        gap: 64px;
+    }
+    .reservation .resa .resa-left .date-flex{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        gap: 0;
+        align-items: center;
+    }
+    .reservation .resa .resa-left .date-flex .date{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+}
