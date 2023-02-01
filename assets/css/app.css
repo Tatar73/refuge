@@ -2125,11 +2125,9 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   top: 0;
   transform: translateX(-50%);
 }
-.tarifs .forfaits .parent .tarif {
-  background: #F8F4EC;
-}
 .tarifs .forfaits .parent .tarif .prix {
   padding: 128px 48px;
+  background: #F8F4EC;
   background-image: url("../../assets/img/tarif_enfant.svg");
   background-size: cover;
   background-position: center;
@@ -2143,9 +2141,15 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   text-align: center;
   color: #F8F4EC;
 }
+.tarifs .forfaits .parent .tarif .categorie {
+  background: #F8F4EC;
+  height: 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .tarifs .forfaits .parent .tarif .categorie p {
-  margin-top: 12px;
-  padding: 32px 0;
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 600;
@@ -2180,11 +2184,9 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   text-align: center;
   color: #F8F4EC;
 }
-.tarifs .forfaits .parent .tarif2 {
-  background: #F8F4EC;
-}
 .tarifs .forfaits .parent .tarif2 .prix {
   padding: 128px 48px;
+  background: #F8F4EC;
   background-image: url("../../assets/img/tarif_adulte.svg");
   background-size: cover;
   background-position: center;
@@ -2198,9 +2200,15 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   text-align: center;
   color: #F8F4EC;
 }
+.tarifs .forfaits .parent .tarif2 .categorie {
+  background: #F8F4EC;
+  height: 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .tarifs .forfaits .parent .tarif2 .categorie p {
-  margin-top: 12px;
-  padding: 32px 0;
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 600;
@@ -2235,11 +2243,9 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   text-align: center;
   color: #F8F4EC;
 }
-.tarifs .forfaits .parent .tarif3 {
-  background: #F8F4EC;
-}
 .tarifs .forfaits .parent .tarif3 .prix {
   padding: 128px 48px;
+  background: #F8F4EC;
   background-image: url("../../assets/img/tarif_caf.svg");
   background-size: cover;
   background-position: center;
@@ -2253,9 +2259,15 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   text-align: center;
   color: #F8F4EC;
 }
+.tarifs .forfaits .parent .tarif3 .categorie {
+  background: #F8F4EC;
+  height: 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .tarifs .forfaits .parent .tarif3 .categorie p {
-  margin-top: 14px;
-  padding: 32px 0 0 0;
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 600;
@@ -2264,6 +2276,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   color: #555B47;
 }
 .tarifs .forfaits .parent .tarif3 .categorie legend {
+  padding: 0 24px;
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 600;
@@ -2271,7 +2284,6 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   line-height: 14px;
   text-align: center;
   color: #555B47;
-  padding-bottom: 16px;
 }
 .tarifs .forfaits .parent .tarif3 .hors_repas {
   background-color: #7E8170;
@@ -2300,11 +2312,9 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   text-align: center;
   color: #F8F4EC;
 }
-.tarifs .forfaits .parent .tarif4 {
-  background: #F8F4EC;
-}
 .tarifs .forfaits .parent .tarif4 .prix {
   padding: 128px 48px;
+  background: #F8F4EC;
   background-image: url("../../assets/img/tarif_bivouac.svg");
   background-size: cover;
   background-position: center;
@@ -2318,9 +2328,15 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   text-align: center;
   color: #F8F4EC;
 }
+.tarifs .forfaits .parent .tarif4 .categorie {
+  height: 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #F8F4EC;
+}
 .tarifs .forfaits .parent .tarif4 .categorie p {
-  margin-top: 12px;
-  padding: 32px 0;
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 600;
@@ -2693,8 +2709,50 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   .reservation .resa .resa-left .nb-personnes .flex .right {
     margin: 16px 0;
   }
+  .nuit {
+    gap: 64px;
+  }
+  .nuit .left {
+    background-position: center;
+  }
+  .tarifs .titre p {
+    padding: 0 32px;
+    font-size: 16px;
+  }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .tarifs .titre h1 {
+    font-size: 36px;
+  }
+  .tarifs .titre p {
+    font-size: 16px;
+  }
+  .tarifs .forfaits .parent .tarif .prix p,
+  .tarifs .forfaits .parent .tarif2 .prix p,
+  .tarifs .forfaits .parent .tarif3 .prix p,
+  .tarifs .forfaits .parent .tarif4 .prix p {
+    font-size: 64px;
+  }
+  .reservation .resa .resa-right p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .tarifs .titre h1 {
+    font-size: 36px;
+  }
+  .tarifs .titre p {
+    font-size: 16px;
+  }
+  .tarifs .forfaits .parent .tarif .prix p,
+  .tarifs .forfaits .parent .tarif2 .prix p,
+  .tarifs .forfaits .parent .tarif3 .prix p,
+  .tarifs .forfaits .parent .tarif4 .prix p {
+    font-size: 64px;
+  }
+  .reservation .resa .resa-right p {
+    font-size: 16px;
+  }
   .reservation .resa .resa-left .form-flex {
     gap: 64px;
   }
@@ -2707,6 +2765,132 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   }
   .reservation .resa .resa-left .date-flex .date {
     width: 100%;
+  }
+  .nuit {
+    flex-direction: column;
+  }
+  .nuit .left {
+    height: 300px;
+    width: 100%;
+  }
+  .nuit .right {
+    width: 100%;
+  }
+  .tarifs .forfaits .parent .tarif .prix,
+  .tarifs .forfaits .parent .tarif2 .prix,
+  .tarifs .forfaits .parent .tarif3 .prix,
+  .tarifs .forfaits .parent .tarif4 .prix {
+    padding: 80px 0;
+  }
+  .tarifs .forfaits {
+    padding: 0 32px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .tarifs .forfaits .parent .tarif3 .prix {
+    background-position: 80% 60%;
+  }
+  .tarifs .forfaits .parent .tarif .prix {
+    background-position: 80% 40%;
+  }
+  .tarifs .forfaits .parent .tarif .hors_repas,
+  .tarifs .forfaits .parent .tarif2 .hors_repas,
+  .tarifs .forfaits .parent .tarif3 .hors_repas,
+  .tarifs .forfaits .parent .tarif4 .hors_repas {
+    justify-content: center;
+    gap: 16px;
+  }
+  .reservation {
+    padding: 100px 32px;
+  }
+  .reservation h2 {
+    font-size: 36px;
+    padding-bottom: 64px;
+  }
+  .reservation .resa .resa-right h3 {
+    font-size: 36px;
+  }
+  .tarifs .forfaits .parent {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tarifs .titre h1 {
+    font-size: 36px;
+  }
+  .tarifs .titre p {
+    font-size: 16px;
+  }
+  .tarifs .forfaits .parent .tarif .prix p,
+  .tarifs .forfaits .parent .tarif2 .prix p,
+  .tarifs .forfaits .parent .tarif3 .prix p,
+  .tarifs .forfaits .parent .tarif4 .prix p {
+    font-size: 48px;
+  }
+  .reservation .resa .resa-right p {
+    font-size: 14px;
+  }
+  .reservation .resa .resa-left .form-flex {
+    gap: 64px;
+  }
+  .reservation .resa .resa-left .date-flex {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    gap: 0;
+    align-items: center;
+  }
+  .reservation .resa .resa-left .date-flex .date {
+    width: 100%;
+  }
+  .nuit {
+    flex-direction: column;
+    padding: 32px 32px 100px 32px;
+  }
+  .nuit .left {
+    height: 300px;
+    width: 100%;
+  }
+  .nuit .right {
+    width: 100%;
+  }
+  .nuit .right h3 {
+    font-size: 36px;
+  }
+  .nuit .right p {
+    font-size: 14px;
+  }
+  .tarifs .forfaits .parent .tarif .prix,
+  .tarifs .forfaits .parent .tarif2 .prix,
+  .tarifs .forfaits .parent .tarif3 .prix,
+  .tarifs .forfaits .parent .tarif4 .prix {
+    padding: 32px 0;
+  }
+  .tarifs .forfaits {
+    padding: 0 32px;
+  }
+  .tarifs .forfaits .parent .tarif .categorie p,
+  .tarifs .forfaits .parent .tarif2 .categorie p,
+  .tarifs .forfaits .parent .tarif3 .categorie p,
+  .tarifs .forfaits .parent .tarif4 .categorie p {
+    font-size: 16px;
+  }
+  .tarifs .forfaits .parent .tarif .categorie legend,
+  .tarifs .forfaits .parent .tarif2 .categorie legend,
+  .tarifs .forfaits .parent .tarif3 .categorie legend,
+  .tarifs .forfaits .parent .tarif4 .categorie legend {
+    padding-top: 4px;
+    font-size: 12px;
+  }
+  .tarifs .forfaits .parent .tarif .hors_repas p:nth-child(2),
+  .tarifs .forfaits .parent .tarif2 .hors_repas p:nth-child(2),
+  .tarifs .forfaits .parent .tarif3 .hors_repas p:nth-child(2),
+  .tarifs .forfaits .parent .tarif4 .hors_repas p:nth-child(2) {
+    font-size: 20px;
+  }
+  .tarifs .forfaits .parent .tarif .categorie,
+  .tarifs .forfaits .parent .tarif2 .categorie,
+  .tarifs .forfaits .parent .tarif3 .categorie,
+  .tarifs .forfaits .parent .tarif4 .categorie {
+    height: 80px;
   }
 }
 .erreur {
