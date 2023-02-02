@@ -2523,6 +2523,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   margin-bottom: 10px;
 }
 .reservation .resa .resa-left .date-flex .date input {
+  padding: 12px 0;
   text-align: center;
   width: 100%;
   margin: auto;
@@ -2800,6 +2801,12 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   .reservation .resa .resa-left .infos .ligne1,
   .reservation .resa .resa-left .infos .ligne2 {
     text-align: center;
+  }
+  .reservation .resa .resa-left .submit {
+    width: 100%;
+  }
+  .reservation .resa .resa-left .submit .right {
+    width: 100%;
   }
   .reservation .resa .resa-left .infos .wpcf7-list-item-label {
     padding: 12px 0;

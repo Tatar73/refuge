@@ -482,6 +482,7 @@
                         margin-bottom: 10px;
                     }
                     input{
+                        padding: 12px 0;
                         text-align: center;
                         width: 100%;
                         margin: auto;
@@ -784,6 +785,15 @@
     .reservation .resa .resa-left .infos .ligne2{
         text-align: center;
     }
+    
+    .reservation .resa .resa-left .submit{
+        width: 100%;
+    }
+
+    .reservation .resa .resa-left .submit .right{
+        width: 100%;
+    }
+
     .reservation .resa .resa-left .infos .wpcf7-list-item-label{
         padding: 12px 0;
         width: 224px;
