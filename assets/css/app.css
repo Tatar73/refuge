@@ -2557,6 +2557,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   margin-bottom: 10px;
 }
 .reservation .resa .resa-left .date-flex .date input {
+  border: 3px solid #555B47;
   padding: 12px 0;
   text-align: center;
   width: 100%;
@@ -2641,6 +2642,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   justify-content: space-between;
 }
 .reservation .resa .resa-left .submit input {
+  height: 50px;
   padding: 12px 0;
   font-family: "Gilmer";
   font-style: normal;
@@ -2648,7 +2650,6 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   font-size: 20px;
   color: white;
   background: #555B47;
-  padding: 0 112px;
 }
 .reservation .resa .resa-right {
   display: flex;
@@ -3016,6 +3017,14 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   .tarifs .forfaits .parent .tarif3 .categorie,
   .tarifs .forfaits .parent .tarif4 .categorie {
     height: 80px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container-index .services #service_topo_droite {
+    display: none;
+  }
+  .container-index .intro #topo_right {
+    display: none;
   }
 }
 .erreur {

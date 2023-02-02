@@ -499,6 +499,7 @@
                         margin-bottom: 10px;
                     }
                     input{
+                        border: 3px solid #555B47;
                         padding: 12px 0;
                         text-align: center;
                         width: 100%;
@@ -586,6 +587,7 @@
                 width: 100%;
                 justify-content: space-between;
                 input{
+                    height: 50px;
                     padding: 12px 0;
                     font-family: 'Gilmer';
                     font-style: normal;
@@ -593,7 +595,6 @@
                     font-size: 20px;
                     color: white;
                     background: #555B47;
-                    padding: 0 112px;
                 }
             }
         }
@@ -1010,5 +1011,15 @@
     .tarifs .forfaits .parent .tarif3 .categorie,
     .tarifs .forfaits .parent .tarif4 .categorie{
         height: 80px;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .container-index .services #service_topo_droite{
+        display: none;
+    }
+    .container-index .intro #topo_right{
+        display: none;
     }
 }
