@@ -51,12 +51,12 @@
             grid-column-gap: 64px;
             grid-row-gap: 0px;
             .infos{
-                position: absolute;
+                position: relative;
                 display: flex;
                 .taxes{
-                    opacity: 0;
+                    display: none;
                     overflow: hidden;
-                    transition: height 0.5s;
+                    transition: opacity 0.5s;
                     background: #F8F4EC;
                     padding: 32px 32px 32px 50px;
                     p{
@@ -69,13 +69,14 @@
                     }
                 }
                 img{
+                    z-index: 5;
                     position: absolute;
                     left: 0;
                     top: 0;
                     transform: translateX(-50%);
                 }
                 img:hover + .taxes{
-                    opacity: 1;
+                    display: block;
                 }
             }
             .tarif{
