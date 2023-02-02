@@ -2432,7 +2432,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   width: 50%;
 }
 .reservation .resa .resa-left .form-flex .form-right input {
-  margin-bottom: 16px;
+  border: 3px solid #555B47;
   height: 50px;
   margin-bottom: 16px;
 }
@@ -2810,10 +2810,20 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
     width: 224px;
   }
   .reservation .resa .resa-left .submit input {
-    padding: 12px 0;
+    width: 100%;
+    height: 50px;
   }
   .reservation .resa .resa-left .message textarea {
     width: unset;
+  }
+  .reservation .resa .resa-left .infos .wpcf7-list-item {
+    margin-bottom: 16px;
+  }
+  .reservation .resa .resa-left .infos p {
+    margin-bottom: 32px;
+  }
+  .reservation .resa .resa-left .message textarea {
+    font-size: 14px;
   }
   .tarifs .forfaits .parent .tarif .hors_repas,
   .tarifs .forfaits .parent .tarif2 .hors_repas,
