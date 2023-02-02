@@ -54,7 +54,7 @@
                 position: absolute;
                 display: flex;
                 .taxes{
-                    height: 0;
+                    opacity: 0;
                     overflow: hidden;
                     transition: height 0.5s;
                     background: #F8F4EC;
@@ -74,8 +74,8 @@
                     top: 0;
                     transform: translateX(-50%);
                 }
-                img:hover .taxes{
-                    height: 100%;
+                img:hover.taxes{
+                    opacity: 1;
                 }
             }
             .tarif{

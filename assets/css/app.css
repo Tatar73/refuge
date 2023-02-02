@@ -2108,7 +2108,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   display: flex;
 }
 .tarifs .forfaits .parent .infos .taxes {
-  height: 0;
+  opacity: 0;
   overflow: hidden;
   transition: height 0.5s;
   background: #F8F4EC;
@@ -2128,8 +2128,8 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   top: 0;
   transform: translateX(-50%);
 }
-.tarifs .forfaits .parent .infos img:hover .taxes {
-  height: 100%;
+.tarifs .forfaits .parent .infos img:hover.taxes {
+  opacity: 1;
 }
 .tarifs .forfaits .parent .tarif .prix {
   padding: 128px 48px;
