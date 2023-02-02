@@ -2833,10 +2833,21 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   .reservation .resa .resa-left .message textarea {
     font-size: 14px;
   }
+  .tarifs .forfaits .parent .infos img {
+    width: 60px;
+    height: 60px;
+  }
+  .tarifs .forfaits .parent .infos .taxes p {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 480px) {
   .tarifs .forfaits .parent .infos img {
-    height: 40%;
+    width: 60px;
+    height: 60px;
+  }
+  .tarifs .forfaits .parent .infos .taxes p {
+    font-size: 14px;
   }
   .tarifs .forfaits .parent .tarif3 .prix {
     background-position: 80% 60%;
