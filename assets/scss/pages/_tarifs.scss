@@ -770,6 +770,49 @@
     .tarifs .forfaits{
         padding: 0 32px;
     }
+
+    .reservation .resa .resa-left .infos .ligne1,
+    .reservation .resa .resa-left .infos .ligne2{
+        text-align: center;
+    }
+    
+    .reservation .resa .resa-left .submit{
+        width: 100%;
+    }
+
+    .reservation .resa .resa-left .submit .right{
+        width: 100%;
+    }
+
+    .reservation .resa .resa-left .infos .wpcf7-list-item-label{
+        padding: 12px 0;
+        width: 224px;
+    }
+
+    .reservation .resa .resa-left .date-flex .date input{
+        padding: 12px 0;
+        width: 224px;
+    }
+    .reservation .resa .resa-left .submit input{
+        width: 100%;
+        height: 50px;
+    }
+
+    .reservation .resa .resa-left .message textarea{
+        width: unset;
+    }
+
+    .reservation .resa .resa-left .infos .wpcf7-list-item{
+        margin-bottom: 16px;
+    }
+    .reservation .resa .resa-left .infos p{
+        margin-bottom: 32px;
+    }
+
+    .reservation .resa .resa-left .message textarea{
+        font-size: 14px;
+    }
+
     
 }
 @media screen and (max-width: 480px) {
