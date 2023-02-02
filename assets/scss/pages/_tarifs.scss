@@ -391,6 +391,8 @@
                     width: 50%;
                     input{
                         margin-bottom: 16px;
+                        height: 50px;
+                        margin-bottom: 16px;
                     }
                 }
                 input{
@@ -499,6 +501,9 @@
                 flex-direction: column;
                 align-items: center;
                 gap: 50px;
+                .wpcf7-list-item{
+                    margin: 0;
+                }
                 p{
                     font-family: 'Gilmer';
                     font-style: normal;
@@ -788,6 +793,9 @@
         padding: 12px 0;
         width: 224px;
     }
+    .reservation .resa .resa-left .submit input{
+        padding: 12px 0;
+    }
 
     .reservation .resa .resa-left .message textarea{
         width: unset;
@@ -847,9 +855,6 @@
 
     .reservation input{
         font-size: 14px;
-    }
-    .wpcf7-list-item{
-        margin: 0   ;
     }
     
     .nuit{
