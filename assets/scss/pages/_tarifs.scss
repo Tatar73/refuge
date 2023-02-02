@@ -776,6 +776,15 @@
         background-position: 80% 40%;
     }
 
+    .reservation .resa .resa-left .infos .ligne1,
+    .reservation .resa .resa-left .infos .ligne2,{
+        text-align: center;
+    }
+    .reservation .resa .resa-left .infos .wpcf7-list-item-label{
+        padding: 12px 0;
+        width: 224px;
+    }
+
     .tarifs .forfaits .parent .tarif .hors_repas,
     .tarifs .forfaits .parent .tarif2 .hors_repas,
     .tarifs .forfaits .parent .tarif3 .hors_repas,
@@ -820,6 +829,7 @@
         display: flex;
         margin: auto;
         justify-content: center;
+        flex-direction: column;
         gap: 0;
         align-items: center;
     }
