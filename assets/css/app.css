@@ -2109,6 +2109,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
 }
 .tarifs .forfaits .parent .infos .taxes {
   display: none;
+  opacity: 0;
   overflow: hidden;
   transition: opacity 0.5s;
   background: #F8F4EC;
@@ -2131,6 +2132,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
 }
 .tarifs .forfaits .parent .infos img:hover + .taxes {
   display: block;
+  opacity: 1;
 }
 .tarifs .forfaits .parent .tarif .prix {
   padding: 128px 48px;
