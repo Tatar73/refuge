@@ -78,7 +78,7 @@
                 }
                 img:hover + .taxes{
                     display: block;
-                    animation: opacity 0.5s ease-out;
+                    animation: opacity 0.5s forwards;
                 }
                 @keyframes opacity {
                     from{
