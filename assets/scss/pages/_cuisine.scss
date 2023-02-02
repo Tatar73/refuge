@@ -9,11 +9,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    img{
+    img:nth-child(1){
         position: absolute;
         top: 0;
         left: 0;
         transform: translate(-40%, -45%);
+    }
+    img:nth-child(2){
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translateX(40%);
     }
     h1{
         padding-top: 230px;
@@ -143,6 +149,9 @@
 }
 
 @media screen and (max-width: 1024px) {
+    img:nth-child(2){
+        display: none;
+    }
     .menu .container .parent{
         display: unset;
     }

@@ -2,6 +2,10 @@
 
     background: #F8F4EC;
     padding: 0 64px;
+    img{
+        position: absolute;
+        right: 0;
+    }
     h1{
         padding-top: 100px;
         font-family: 'Gilmer';
@@ -144,6 +148,10 @@ body div.wpforms-container-full .wpforms-form{
 }
 
 @media screen and (max-width: 1024px) {
+
+    .contact img{
+        display: none;
+    }
     .contact .form{
         flex-direction: column;
     }

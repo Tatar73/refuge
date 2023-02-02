@@ -17,10 +17,14 @@ $file = get_field('menu');
 <section class="cuisine">
     <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/illustration_cuisine.svg"
         alt="illustration cuisine">
+    <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/carto_cuisine_top.svg"
+        alt="carto cuisine top right">
     <h1>
         <?php the_field('titre_page'); ?>
     </h1>
-    <p><?php the_field('presentation'); ?></p>
+    <p>
+        <?php the_field('presentation'); ?>
+    </p>
     <div class="ligne"></div>
 </section>
 
@@ -35,7 +39,9 @@ $file = get_field('menu');
         <div class="parent">
             <?php foreach ($repas as $programme): ?>
                 <div class="content">
-                    <h3><?php echo ($programme['titre_repas']); ?></h3>
+                    <h3>
+                        <?php echo ($programme['titre_repas']); ?>
+                    </h3>
                     <p>
                         <?php echo ($programme['description_repas']); ?>
                     </p>

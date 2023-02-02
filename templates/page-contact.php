@@ -6,6 +6,8 @@
 get_header();
 ?>
 <section class="contact">
+    <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/carto_contact.svg"
+        alt="illustration cartographie">
     <h1>
         <?php _e('Contact', 'refuge'); ?>
     </h1>

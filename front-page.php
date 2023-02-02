@@ -104,6 +104,8 @@ $modalitesHorsGardiennage = get_field('modalites_hors_gardiennage');
         <section class="services">
             <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/service_topo_gauche.svg" alt=""
                 id="service_topo_gauche">
+            <img src="<?php echo (get_template_directory_uri()); ?>/assets/img/carto_accueil_right.svg" alt=""
+                id="service_topo_droite">
             <div class="wrap">
                 <h3>
                     <?php the_field('services_title') ?>

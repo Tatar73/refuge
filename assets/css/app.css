@@ -527,6 +527,7 @@ footer .flex .left a {
   top: 86%;
   right: 0;
   transform: translate(-50%, -50%);
+  z-index: 5;
 }
 .container-index .acceuil .panorama button {
   margin-left: -50px;
@@ -1748,11 +1749,17 @@ footer .flex .left a {
   flex-direction: column;
   justify-content: center;
 }
-.cuisine img {
+.cuisine img:nth-child(1) {
   position: absolute;
   top: 0;
   left: 0;
   transform: translate(-40%, -45%);
+}
+.cuisine img:nth-child(2) {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(40%);
 }
 .cuisine h1 {
   padding-top: 230px;
@@ -1874,6 +1881,9 @@ footer .flex .left a {
   }
 }
 @media screen and (max-width: 1024px) {
+  img:nth-child(2) {
+    display: none;
+  }
   .menu .container .parent {
     display: unset;
   }
@@ -1894,6 +1904,10 @@ footer .flex .left a {
 .contact {
   background: #F8F4EC;
   padding: 0 64px;
+}
+.contact img {
+  position: absolute;
+  right: 0;
 }
 .contact h1 {
   padding-top: 100px;
@@ -2023,6 +2037,9 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   }
 }
 @media screen and (max-width: 1024px) {
+  .contact img {
+    display: none;
+  }
   .contact .form {
     flex-direction: column;
   }
@@ -2132,7 +2149,15 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
 }
 .tarifs .forfaits .parent .infos img:hover + .taxes {
   display: block;
-  opacity: 1;
+  animation: opacity 0.5s ease-out;
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .tarifs .forfaits .parent .tarif .prix {
   padding: 128px 48px;
