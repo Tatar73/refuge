@@ -2646,7 +2646,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
 }
 .reservation .resa .resa-left .submit input {
   height: 50px;
-  padding: 12px 0;
+  width: 250px;
   font-family: "Gilmer";
   font-style: normal;
   font-weight: 700;
