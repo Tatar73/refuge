@@ -2128,7 +2128,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   top: 0;
   transform: translateX(-50%);
 }
-.tarifs .forfaits .parent .infos img:hover.taxes {
+.tarifs .forfaits .parent .infos img:hover + .taxes {
   opacity: 1;
 }
 .tarifs .forfaits .parent .tarif .prix {
@@ -2832,6 +2832,9 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   }
 }
 @media screen and (max-width: 480px) {
+  .tarifs .forfaits .parent .infos img {
+    height: 40%;
+  }
   .tarifs .forfaits .parent .tarif3 .prix {
     background-position: 80% 60%;
   }
