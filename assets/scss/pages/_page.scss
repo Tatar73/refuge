@@ -11,7 +11,7 @@
         margin-bottom: 32px;
     }
     .text{
-        width: 50%;
+        width: 100%;
         h2{
             font-family: 'Athelas';
             font-style: normal;
@@ -70,3 +70,10 @@
     }
 
 }
+
+@media screen and (max-width: 768px) {
+    .confidentialite{
+        padding: 32px;
+    }
+}
+   

@@ -47,3 +47,35 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .plan .parent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 32px;
+        height: unset;
+        width: unset;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .plan .parent {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .parent {
+        .item1,
+        .item2,
+        .item3,
+        .item4,
+        .item5,
+        .item6{
+            p,
+            h3{
+            text-align: center;
+            }
+        }
+    }
+    .plan h1{
+        font-size: 36px;
+    }
+}

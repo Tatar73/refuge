@@ -3154,6 +3154,36 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   color: #FFFFFF;
 }
 
+@media screen and (max-width: 1024px) {
+  .plan .parent {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 32px;
+    height: unset;
+    width: unset;
+  }
+}
+@media screen and (max-width: 768px) {
+  .plan .parent {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .parent .item1 p,
+  .parent .item1 h3,
+  .parent .item2 p,
+  .parent .item2 h3,
+  .parent .item3 p,
+  .parent .item3 h3,
+  .parent .item4 p,
+  .parent .item4 h3,
+  .parent .item5 p,
+  .parent .item5 h3,
+  .parent .item6 p,
+  .parent .item6 h3 {
+    text-align: center;
+  }
+  .plan h1 {
+    font-size: 36px;
+  }
+}
 .confidentialite {
   background: #555B47;
   padding: 100px;
@@ -3168,7 +3198,7 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   margin-bottom: 32px;
 }
 .confidentialite .text {
-  width: 50%;
+  width: 100%;
 }
 .confidentialite .text h2 {
   font-family: "Athelas";
@@ -3225,6 +3255,11 @@ body div.wpforms-container-full .wpforms-form .wpforms-submit-container button:h
   color: #FFFFFF;
 }
 
+@media screen and (max-width: 768px) {
+  .confidentialite {
+    padding: 32px;
+  }
+}
 /* Flickity horizontal scroll */
 /*! Flickity v2.3.0
 https://flickity.metafizzy.co
